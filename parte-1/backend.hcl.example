@@ -1,0 +1,8 @@
+# Copie para backend.hcl e substitua somente com valores confirmados.
+# Não inclua access_key, secret_key ou session_token neste arquivo.
+bucket               = "eda262-g09-tfstate"
+key                  = "parte-1/terraform.tfstate"
+region               = "us-east-1"
+dynamodb_table       = "eda262-g09-terraform-locks"
+encrypt              = true
+workspace_key_prefix = "workspaces"

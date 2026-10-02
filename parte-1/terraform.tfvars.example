@@ -1,0 +1,11 @@
+# A configuração entregue está em scenario.auto.tfvars e é carregada
+# automaticamente. Copie este arquivo para terraform.tfvars somente se precisar
+# definir overrides opcionais e revisados.
+
+database_name_override = null
+trusted_table_name     = "trusted"
+
+# Defina um limite apenas após justificá-lo com uma medição real.
+# athena_bytes_scanned_cutoff = 10000000
+
+extra_tags = {}

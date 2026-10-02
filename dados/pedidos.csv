@@ -1,0 +1,13 @@
+order_id,customer_id,order_timestamp,status,quantity,unit_price,city,state
+ECOM-1001,CUST-001,2026-09-28 09:15:00,paid,2,79.90,Recife,PE
+ECOM-1002,CUST-002,2026-09-28 11:40:00,shipped,1,249.90,Olinda,PE
+ECOM-1003,CUST-003,2026-09-28 16:05:00,cancelled,3,39.50,Jaboatao dos Guararapes,PE
+ECOM-1004,CUST-004,2026-09-29 08:20:00,delivered,1,899.00,Recife,PE
+ECOM-1005,CUST-005,2026-09-29 10:35:00,paid,4,25.00,Paulista,PE
+ECOM-1006,CUST-006,2026-09-29 14:10:00,shipped,2,120.00,Caruaru,PE
+ECOM-1007,CUST-007,2026-09-30 09:00:00,pending,1,59.90,Recife,PE
+ECOM-1008,CUST-008,2026-09-30 12:25:00,paid,2,150.50,Olinda,PE
+ECOM-1009,CUST-009,2026-09-30 18:45:00,delivered,5,19.99,Jaboatao dos Guararapes,PE
+ECOM-1010,CUST-010,2026-10-01 08:30:00,shipped,1,349.00,Recife,PE
+ECOM-1011,CUST-011,2026-10-01 13:15:00,paid,3,45.90,Caruaru,PE
+ECOM-1012,CUST-012,2026-10-01 17:50:00,cancelled,1,999.90,Olinda,PE

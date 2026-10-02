@@ -1,0 +1,10 @@
+order_id,customer_id,order_timestamp,status,quantity,unit_price,city,state
+ECOM-1001,CUST-001,2026-09-28 09:15:00,paid,2,79.90,Recife,PE
+ECOM-1001,CUST-001,2026-09-28 09:15:00,paid,2,79.90,Recife,PE
+DIRTY-1001,CUST-X01,2026-09-30 10:00:00,PAID,1,89.90,Recife,PE
+DIRTY-1002,CUST-X02,2026-09-30 10:15:00,shippedd,1,49.90,Olinda,PE
+DIRTY-1003,CUST-X03,2026-09-30 10:30:00,paid,0,29.90,Recife,PE
+DIRTY-1004,CUST-X04,2026-09-30 10:45:00,paid,-2,29.90,Recife,PE
+DIRTY-1005,CUST-X05,2026-09-30 11:00:00,paid,1,-19.90,Caruaru,PE
+DIRTY-1006,CUST-X06,30/09/2026 11:15:00,paid,1,59.90,Recife,PE
+DIRTY-1007,CUST-X07,not-a-timestamp,paid,1,free,Olinda,PE
