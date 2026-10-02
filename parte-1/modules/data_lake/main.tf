@@ -132,10 +132,11 @@ resource "aws_glue_catalog_table" "trusted" {
 }
 
 resource "aws_athena_workgroup" "this" {
-  name        = var.workgroup_name
-  description = "Consultas AV1 para ${var.business_question}"
-  state       = "ENABLED"
-  tags        = var.tags
+  name          = var.workgroup_name
+  description   = "Consultas AV1 para ${var.business_question}"
+  state         = "ENABLED"
+  force_destroy = true
+  tags          = var.tags
 
   configuration {
     enforce_workgroup_configuration    = true

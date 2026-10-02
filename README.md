@@ -94,7 +94,11 @@ grupo.
 - AWS CLI configurada localmente, sem credenciais no repositório;
 - acesso autorizado à conta do grupo g09 em `us-east-1`.
 
-Nenhum deploy foi feito durante a preparação deste projeto.
+Uma execução real foi realizada em 01/10/2026 na conta acadêmica do grupo, em
+`us-east-1`. O resultado da consulta e as medições estão em
+`evidencias/execucao-aws.md`. A stack foi destruída e a ausência de órfãos está
+registrada em `evidencias/destroy-aws.md`. O backend remoto foi mantido para
+preservar o estado. As credenciais não fazem parte do projeto.
 
 ## 1. Criar o backend remoto
 
@@ -143,9 +147,10 @@ terraform output
 ```
 
 Execute `consultas/pergunta-negocio.sql` no workgroup
-`eda262-g09-athena`. Registre o Query execution ID, tempo, bytes processados,
-região, preço vigente e cálculo do custo em `DECISOES.md` e `evidencias/`.
-Nenhum custo foi presumido neste projeto.
+`eda262-g09-athena`. A execução comprovada, seu Query execution ID, tempo,
+bytes processados e cálculo do custo estão em `DECISOES.md` e
+`evidencias/execucao-aws.md`. Em uma nova execução, atualize essas medições em
+vez de reutilizá-las como se fossem atuais.
 
 ## 4. Verificar
 
@@ -162,8 +167,9 @@ AWS exclusivamente de leitura podem ser habilitadas explicitamente:
 RUN_AWS_CHECKS=1 ./verificacao/verifica.sh
 ```
 
-Enquanto o backend, as evidências e as medições reais não existirem, algumas
-checagens devem apresentar `FALHA` em vez de fabricar um resultado positivo.
+Em uma cópia limpa do repositório, a checagem de `backend.hcl` falha até a
+configuração local do backend ser criada. As checagens AWS também falham por
+padrão e só são habilitadas de forma consciente com `RUN_AWS_CHECKS=1`.
 
 ## 5. Destroy limpo
 

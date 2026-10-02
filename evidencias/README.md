@@ -1,6 +1,6 @@
 # Evidências
 
-Adicione aqui, sem credenciais ou dados sensíveis:
+Esta pasta registra, sem credenciais ou dados sensíveis:
 
 - saída completa de `verificacao/verifica.sh`;
 - resumo do `terraform apply`;
@@ -9,5 +9,6 @@ Adicione aqui, sem credenciais ou dados sensíveis:
 - saída do `terraform destroy`;
 - verificações de leitura que demonstrem ausência de recursos órfãos.
 
-Não há evidências fabricadas neste scaffold. Os arquivos devem registrar data,
-região, conta mascarada e workspace usados na execução real.
+`execucao-aws.md` contém a evidência textual da criação e da consulta real.
+`destroy-aws.md` registra a destruição limpa e a checagem de ausência de
+órfãos.

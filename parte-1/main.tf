@@ -12,17 +12,17 @@ resource "terraform_data" "workspace_guard" {
 module "data_lake" {
   source = "./modules/data_lake"
 
-  resource_prefix             = local.resource_prefix
-  lake_bucket_name            = local.lake_bucket_name
-  results_bucket_name         = local.results_bucket_name
-  glue_database_name          = local.database_name
-  trusted_table_name          = var.trusted_table_name
-  workgroup_name              = local.workgroup_name
-  grain                       = var.grain
-  business_question           = var.business_question
-  schema_columns              = var.schema_columns
-  csv_delimiter               = var.csv_delimiter
-  csv_has_header              = var.csv_has_header
+  resource_prefix     = local.resource_prefix
+  lake_bucket_name    = local.lake_bucket_name
+  results_bucket_name = local.results_bucket_name
+  glue_database_name  = local.database_name
+  trusted_table_name  = var.trusted_table_name
+  workgroup_name      = local.workgroup_name
+  grain               = var.grain
+  business_question   = var.business_question
+  schema_columns      = var.schema_columns
+  csv_delimiter       = var.csv_delimiter
+  csv_has_header      = var.csv_has_header
   source_objects = {
     for name, object in var.source_objects : name => merge(object, {
       source = abspath(object.source)

@@ -1,7 +1,8 @@
 # Decisões de Engenharia — AV1 — g09
 
-As medições locais abaixo são reproduzíveis sobre os arquivos versionados. As
-medições AWS permanecem explicitamente pendentes até um deploy autorizado.
+As medições locais abaixo são reproduzíveis sobre os arquivos versionados. A
+stack também foi executada na conta acadêmica do grupo em `us-east-1`, e os
+resultados reais estão registrados sem credenciais em `evidencias/`.
 
 ## Identificação
 
@@ -97,11 +98,10 @@ escala real.
   `projeto=engenharia-de-dados`.
 - Região: validação bloqueia qualquer valor diferente de `us-east-1`.
 
-## Resultado esperado da consulta local
+## Resultado verificado no Athena
 
-A consulta agrupa por data e status. Estes valores foram calculados localmente
-a partir do CSV para conferência funcional; ainda não são evidência de execução
-no Athena:
+A consulta agrupa por data e status. Os valores calculados localmente foram
+confirmados por uma execução real no Athena em 01/10/2026:
 
 | Data | Status | Valor bruto (R$) |
 |---|---|---:|
@@ -121,26 +121,41 @@ no Athena:
 Pedidos cancelados continuam visíveis em sua própria categoria; a consulta não
 os trata como receita realizada nem os oculta.
 
-## Custo da consulta no Athena — pendente
+## Custo medido da consulta no Athena
 
-Não existe deploy nem execução Athena autorizada até o momento. Após executar a
-consulta em `us-east-1`, registrar:
+- Query execution ID: `5c11fe2f-ba30-457e-aa26-0055b3970cb1`.
+- Data/hora de submissão: **01/10/2026 23:43:29 -03:00**.
+- Estado: **SUCCEEDED**.
+- Tempo total: **608 ms**.
+- Tempo de engine: **414 ms**.
+- Dados processados informados pelo Athena: **895 bytes**.
+- Reuso de resultado anterior: **não**.
+- Saída: `s3://eda262-g09-athena-results/results/5c11fe2f-ba30-457e-aa26-0055b3970cb1.csv`.
 
-- Query execution ID: **PENDENTE**
-- Data/hora: **PENDENTE**
-- Tempo de execução: **PENDENTE**
-- Dados processados em bytes: **PENDENTE**
-- Preço oficial aplicado, moeda, região, data e fonte: **PENDENTE**
-- Fórmula reproduzível: **PENDENTE**
-- Custo calculado: **PENDENTE — não inventado**
+O preço sob demanda publicado pela AWS é **US$ 5 por TB verificado**, com
+arredondamento e mínimo faturável de **10 MB por consulta**. Assim, embora o
+Athena tenha informado somente 895 bytes processados, a estimativa conservadora
+é:
 
-## Destroy limpo — pendente
+`US$ 5 × 10 MB ÷ 1 TB ≈ US$ 0,00005`
 
-Os buckets da stack usam `force_destroy = true`; ainda assim, a comprovação
-precisa de uma execução real:
+Fonte consultada em 01/10/2026:
+<https://aws.amazon.com/pt/athena/pricing/>.
 
-- Workspace usado: **PENDENTE**
-- Resultado do destroy: **PENDENTE**
-- Checagem pós-destroy de S3, Glue e Athena: **PENDENTE**
-- Recursos órfãos: **PENDENTE**
-- Evidência em `evidencias/`: **PENDENTE**
+## Destroy limpo
+
+- Workspace: `av1`.
+- Plano original: `0 to add, 0 to change, 14 to destroy`.
+- Resultado final: estado da stack com **0 recursos**.
+- S3 `eda262-g09-lake-trusted`: ausente após o destroy.
+- S3 `eda262-g09-athena-results`: ausente após o destroy.
+- Glue database e tabela trusted: ausentes após o destroy.
+- Athena workgroup: ausente após o destroy.
+- Recursos órfãos da stack: **0**.
+
+A primeira tentativa revelou que o workgroup não podia ser removido enquanto
+mantinha histórico de consulta. O módulo foi corrigido com
+`force_destroy = true`, validado e reaplicado somente ao workgroup antes da
+conclusão do destroy. O backend remoto foi deliberadamente mantido: S3
+`eda262-g09-tfstate` e DynamoDB `eda262-g09-terraform-locks` continuam ativos
+para preservar o estado e o mecanismo de lock do projeto.
