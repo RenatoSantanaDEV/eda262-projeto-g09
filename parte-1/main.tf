@@ -23,9 +23,11 @@ module "data_lake" {
   schema_columns      = var.schema_columns
   csv_delimiter       = var.csv_delimiter
   csv_has_header      = var.csv_has_header
+  # Caminho relativo ao módulo raiz: o plano e o estado não dependem do
+  # diretório absoluto da máquina que executa o Terraform.
   source_objects = {
     for name, object in var.source_objects : name => merge(object, {
-      source = abspath(object.source)
+      source = "${path.root}/${object.source}"
     })
   }
   athena_bytes_scanned_cutoff = var.athena_bytes_scanned_cutoff

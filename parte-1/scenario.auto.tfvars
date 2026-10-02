@@ -25,5 +25,7 @@ source_objects = {
   }
 }
 
-athena_bytes_scanned_cutoff = null
+# Limite de custo por consulta: 10 MiB, o menor valor aceito pelo provider AWS.
+# A consulta medida em 01/10/2026 leu 895 bytes e rodou antes deste limite.
+athena_bytes_scanned_cutoff = 10485760
 extra_tags                  = {}

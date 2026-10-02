@@ -17,6 +17,11 @@ credenciais*
 *access_key*
 *acesso-programatico*
 *acesso_programatico*
+
+# Evidências: capturas ainda não revisadas ficam fora do Git, em
+# evidencias/_local/ ou soltas em evidencias/. Só são versionadas as saídas
+# brutas já sanitizadas, em evidencias/brutas/ (ver evidencias/README.md).
+evidencias/_local/
 evidencias/*.json
 evidencias/*.txt
 evidencias/*.png

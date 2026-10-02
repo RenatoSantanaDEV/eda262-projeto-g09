@@ -112,7 +112,7 @@ variable "csv_has_header" {
 }
 
 variable "source_objects" {
-  description = "Arquivos locais enviados pelo Terraform para a camada trusted."
+  description = "Arquivos locais enviados pelo Terraform para a camada trusted. O campo source é relativo ao diretório parte-1."
   type = map(object({
     source       = string
     key          = string
@@ -126,16 +126,23 @@ variable "source_objects" {
     ])
     error_message = "Toda chave de source_objects deve começar com trusted/."
   }
+
+  validation {
+    condition = alltrue([
+      for object in values(var.source_objects) : !can(regex("^(/|~|[A-Za-z]:)", object.source))
+    ])
+    error_message = "source deve ser um caminho relativo ao diretório parte-1, sem depender da máquina."
+  }
 }
 
 variable "athena_bytes_scanned_cutoff" {
-  description = "Limite opcional de bytes examinados por consulta no workgroup."
+  description = "Limite de bytes examinados por consulta no workgroup. Nulo desativa o limite."
   type        = number
   default     = null
 
   validation {
-    condition     = var.athena_bytes_scanned_cutoff == null ? true : var.athena_bytes_scanned_cutoff >= 10000000
-    error_message = "O cutoff do Athena deve ser nulo ou ao menos 10 MB."
+    condition     = var.athena_bytes_scanned_cutoff == null ? true : var.athena_bytes_scanned_cutoff >= 10485760
+    error_message = "O cutoff do Athena deve ser nulo ou ao menos 10485760 bytes (10 MiB), mínimo aceito pelo provider AWS."
   }
 }
 
