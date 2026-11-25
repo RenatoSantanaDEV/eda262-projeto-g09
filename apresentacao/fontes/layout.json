@@ -289,9 +289,25 @@
   ],
   [
     2,
+    "Infraestrutura: ",
+    88,
+    493,
+    142.24609375,
+    20
+  ],
+  [
+    2,
+    "Terraform modular; estado remoto em S3 com lock no DynamoDB; workspace av2.",
+    230.24609375,
+    493,
+    738.06640625,
+    20
+  ],
+  [
+    2,
     "Glue transforma",
     64,
-    503,
+    535,
     193.10302734375,
     25
   ],
@@ -299,7 +315,7 @@
     2,
     "Normaliza, valida, deduplica e agrega.<br/>Glue 4.0, Spark, 2 workers G.1X.",
     64,
-    543,
+    571,
     350,
     52.0
   ],
@@ -307,7 +323,7 @@
     2,
     "Catálogo descreve",
     464,
-    503,
+    535,
     222.314453125,
     25
   ],
@@ -315,7 +331,7 @@
     2,
     "Schema no Terraform e partition<br/>projection, sem crawler.",
     464,
-    543,
+    571,
     350,
     52.0
   ],
@@ -323,7 +339,7 @@
     2,
     "Athena responde",
     864,
-    503,
+    535,
     204.19921875,
     25
   ],
@@ -331,7 +347,7 @@
     2,
     "SQL sobre a refined, filtrada por data.<br/>Workgroup com teto de 10 MiB.",
     864,
-    543,
+    571,
     350,
     52.0
   ],
@@ -497,11 +513,11 @@
   ],
   [
     3,
-    "Chave: pedido + item.<br/>Maior updated_at, depois arrival_date<br/>e SHA-256 do conteúdo normalizado.",
+    "Chave: pedido + item.<br/>Maior updated_at, depois<br/>arrival_date e SHA-256 do<br/>conteúdo normalizado.",
     864,
     502,
     350,
-    78.0
+    104.0
   ],
   [
     3,
@@ -1609,7 +1625,7 @@
   ],
   [
     8,
-    "<b>Entrega administrativa:</b> main, tag av2-entrega,<br/>link + PDF no Classroom e confirmação<br/>da planilha de integrantes.",
+    "<b>Reprodução:</b> código, decisões e evidências<br/>versionados; consulta com custo, idempotência,<br/>backfill e remoção documentados.",
     684,
     526,
     532,
