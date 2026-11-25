@@ -1,0 +1,21 @@
+{
+  "code_sha256": "8f7e09c80b1fa6e7eaec2065dae5817631516467bc908c615c04ac2b42f1a165",
+  "duplicates_removed_selected": 60,
+  "generated_at_utc": "2026-11-19T03:11:49.654907+00:00",
+  "mode": "BACKFILL",
+  "partitions_written": 1,
+  "raw_rows_read": 187854,
+  "refined_groups_after_run": 150,
+  "refined_groups_written": 5,
+  "rejected_rows_selected": 316,
+  "requested_days": [
+    "2026-09-15"
+  ],
+  "trusted_distinct_keys_after_run": 174878,
+  "trusted_rows_after_run": 174878,
+  "trusted_rows_written": 5821,
+  "valid_rows_before_dedup_selected": 5881,
+  "written_days": [
+    "2026-09-15"
+  ]
+}

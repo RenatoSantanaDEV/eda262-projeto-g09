@@ -1,5 +1,8 @@
 # Evidências
 
+> As evidências da AV2 seguem um fluxo automatizado e ficam em
+> [`av2/`](av2/README.md). O restante deste arquivo documenta a execução da AV1.
+
 Esta pasta registra, sem credenciais ou dados sensíveis, a execução real feita
 em 01/10/2026 na conta acadêmica do grupo g09, em `us-east-1`.
 
@@ -74,7 +77,7 @@ ignorados, para que uma captura não revisada não seja versionada por engano.
    no projeto ou ID de conta completo em `evidencias/`.
 
 5. Só então `git add evidencias/brutas/` e atualize os resumos
-   (`execucao-aws.md`, `destroy-aws.md`) e o `DECISOES.md` com os números da
+   (`execucao-aws.md`, `destroy-aws.md`) e o `DECISOES-AV1.md` com os números da
    nova execução.
 
 Estado (`*.tfstate`), planos (`*.tfplan`), `backend.hcl` e `terraform.tfvars`

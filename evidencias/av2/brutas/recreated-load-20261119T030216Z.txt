@@ -1,0 +1,2 @@
+Sincronizando dataset determinístico para s3://eda262-g09-lake-raw/orders/
+Evidências sanitizadas: /Users/<USER>/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/outputs/eda262-projeto-g09/evidencias/av2/brutas/generation-summary.json e /Users/<USER>/Documents/Codex/2026-10-01/referenced-chatgpt-conversation-this-is-an/outputs/eda262-projeto-g09/evidencias/av2/brutas/raw-load.txt

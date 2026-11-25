@@ -1,0 +1,26 @@
+Verificação AV2 g09 — padrão local, sem acesso AWS
+
+PASSA [estrutura] parte-2 presente
+PASSA [decisoes] DECISOES-AV2.md presente
+PASSA [consulta] SQL da pergunta presente
+PASSA [camadas] buckets raw, trusted e refined seguem o padrão obrigatório
+PASSA [formato] trusted/refined em Parquet e tabelas particionadas
+PASSA [idempotencia] deduplicação por chave composta e overwrite dinâmico
+PASSA [backfill] backfill seletivo de partição implementado
+PASSA [limpeza] normalização, validação e quarentena implementadas
+PASSA [lakeformation] registro por camada e permissões ingestion/pipeline/analyst
+PASSA [tags] tags obrigatórias declaradas
+PASSA [regiao] us-east-1 é obrigatório
+PASSA [backend] backend remoto S3 + DynamoDB documentado
+PASSA [scripts] scripts operacionais presentes
+PASSA [seguranca] nenhum arquivo com nome típico de credencial
+PASSA [seguranca] nenhum padrão de credencial AWS encontrado
+PASSA [testes] testes unitários do gerador
+PASSA [terraform-fmt] terraform fmt -check
+PASSA [terraform-validate] terraform validate
+PASSA [aws] cinco buckets existem
+PASSA [aws] database Glue existe
+PASSA [aws] job Glue existe
+PASSA [aws] workgroup Athena existe
+
+Resultado: 22 PASSA, 0 FALHA

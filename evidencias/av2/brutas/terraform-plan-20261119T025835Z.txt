@@ -1,0 +1,1804 @@
+
+Warning: Deprecated Parameter
+
+The parameter "dynamodb_table" is deprecated. Use parameter "use_lockfile"
+instead.
+Acquiring state lock. This may take a few moments...
+data.aws_caller_identity.current: Reading...
+data.aws_iam_policy_document.glue_assume_role: Reading...
+data.aws_iam_policy_document.glue_assume_role: Read complete after 0s [id=2681768870]
+data.aws_caller_identity.current: Read complete after 0s [id=<ACCOUNT_ID>]
+data.aws_iam_policy_document.principal_assume_role: Reading...
+data.aws_iam_policy_document.principal_assume_role: Read complete after 0s [id=2716348323]
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  + create
+ <= read (data resources)
+
+Terraform will perform the following actions:
+
+  # data.aws_iam_policy_document.analyst will be read during apply
+  # (config refers to values not yet known)
+ <= data "aws_iam_policy_document" "analyst" {
+      + id            = (known after apply)
+      + json          = (known after apply)
+      + minified_json = (known after apply)
+
+      + statement {
+          + actions   = [
+              + "s3:GetObject",
+            ]
+          + effect    = "Allow"
+          + resources = [
+              + (known after apply),
+            ]
+          + sid       = "ReadRefined"
+        }
+      + statement {
+          + actions   = [
+              + "s3:GetBucketLocation",
+              + "s3:ListBucket",
+            ]
+          + effect    = "Allow"
+          + resources = [
+              + (known after apply),
+              + (known after apply),
+            ]
+          + sid       = "ListRefinedAndResults"
+        }
+      + statement {
+          + actions   = [
+              + "s3:GetObject",
+              + "s3:PutObject",
+            ]
+          + effect    = "Allow"
+          + resources = [
+              + (known after apply),
+            ]
+          + sid       = "WriteAthenaResults"
+        }
+      + statement {
+          + actions   = [
+              + "athena:GetQueryExecution",
+              + "athena:GetQueryResults",
+              + "athena:GetWorkGroup",
+              + "athena:StartQueryExecution",
+            ]
+          + effect    = "Allow"
+          + resources = [
+              + "arn:aws:athena:us-east-1:<ACCOUNT_ID>:workgroup/eda262-g09-av2",
+            ]
+          + sid       = "QueryWorkgroup"
+        }
+      + statement {
+          + actions   = [
+              + "glue:GetDatabase",
+              + "glue:GetDatabases",
+              + "glue:GetPartition",
+              + "glue:GetPartitions",
+              + "glue:GetTable",
+              + "glue:GetTables",
+            ]
+          + effect    = "Allow"
+          + resources = [
+              + "arn:aws:glue:us-east-1:<ACCOUNT_ID>:catalog",
+              + "arn:aws:glue:us-east-1:<ACCOUNT_ID>:database/eda262_g09_av2",
+              + "arn:aws:glue:us-east-1:<ACCOUNT_ID>:table/eda262_g09_av2/refined_daily_sales",
+            ]
+          + sid       = "ReadRefinedCatalog"
+        }
+      + statement {
+          + actions   = [
+              + "lakeformation:GetDataAccess",
+            ]
+          + effect    = "Allow"
+          + resources = [
+              + "*",
+            ]
+          + sid       = "LakeFormationCredentials"
+        }
+    }
+
+  # data.aws_iam_policy_document.ingestion will be read during apply
+  # (config refers to values not yet known)
+ <= data "aws_iam_policy_document" "ingestion" {
+      + id            = (known after apply)
+      + json          = (known after apply)
+      + minified_json = (known after apply)
+
+      + statement {
+          + actions   = [
+              + "s3:GetBucketLocation",
+              + "s3:ListBucket",
+            ]
+          + effect    = "Allow"
+          + resources = [
+              + (known after apply),
+            ]
+          + sid       = "ListRaw"
+        }
+      + statement {
+          + actions   = [
+              + "s3:DeleteObject",
+              + "s3:GetObject",
+              + "s3:PutObject",
+            ]
+          + effect    = "Allow"
+          + resources = [
+              + (known after apply),
+            ]
+          + sid       = "WriteRawOrders"
+        }
+    }
+
+  # data.aws_iam_policy_document.lake_tls["raw"] will be read during apply
+  # (config refers to values not yet known)
+ <= data "aws_iam_policy_document" "lake_tls" {
+      + id            = (known after apply)
+      + json          = (known after apply)
+      + minified_json = (known after apply)
+
+      + statement {
+          + actions   = [
+              + "s3:*",
+            ]
+          + effect    = "Deny"
+          + resources = [
+              + (known after apply),
+              + (known after apply),
+            ]
+          + sid       = "DenyInsecureTransport"
+
+          + condition {
+              + test     = "Bool"
+              + values   = [
+                  + "false",
+                ]
+              + variable = "aws:SecureTransport"
+            }
+
+          + principals {
+              + identifiers = [
+                  + "*",
+                ]
+              + type        = "*"
+            }
+        }
+    }
+
+  # data.aws_iam_policy_document.lake_tls["refined"] will be read during apply
+  # (config refers to values not yet known)
+ <= data "aws_iam_policy_document" "lake_tls" {
+      + id            = (known after apply)
+      + json          = (known after apply)
+      + minified_json = (known after apply)
+
+      + statement {
+          + actions   = [
+              + "s3:*",
+            ]
+          + effect    = "Deny"
+          + resources = [
+              + (known after apply),
+              + (known after apply),
+            ]
+          + sid       = "DenyInsecureTransport"
+
+          + condition {
+              + test     = "Bool"
+              + values   = [
+                  + "false",
+                ]
+              + variable = "aws:SecureTransport"
+            }
+
+          + principals {
+              + identifiers = [
+                  + "*",
+                ]
+              + type        = "*"
+            }
+        }
+    }
+
+  # data.aws_iam_policy_document.lake_tls["trusted"] will be read during apply
+  # (config refers to values not yet known)
+ <= data "aws_iam_policy_document" "lake_tls" {
+      + id            = (known after apply)
+      + json          = (known after apply)
+      + minified_json = (known after apply)
+
+      + statement {
+          + actions   = [
+              + "s3:*",
+            ]
+          + effect    = "Deny"
+          + resources = [
+              + (known after apply),
+              + (known after apply),
+            ]
+          + sid       = "DenyInsecureTransport"
+
+          + condition {
+              + test     = "Bool"
+              + values   = [
+                  + "false",
+                ]
+              + variable = "aws:SecureTransport"
+            }
+
+          + principals {
+              + identifiers = [
+                  + "*",
+                ]
+              + type        = "*"
+            }
+        }
+    }
+
+  # data.aws_iam_policy_document.pipeline will be read during apply
+  # (config refers to values not yet known)
+ <= data "aws_iam_policy_document" "pipeline" {
+      + id            = (known after apply)
+      + json          = (known after apply)
+      + minified_json = (known after apply)
+
+      + statement {
+          + actions   = [
+              + "s3:GetBucketLocation",
+              + "s3:ListBucket",
+            ]
+          + effect    = "Allow"
+          + resources = [
+              + (known after apply),
+              + (known after apply),
+              + (known after apply),
+              + (known after apply),
+            ]
+          + sid       = "ListLakeBuckets"
+        }
+      + statement {
+          + actions   = [
+              + "s3:GetObject",
+              + "s3:GetObjectVersion",
+            ]
+          + effect    = "Allow"
+          + resources = [
+              + (known after apply),
+              + (known after apply),
+            ]
+          + sid       = "ReadRawAndArtifacts"
+        }
+      + statement {
+          + actions   = [
+              + "s3:DeleteObject",
+              + "s3:GetObject",
+              + "s3:PutObject",
+            ]
+          + effect    = "Allow"
+          + resources = [
+              + (known after apply),
+              + (known after apply),
+              + (known after apply),
+              + (known after apply),
+            ]
+          + sid       = "WriteCuratedAndReports"
+        }
+      + statement {
+          + actions   = [
+              + "glue:GetDatabase",
+              + "glue:GetDatabases",
+              + "glue:GetPartition",
+              + "glue:GetPartitions",
+              + "glue:GetTable",
+              + "glue:GetTables",
+            ]
+          + effect    = "Allow"
+          + resources = [
+              + "arn:aws:glue:us-east-1:<ACCOUNT_ID>:catalog",
+              + "arn:aws:glue:us-east-1:<ACCOUNT_ID>:database/eda262_g09_av2",
+              + "arn:aws:glue:us-east-1:<ACCOUNT_ID>:table/eda262_g09_av2/*",
+            ]
+          + sid       = "LakeFormationAndCatalog"
+        }
+      + statement {
+          + actions   = [
+              + "lakeformation:GetDataAccess",
+            ]
+          + effect    = "Allow"
+          + resources = [
+              + "*",
+            ]
+          + sid       = "LakeFormationCredentials"
+        }
+    }
+
+  # data.aws_iam_policy_document.support_tls["artifacts"] will be read during apply
+  # (config refers to values not yet known)
+ <= data "aws_iam_policy_document" "support_tls" {
+      + id            = (known after apply)
+      + json          = (known after apply)
+      + minified_json = (known after apply)
+
+      + statement {
+          + actions   = [
+              + "s3:*",
+            ]
+          + effect    = "Deny"
+          + resources = [
+              + (known after apply),
+              + (known after apply),
+            ]
+          + sid       = "DenyInsecureTransport"
+
+          + condition {
+              + test     = "Bool"
+              + values   = [
+                  + "false",
+                ]
+              + variable = "aws:SecureTransport"
+            }
+
+          + principals {
+              + identifiers = [
+                  + "*",
+                ]
+              + type        = "*"
+            }
+        }
+    }
+
+  # data.aws_iam_policy_document.support_tls["results"] will be read during apply
+  # (config refers to values not yet known)
+ <= data "aws_iam_policy_document" "support_tls" {
+      + id            = (known after apply)
+      + json          = (known after apply)
+      + minified_json = (known after apply)
+
+      + statement {
+          + actions   = [
+              + "s3:*",
+            ]
+          + effect    = "Deny"
+          + resources = [
+              + (known after apply),
+              + (known after apply),
+            ]
+          + sid       = "DenyInsecureTransport"
+
+          + condition {
+              + test     = "Bool"
+              + values   = [
+                  + "false",
+                ]
+              + variable = "aws:SecureTransport"
+            }
+
+          + principals {
+              + identifiers = [
+                  + "*",
+                ]
+              + type        = "*"
+            }
+        }
+    }
+
+  # aws_athena_workgroup.av2 will be created
+  + resource "aws_athena_workgroup" "av2" {
+      + arn           = (known after apply)
+      + description   = "Consultas AV2 do grupo g09 sobre a camada refined"
+      + force_destroy = true
+      + id            = (known after apply)
+      + name          = "eda262-g09-av2"
+      + state         = "ENABLED"
+      + tags_all      = {
+          + "entrega"   = "av2"
+          + "grupo"     = "g09"
+          + "managedby" = "terraform"
+          + "projeto"   = "engenharia-de-dados"
+          + "turma"     = "eda262"
+        }
+
+      + configuration {
+          + bytes_scanned_cutoff_per_query     = 10485760
+          + enforce_workgroup_configuration    = true
+          + publish_cloudwatch_metrics_enabled = true
+          + requester_pays_enabled             = false
+
+          + result_configuration {
+              + output_location = (known after apply)
+
+              + encryption_configuration {
+                  + encryption_option = "SSE_S3"
+                }
+            }
+        }
+    }
+
+  # aws_glue_catalog_database.av2 will be created
+  + resource "aws_glue_catalog_database" "av2" {
+      + arn          = (known after apply)
+      + catalog_id   = (known after apply)
+      + description  = "Catálogo AV2 do grupo g09: pedidos de e-commerce"
+      + id           = (known after apply)
+      + location_uri = (known after apply)
+      + name         = "eda262_g09_av2"
+      + tags_all     = {
+          + "entrega"   = "av2"
+          + "grupo"     = "g09"
+          + "managedby" = "terraform"
+          + "projeto"   = "engenharia-de-dados"
+          + "turma"     = "eda262"
+        }
+
+      + create_table_default_permission {
+          + principal {
+              + data_lake_principal_identifier = "IAM_ALLOWED_PRINCIPALS"
+            }
+        }
+    }
+
+  # aws_glue_catalog_table.raw_orders will be created
+  + resource "aws_glue_catalog_table" "raw_orders" {
+      + arn           = (known after apply)
+      + catalog_id    = (known after apply)
+      + database_name = "eda262_g09_av2"
+      + id            = (known after apply)
+      + name          = "raw_orders"
+      + parameters    = {
+          + "classification"                        = "json"
+          + "projection.arrival_date.format"        = "yyyy-MM-dd"
+          + "projection.arrival_date.interval"      = "1"
+          + "projection.arrival_date.interval.unit" = "DAYS"
+          + "projection.arrival_date.range"         = "2026-09-01,2026-10-15"
+          + "projection.arrival_date.type"          = "date"
+          + "projection.enabled"                    = "true"
+          + "storage.location.template"             = "s3://eda262-g09-lake-raw/orders/arrival_date=${arrival_date}/"
+        }
+      + table_type    = "EXTERNAL_TABLE"
+
+      + partition_index (known after apply)
+
+      + partition_keys {
+          + name = "arrival_date"
+          + type = "string"
+        }
+
+      + storage_descriptor {
+          + input_format  = "org.apache.hadoop.mapred.TextInputFormat"
+          + location      = (known after apply)
+          + output_format = "org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat"
+
+          + columns {
+              + name = "order_id"
+              + type = "string"
+            }
+          + columns {
+              + name = "order_item_id"
+              + type = "string"
+            }
+          + columns {
+              + name = "customer_id"
+              + type = "string"
+            }
+          + columns {
+              + name = "order_timestamp"
+              + type = "string"
+            }
+          + columns {
+              + name = "status"
+              + type = "string"
+            }
+          + columns {
+              + name = "quantity"
+              + type = "string"
+            }
+          + columns {
+              + name = "unit_price"
+              + type = "string"
+            }
+          + columns {
+              + name = "city"
+              + type = "string"
+            }
+          + columns {
+              + name = "state"
+              + type = "string"
+            }
+          + columns {
+              + name = "updated_at"
+              + type = "string"
+            }
+
+          + ser_de_info {
+              + name                  = "raw-orders-json"
+              + serialization_library = "org.openx.data.jsonserde.JsonSerDe"
+            }
+        }
+    }
+
+  # aws_glue_catalog_table.refined_sales will be created
+  + resource "aws_glue_catalog_table" "refined_sales" {
+      + arn           = (known after apply)
+      + catalog_id    = (known after apply)
+      + database_name = "eda262_g09_av2"
+      + id            = (known after apply)
+      + name          = "refined_daily_sales"
+      + parameters    = (known after apply)
+      + table_type    = "EXTERNAL_TABLE"
+
+      + partition_index (known after apply)
+
+      + partition_keys {
+          + name = "order_date"
+          + type = "string"
+        }
+
+      + storage_descriptor {
+          + input_format  = "org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat"
+          + location      = (known after apply)
+          + output_format = "org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat"
+
+          + columns {
+              + name = "status"
+              + type = "string"
+            }
+          + columns {
+              + name = "order_count"
+              + type = "bigint"
+            }
+          + columns {
+              + name = "item_count"
+              + type = "bigint"
+            }
+          + columns {
+              + name = "quantity_total"
+              + type = "bigint"
+            }
+          + columns {
+              + name = "gross_sales"
+              + type = "decimal(18,2)"
+            }
+
+          + ser_de_info {
+              + name                  = "refined-sales-parquet"
+              + serialization_library = "org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe"
+            }
+        }
+    }
+
+  # aws_glue_catalog_table.trusted_orders will be created
+  + resource "aws_glue_catalog_table" "trusted_orders" {
+      + arn           = (known after apply)
+      + catalog_id    = (known after apply)
+      + database_name = "eda262_g09_av2"
+      + id            = (known after apply)
+      + name          = "trusted_orders"
+      + parameters    = (known after apply)
+      + table_type    = "EXTERNAL_TABLE"
+
+      + partition_index (known after apply)
+
+      + partition_keys {
+          + name = "order_date"
+          + type = "string"
+        }
+
+      + storage_descriptor {
+          + input_format  = "org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat"
+          + location      = (known after apply)
+          + output_format = "org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat"
+
+          + columns {
+              + name = "order_id"
+              + type = "string"
+            }
+          + columns {
+              + name = "order_item_id"
+              + type = "string"
+            }
+          + columns {
+              + name = "customer_id"
+              + type = "string"
+            }
+          + columns {
+              + name = "order_timestamp"
+              + type = "timestamp"
+            }
+          + columns {
+              + name = "status"
+              + type = "string"
+            }
+          + columns {
+              + name = "quantity"
+              + type = "int"
+            }
+          + columns {
+              + name = "unit_price"
+              + type = "decimal(10,2)"
+            }
+          + columns {
+              + name = "city"
+              + type = "string"
+            }
+          + columns {
+              + name = "state"
+              + type = "string"
+            }
+          + columns {
+              + name = "updated_at"
+              + type = "timestamp"
+            }
+          + columns {
+              + name = "arrival_date"
+              + type = "string"
+            }
+
+          + ser_de_info {
+              + name                  = "trusted-orders-parquet"
+              + serialization_library = "org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe"
+            }
+        }
+    }
+
+  # aws_glue_job.orders_pipeline will be created
+  + resource "aws_glue_job" "orders_pipeline" {
+      + arn               = (known after apply)
+      + default_arguments = (known after apply)
+      + glue_version      = "4.0"
+      + id                = (known after apply)
+      + max_capacity      = (known after apply)
+      + max_retries       = 0
+      + name              = "eda262-g09-av2-orders-pipeline"
+      + number_of_workers = 2
+      + role_arn          = (known after apply)
+      + tags_all          = {
+          + "entrega"   = "av2"
+          + "grupo"     = "g09"
+          + "managedby" = "terraform"
+          + "projeto"   = "engenharia-de-dados"
+          + "turma"     = "eda262"
+        }
+      + timeout           = 30
+      + worker_type       = "G.1X"
+
+      + command {
+          + name            = "glueetl"
+          + python_version  = "3"
+          + runtime         = (known after apply)
+          + script_location = (known after apply)
+        }
+
+      + execution_property {
+          + max_concurrent_runs = 1
+        }
+
+      + notification_property (known after apply)
+    }
+
+  # aws_iam_role.analyst will be created
+  + resource "aws_iam_role" "analyst" {
+      + arn                   = (known after apply)
+      + assume_role_policy    = jsonencode(
+            {
+              + Statement = [
+                  + {
+                      + Action    = "sts:AssumeRole"
+                      + Effect    = "Allow"
+                      + Principal = {
+                          + AWS = "arn:aws:iam::<ACCOUNT_ID>:root"
+                        }
+                    },
+                ]
+              + Version   = "2012-10-17"
+            }
+        )
+      + create_date           = (known after apply)
+      + description           = "Consulta somente da camada refined com Athena"
+      + force_detach_policies = false
+      + id                    = (known after apply)
+      + managed_policy_arns   = (known after apply)
+      + max_session_duration  = 3600
+      + name                  = "eda262-g09-av2-analyst"
+      + name_prefix           = (known after apply)
+      + path                  = "/"
+      + tags_all              = {
+          + "entrega"   = "av2"
+          + "grupo"     = "g09"
+          + "managedby" = "terraform"
+          + "projeto"   = "engenharia-de-dados"
+          + "turma"     = "eda262"
+        }
+      + unique_id             = (known after apply)
+
+      + inline_policy (known after apply)
+    }
+
+  # aws_iam_role.ingestion will be created
+  + resource "aws_iam_role" "ingestion" {
+      + arn                   = (known after apply)
+      + assume_role_policy    = jsonencode(
+            {
+              + Statement = [
+                  + {
+                      + Action    = "sts:AssumeRole"
+                      + Effect    = "Allow"
+                      + Principal = {
+                          + AWS = "arn:aws:iam::<ACCOUNT_ID>:root"
+                        }
+                    },
+                ]
+              + Version   = "2012-10-17"
+            }
+        )
+      + create_date           = (known after apply)
+      + description           = "Carga idempotente de objetos na camada raw da AV2"
+      + force_detach_policies = false
+      + id                    = (known after apply)
+      + managed_policy_arns   = (known after apply)
+      + max_session_duration  = 3600
+      + name                  = "eda262-g09-av2-ingestion"
+      + name_prefix           = (known after apply)
+      + path                  = "/"
+      + tags_all              = {
+          + "entrega"   = "av2"
+          + "grupo"     = "g09"
+          + "managedby" = "terraform"
+          + "projeto"   = "engenharia-de-dados"
+          + "turma"     = "eda262"
+        }
+      + unique_id             = (known after apply)
+
+      + inline_policy (known after apply)
+    }
+
+  # aws_iam_role.pipeline will be created
+  + resource "aws_iam_role" "pipeline" {
+      + arn                   = (known after apply)
+      + assume_role_policy    = jsonencode(
+            {
+              + Statement = [
+                  + {
+                      + Action    = "sts:AssumeRole"
+                      + Effect    = "Allow"
+                      + Principal = {
+                          + Service = "glue.amazonaws.com"
+                        }
+                    },
+                ]
+              + Version   = "2012-10-17"
+            }
+        )
+      + create_date           = (known after apply)
+      + description           = "Transformação raw para trusted e refined"
+      + force_detach_policies = false
+      + id                    = (known after apply)
+      + managed_policy_arns   = (known after apply)
+      + max_session_duration  = 3600
+      + name                  = "eda262-g09-av2-glue-pipeline"
+      + name_prefix           = (known after apply)
+      + path                  = "/"
+      + tags_all              = {
+          + "entrega"   = "av2"
+          + "grupo"     = "g09"
+          + "managedby" = "terraform"
+          + "projeto"   = "engenharia-de-dados"
+          + "turma"     = "eda262"
+        }
+      + unique_id             = (known after apply)
+
+      + inline_policy (known after apply)
+    }
+
+  # aws_iam_role_policy.analyst will be created
+  + resource "aws_iam_role_policy" "analyst" {
+      + id          = (known after apply)
+      + name        = "refined-query-only"
+      + name_prefix = (known after apply)
+      + policy      = (known after apply)
+      + role        = (known after apply)
+    }
+
+  # aws_iam_role_policy.ingestion will be created
+  + resource "aws_iam_role_policy" "ingestion" {
+      + id          = (known after apply)
+      + name        = "raw-only"
+      + name_prefix = (known after apply)
+      + policy      = (known after apply)
+      + role        = (known after apply)
+    }
+
+  # aws_iam_role_policy.pipeline will be created
+  + resource "aws_iam_role_policy" "pipeline" {
+      + id          = (known after apply)
+      + name        = "lake-pipeline"
+      + name_prefix = (known after apply)
+      + policy      = (known after apply)
+      + role        = (known after apply)
+    }
+
+  # aws_iam_role_policy.pipeline_runtime will be created
+  + resource "aws_iam_role_policy" "pipeline_runtime" {
+      + id          = (known after apply)
+      + name        = "glue-runtime-minimal"
+      + name_prefix = (known after apply)
+      + policy      = jsonencode(
+            {
+              + Statement = [
+                  + {
+                      + Action   = [
+                          + "logs:CreateLogGroup",
+                          + "logs:CreateLogStream",
+                          + "logs:PutLogEvents",
+                        ]
+                      + Effect   = "Allow"
+                      + Resource = [
+                          + "arn:aws:logs:us-east-1:<ACCOUNT_ID>:log-group:/aws-glue/*",
+                          + "arn:aws:logs:us-east-1:<ACCOUNT_ID>:log-group:/aws-glue/*:*",
+                        ]
+                      + Sid      = "WriteGlueLogs"
+                    },
+                  + {
+                      + Action   = [
+                          + "logs:DescribeLogGroups",
+                          + "logs:DescribeLogStreams",
+                        ]
+                      + Effect   = "Allow"
+                      + Resource = "*"
+                      + Sid      = "DescribeGlueLogs"
+                    },
+                  + {
+                      + Action    = [
+                          + "cloudwatch:PutMetricData",
+                        ]
+                      + Condition = {
+                          + StringEquals = {
+                              + "cloudwatch:namespace" = "Glue"
+                            }
+                        }
+                      + Effect    = "Allow"
+                      + Resource  = "*"
+                      + Sid       = "PublishGlueMetrics"
+                    },
+                ]
+              + Version   = "2012-10-17"
+            }
+        )
+      + role        = (known after apply)
+    }
+
+  # aws_lakeformation_permissions.analyst_database will be created
+  + resource "aws_lakeformation_permissions" "analyst_database" {
+      + catalog_resource              = false
+      + id                            = (known after apply)
+      + permissions                   = [
+          + "DESCRIBE",
+        ]
+      + permissions_with_grant_option = (known after apply)
+      + principal                     = (known after apply)
+
+      + data_location (known after apply)
+
+      + database {
+          + catalog_id = "<ACCOUNT_ID>"
+          + name       = "eda262_g09_av2"
+        }
+
+      + lf_tag (known after apply)
+
+      + lf_tag_policy (known after apply)
+
+      + table (known after apply)
+
+      + table_with_columns (known after apply)
+    }
+
+  # aws_lakeformation_permissions.analyst_refined_table will be created
+  + resource "aws_lakeformation_permissions" "analyst_refined_table" {
+      + catalog_resource              = false
+      + id                            = (known after apply)
+      + permissions                   = [
+          + "DESCRIBE",
+          + "SELECT",
+        ]
+      + permissions_with_grant_option = (known after apply)
+      + principal                     = (known after apply)
+
+      + data_location (known after apply)
+
+      + database (known after apply)
+
+      + lf_tag (known after apply)
+
+      + lf_tag_policy (known after apply)
+
+      + table {
+          + catalog_id    = (known after apply)
+          + database_name = "eda262_g09_av2"
+          + name          = "refined_daily_sales"
+          + wildcard      = false
+        }
+
+      + table_with_columns (known after apply)
+    }
+
+  # aws_lakeformation_permissions.executor_database will be created
+  + resource "aws_lakeformation_permissions" "executor_database" {
+      + catalog_resource              = false
+      + id                            = (known after apply)
+      + permissions                   = [
+          + "ALL",
+        ]
+      + permissions_with_grant_option = (known after apply)
+      + principal                     = "arn:aws:iam::<ACCOUNT_ID>:user/eda-grupo09"
+
+      + data_location (known after apply)
+
+      + database {
+          + catalog_id = "<ACCOUNT_ID>"
+          + name       = "eda262_g09_av2"
+        }
+
+      + lf_tag (known after apply)
+
+      + lf_tag_policy (known after apply)
+
+      + table (known after apply)
+
+      + table_with_columns (known after apply)
+    }
+
+  # aws_lakeformation_permissions.executor_locations["raw"] will be created
+  + resource "aws_lakeformation_permissions" "executor_locations" {
+      + catalog_resource              = false
+      + id                            = (known after apply)
+      + permissions                   = [
+          + "DATA_LOCATION_ACCESS",
+        ]
+      + permissions_with_grant_option = (known after apply)
+      + principal                     = "arn:aws:iam::<ACCOUNT_ID>:user/eda-grupo09"
+
+      + data_location {
+          + arn        = (known after apply)
+          + catalog_id = (known after apply)
+        }
+
+      + database (known after apply)
+
+      + lf_tag (known after apply)
+
+      + lf_tag_policy (known after apply)
+
+      + table (known after apply)
+
+      + table_with_columns (known after apply)
+    }
+
+  # aws_lakeformation_permissions.executor_locations["refined"] will be created
+  + resource "aws_lakeformation_permissions" "executor_locations" {
+      + catalog_resource              = false
+      + id                            = (known after apply)
+      + permissions                   = [
+          + "DATA_LOCATION_ACCESS",
+        ]
+      + permissions_with_grant_option = (known after apply)
+      + principal                     = "arn:aws:iam::<ACCOUNT_ID>:user/eda-grupo09"
+
+      + data_location {
+          + arn        = (known after apply)
+          + catalog_id = (known after apply)
+        }
+
+      + database (known after apply)
+
+      + lf_tag (known after apply)
+
+      + lf_tag_policy (known after apply)
+
+      + table (known after apply)
+
+      + table_with_columns (known after apply)
+    }
+
+  # aws_lakeformation_permissions.executor_locations["trusted"] will be created
+  + resource "aws_lakeformation_permissions" "executor_locations" {
+      + catalog_resource              = false
+      + id                            = (known after apply)
+      + permissions                   = [
+          + "DATA_LOCATION_ACCESS",
+        ]
+      + permissions_with_grant_option = (known after apply)
+      + principal                     = "arn:aws:iam::<ACCOUNT_ID>:user/eda-grupo09"
+
+      + data_location {
+          + arn        = (known after apply)
+          + catalog_id = (known after apply)
+        }
+
+      + database (known after apply)
+
+      + lf_tag (known after apply)
+
+      + lf_tag_policy (known after apply)
+
+      + table (known after apply)
+
+      + table_with_columns (known after apply)
+    }
+
+  # aws_lakeformation_permissions.ingestion_raw_location will be created
+  + resource "aws_lakeformation_permissions" "ingestion_raw_location" {
+      + catalog_resource              = false
+      + id                            = (known after apply)
+      + permissions                   = [
+          + "DATA_LOCATION_ACCESS",
+        ]
+      + permissions_with_grant_option = (known after apply)
+      + principal                     = (known after apply)
+
+      + data_location {
+          + arn        = (known after apply)
+          + catalog_id = (known after apply)
+        }
+
+      + database (known after apply)
+
+      + lf_tag (known after apply)
+
+      + lf_tag_policy (known after apply)
+
+      + table (known after apply)
+
+      + table_with_columns (known after apply)
+    }
+
+  # aws_lakeformation_permissions.pipeline_database will be created
+  + resource "aws_lakeformation_permissions" "pipeline_database" {
+      + catalog_resource              = false
+      + id                            = (known after apply)
+      + permissions                   = [
+          + "DESCRIBE",
+        ]
+      + permissions_with_grant_option = (known after apply)
+      + principal                     = (known after apply)
+
+      + data_location (known after apply)
+
+      + database {
+          + catalog_id = "<ACCOUNT_ID>"
+          + name       = "eda262_g09_av2"
+        }
+
+      + lf_tag (known after apply)
+
+      + lf_tag_policy (known after apply)
+
+      + table (known after apply)
+
+      + table_with_columns (known after apply)
+    }
+
+  # aws_lakeformation_permissions.pipeline_locations["raw"] will be created
+  + resource "aws_lakeformation_permissions" "pipeline_locations" {
+      + catalog_resource              = false
+      + id                            = (known after apply)
+      + permissions                   = [
+          + "DATA_LOCATION_ACCESS",
+        ]
+      + permissions_with_grant_option = (known after apply)
+      + principal                     = (known after apply)
+
+      + data_location {
+          + arn        = (known after apply)
+          + catalog_id = (known after apply)
+        }
+
+      + database (known after apply)
+
+      + lf_tag (known after apply)
+
+      + lf_tag_policy (known after apply)
+
+      + table (known after apply)
+
+      + table_with_columns (known after apply)
+    }
+
+  # aws_lakeformation_permissions.pipeline_locations["refined"] will be created
+  + resource "aws_lakeformation_permissions" "pipeline_locations" {
+      + catalog_resource              = false
+      + id                            = (known after apply)
+      + permissions                   = [
+          + "DATA_LOCATION_ACCESS",
+        ]
+      + permissions_with_grant_option = (known after apply)
+      + principal                     = (known after apply)
+
+      + data_location {
+          + arn        = (known after apply)
+          + catalog_id = (known after apply)
+        }
+
+      + database (known after apply)
+
+      + lf_tag (known after apply)
+
+      + lf_tag_policy (known after apply)
+
+      + table (known after apply)
+
+      + table_with_columns (known after apply)
+    }
+
+  # aws_lakeformation_permissions.pipeline_locations["trusted"] will be created
+  + resource "aws_lakeformation_permissions" "pipeline_locations" {
+      + catalog_resource              = false
+      + id                            = (known after apply)
+      + permissions                   = [
+          + "DATA_LOCATION_ACCESS",
+        ]
+      + permissions_with_grant_option = (known after apply)
+      + principal                     = (known after apply)
+
+      + data_location {
+          + arn        = (known after apply)
+          + catalog_id = (known after apply)
+        }
+
+      + database (known after apply)
+
+      + lf_tag (known after apply)
+
+      + lf_tag_policy (known after apply)
+
+      + table (known after apply)
+
+      + table_with_columns (known after apply)
+    }
+
+  # aws_lakeformation_permissions.pipeline_tables["raw"] will be created
+  + resource "aws_lakeformation_permissions" "pipeline_tables" {
+      + catalog_resource              = false
+      + id                            = (known after apply)
+      + permissions                   = [
+          + "DESCRIBE",
+          + "SELECT",
+        ]
+      + permissions_with_grant_option = (known after apply)
+      + principal                     = (known after apply)
+
+      + data_location (known after apply)
+
+      + database (known after apply)
+
+      + lf_tag (known after apply)
+
+      + lf_tag_policy (known after apply)
+
+      + table {
+          + catalog_id    = (known after apply)
+          + database_name = "eda262_g09_av2"
+          + name          = "raw_orders"
+          + wildcard      = false
+        }
+
+      + table_with_columns (known after apply)
+    }
+
+  # aws_lakeformation_permissions.pipeline_tables["refined"] will be created
+  + resource "aws_lakeformation_permissions" "pipeline_tables" {
+      + catalog_resource              = false
+      + id                            = (known after apply)
+      + permissions                   = [
+          + "DESCRIBE",
+          + "SELECT",
+        ]
+      + permissions_with_grant_option = (known after apply)
+      + principal                     = (known after apply)
+
+      + data_location (known after apply)
+
+      + database (known after apply)
+
+      + lf_tag (known after apply)
+
+      + lf_tag_policy (known after apply)
+
+      + table {
+          + catalog_id    = (known after apply)
+          + database_name = "eda262_g09_av2"
+          + name          = "refined_daily_sales"
+          + wildcard      = false
+        }
+
+      + table_with_columns (known after apply)
+    }
+
+  # aws_lakeformation_permissions.pipeline_tables["trusted"] will be created
+  + resource "aws_lakeformation_permissions" "pipeline_tables" {
+      + catalog_resource              = false
+      + id                            = (known after apply)
+      + permissions                   = [
+          + "DESCRIBE",
+          + "SELECT",
+        ]
+      + permissions_with_grant_option = (known after apply)
+      + principal                     = (known after apply)
+
+      + data_location (known after apply)
+
+      + database (known after apply)
+
+      + lf_tag (known after apply)
+
+      + lf_tag_policy (known after apply)
+
+      + table {
+          + catalog_id    = (known after apply)
+          + database_name = "eda262_g09_av2"
+          + name          = "trusted_orders"
+          + wildcard      = false
+        }
+
+      + table_with_columns (known after apply)
+    }
+
+  # aws_lakeformation_resource.layer["raw"] will be created
+  + resource "aws_lakeformation_resource" "layer" {
+      + arn                     = (known after apply)
+      + hybrid_access_enabled   = (known after apply)
+      + id                      = (known after apply)
+      + last_modified           = (known after apply)
+      + role_arn                = (known after apply)
+      + use_service_linked_role = true
+      + with_federation         = (known after apply)
+    }
+
+  # aws_lakeformation_resource.layer["refined"] will be created
+  + resource "aws_lakeformation_resource" "layer" {
+      + arn                     = (known after apply)
+      + hybrid_access_enabled   = (known after apply)
+      + id                      = (known after apply)
+      + last_modified           = (known after apply)
+      + role_arn                = (known after apply)
+      + use_service_linked_role = true
+      + with_federation         = (known after apply)
+    }
+
+  # aws_lakeformation_resource.layer["trusted"] will be created
+  + resource "aws_lakeformation_resource" "layer" {
+      + arn                     = (known after apply)
+      + hybrid_access_enabled   = (known after apply)
+      + id                      = (known after apply)
+      + last_modified           = (known after apply)
+      + role_arn                = (known after apply)
+      + use_service_linked_role = true
+      + with_federation         = (known after apply)
+    }
+
+  # aws_s3_bucket.lake["raw"] will be created
+  + resource "aws_s3_bucket" "lake" {
+      + acceleration_status         = (known after apply)
+      + acl                         = (known after apply)
+      + arn                         = (known after apply)
+      + bucket                      = "eda262-g09-lake-raw"
+      + bucket_domain_name          = (known after apply)
+      + bucket_prefix               = (known after apply)
+      + bucket_regional_domain_name = (known after apply)
+      + force_destroy               = true
+      + hosted_zone_id              = (known after apply)
+      + id                          = (known after apply)
+      + object_lock_enabled         = (known after apply)
+      + policy                      = (known after apply)
+      + region                      = (known after apply)
+      + request_payer               = (known after apply)
+      + tags_all                    = {
+          + "entrega"   = "av2"
+          + "grupo"     = "g09"
+          + "managedby" = "terraform"
+          + "projeto"   = "engenharia-de-dados"
+          + "turma"     = "eda262"
+        }
+      + website_domain              = (known after apply)
+      + website_endpoint            = (known after apply)
+
+      + cors_rule (known after apply)
+
+      + grant (known after apply)
+
+      + lifecycle_rule (known after apply)
+
+      + logging (known after apply)
+
+      + object_lock_configuration (known after apply)
+
+      + replication_configuration (known after apply)
+
+      + server_side_encryption_configuration (known after apply)
+
+      + versioning (known after apply)
+
+      + website (known after apply)
+    }
+
+  # aws_s3_bucket.lake["refined"] will be created
+  + resource "aws_s3_bucket" "lake" {
+      + acceleration_status         = (known after apply)
+      + acl                         = (known after apply)
+      + arn                         = (known after apply)
+      + bucket                      = "eda262-g09-lake-refined"
+      + bucket_domain_name          = (known after apply)
+      + bucket_prefix               = (known after apply)
+      + bucket_regional_domain_name = (known after apply)
+      + force_destroy               = true
+      + hosted_zone_id              = (known after apply)
+      + id                          = (known after apply)
+      + object_lock_enabled         = (known after apply)
+      + policy                      = (known after apply)
+      + region                      = (known after apply)
+      + request_payer               = (known after apply)
+      + tags_all                    = {
+          + "entrega"   = "av2"
+          + "grupo"     = "g09"
+          + "managedby" = "terraform"
+          + "projeto"   = "engenharia-de-dados"
+          + "turma"     = "eda262"
+        }
+      + website_domain              = (known after apply)
+      + website_endpoint            = (known after apply)
+
+      + cors_rule (known after apply)
+
+      + grant (known after apply)
+
+      + lifecycle_rule (known after apply)
+
+      + logging (known after apply)
+
+      + object_lock_configuration (known after apply)
+
+      + replication_configuration (known after apply)
+
+      + server_side_encryption_configuration (known after apply)
+
+      + versioning (known after apply)
+
+      + website (known after apply)
+    }
+
+  # aws_s3_bucket.lake["trusted"] will be created
+  + resource "aws_s3_bucket" "lake" {
+      + acceleration_status         = (known after apply)
+      + acl                         = (known after apply)
+      + arn                         = (known after apply)
+      + bucket                      = "eda262-g09-lake-trusted"
+      + bucket_domain_name          = (known after apply)
+      + bucket_prefix               = (known after apply)
+      + bucket_regional_domain_name = (known after apply)
+      + force_destroy               = true
+      + hosted_zone_id              = (known after apply)
+      + id                          = (known after apply)
+      + object_lock_enabled         = (known after apply)
+      + policy                      = (known after apply)
+      + region                      = (known after apply)
+      + request_payer               = (known after apply)
+      + tags_all                    = {
+          + "entrega"   = "av2"
+          + "grupo"     = "g09"
+          + "managedby" = "terraform"
+          + "projeto"   = "engenharia-de-dados"
+          + "turma"     = "eda262"
+        }
+      + website_domain              = (known after apply)
+      + website_endpoint            = (known after apply)
+
+      + cors_rule (known after apply)
+
+      + grant (known after apply)
+
+      + lifecycle_rule (known after apply)
+
+      + logging (known after apply)
+
+      + object_lock_configuration (known after apply)
+
+      + replication_configuration (known after apply)
+
+      + server_side_encryption_configuration (known after apply)
+
+      + versioning (known after apply)
+
+      + website (known after apply)
+    }
+
+  # aws_s3_bucket.support["artifacts"] will be created
+  + resource "aws_s3_bucket" "support" {
+      + acceleration_status         = (known after apply)
+      + acl                         = (known after apply)
+      + arn                         = (known after apply)
+      + bucket                      = "eda262-g09-artifacts-av2"
+      + bucket_domain_name          = (known after apply)
+      + bucket_prefix               = (known after apply)
+      + bucket_regional_domain_name = (known after apply)
+      + force_destroy               = true
+      + hosted_zone_id              = (known after apply)
+      + id                          = (known after apply)
+      + object_lock_enabled         = (known after apply)
+      + policy                      = (known after apply)
+      + region                      = (known after apply)
+      + request_payer               = (known after apply)
+      + tags_all                    = {
+          + "entrega"   = "av2"
+          + "grupo"     = "g09"
+          + "managedby" = "terraform"
+          + "projeto"   = "engenharia-de-dados"
+          + "turma"     = "eda262"
+        }
+      + website_domain              = (known after apply)
+      + website_endpoint            = (known after apply)
+
+      + cors_rule (known after apply)
+
+      + grant (known after apply)
+
+      + lifecycle_rule (known after apply)
+
+      + logging (known after apply)
+
+      + object_lock_configuration (known after apply)
+
+      + replication_configuration (known after apply)
+
+      + server_side_encryption_configuration (known after apply)
+
+      + versioning (known after apply)
+
+      + website (known after apply)
+    }
+
+  # aws_s3_bucket.support["results"] will be created
+  + resource "aws_s3_bucket" "support" {
+      + acceleration_status         = (known after apply)
+      + acl                         = (known after apply)
+      + arn                         = (known after apply)
+      + bucket                      = "eda262-g09-athena-results-av2"
+      + bucket_domain_name          = (known after apply)
+      + bucket_prefix               = (known after apply)
+      + bucket_regional_domain_name = (known after apply)
+      + force_destroy               = true
+      + hosted_zone_id              = (known after apply)
+      + id                          = (known after apply)
+      + object_lock_enabled         = (known after apply)
+      + policy                      = (known after apply)
+      + region                      = (known after apply)
+      + request_payer               = (known after apply)
+      + tags_all                    = {
+          + "entrega"   = "av2"
+          + "grupo"     = "g09"
+          + "managedby" = "terraform"
+          + "projeto"   = "engenharia-de-dados"
+          + "turma"     = "eda262"
+        }
+      + website_domain              = (known after apply)
+      + website_endpoint            = (known after apply)
+
+      + cors_rule (known after apply)
+
+      + grant (known after apply)
+
+      + lifecycle_rule (known after apply)
+
+      + logging (known after apply)
+
+      + object_lock_configuration (known after apply)
+
+      + replication_configuration (known after apply)
+
+      + server_side_encryption_configuration (known after apply)
+
+      + versioning (known after apply)
+
+      + website (known after apply)
+    }
+
+  # aws_s3_bucket_ownership_controls.lake["raw"] will be created
+  + resource "aws_s3_bucket_ownership_controls" "lake" {
+      + bucket = (known after apply)
+      + id     = (known after apply)
+
+      + rule {
+          + object_ownership = "BucketOwnerEnforced"
+        }
+    }
+
+  # aws_s3_bucket_ownership_controls.lake["refined"] will be created
+  + resource "aws_s3_bucket_ownership_controls" "lake" {
+      + bucket = (known after apply)
+      + id     = (known after apply)
+
+      + rule {
+          + object_ownership = "BucketOwnerEnforced"
+        }
+    }
+
+  # aws_s3_bucket_ownership_controls.lake["trusted"] will be created
+  + resource "aws_s3_bucket_ownership_controls" "lake" {
+      + bucket = (known after apply)
+      + id     = (known after apply)
+
+      + rule {
+          + object_ownership = "BucketOwnerEnforced"
+        }
+    }
+
+  # aws_s3_bucket_ownership_controls.support["artifacts"] will be created
+  + resource "aws_s3_bucket_ownership_controls" "support" {
+      + bucket = (known after apply)
+      + id     = (known after apply)
+
+      + rule {
+          + object_ownership = "BucketOwnerEnforced"
+        }
+    }
+
+  # aws_s3_bucket_ownership_controls.support["results"] will be created
+  + resource "aws_s3_bucket_ownership_controls" "support" {
+      + bucket = (known after apply)
+      + id     = (known after apply)
+
+      + rule {
+          + object_ownership = "BucketOwnerEnforced"
+        }
+    }
+
+  # aws_s3_bucket_policy.lake_tls["raw"] will be created
+  + resource "aws_s3_bucket_policy" "lake_tls" {
+      + bucket = (known after apply)
+      + id     = (known after apply)
+      + policy = (known after apply)
+    }
+
+  # aws_s3_bucket_policy.lake_tls["refined"] will be created
+  + resource "aws_s3_bucket_policy" "lake_tls" {
+      + bucket = (known after apply)
+      + id     = (known after apply)
+      + policy = (known after apply)
+    }
+
+  # aws_s3_bucket_policy.lake_tls["trusted"] will be created
+  + resource "aws_s3_bucket_policy" "lake_tls" {
+      + bucket = (known after apply)
+      + id     = (known after apply)
+      + policy = (known after apply)
+    }
+
+  # aws_s3_bucket_policy.support_tls["artifacts"] will be created
+  + resource "aws_s3_bucket_policy" "support_tls" {
+      + bucket = (known after apply)
+      + id     = (known after apply)
+      + policy = (known after apply)
+    }
+
+  # aws_s3_bucket_policy.support_tls["results"] will be created
+  + resource "aws_s3_bucket_policy" "support_tls" {
+      + bucket = (known after apply)
+      + id     = (known after apply)
+      + policy = (known after apply)
+    }
+
+  # aws_s3_bucket_public_access_block.lake["raw"] will be created
+  + resource "aws_s3_bucket_public_access_block" "lake" {
+      + block_public_acls       = true
+      + block_public_policy     = true
+      + bucket                  = (known after apply)
+      + id                      = (known after apply)
+      + ignore_public_acls      = true
+      + restrict_public_buckets = true
+    }
+
+  # aws_s3_bucket_public_access_block.lake["refined"] will be created
+  + resource "aws_s3_bucket_public_access_block" "lake" {
+      + block_public_acls       = true
+      + block_public_policy     = true
+      + bucket                  = (known after apply)
+      + id                      = (known after apply)
+      + ignore_public_acls      = true
+      + restrict_public_buckets = true
+    }
+
+  # aws_s3_bucket_public_access_block.lake["trusted"] will be created
+  + resource "aws_s3_bucket_public_access_block" "lake" {
+      + block_public_acls       = true
+      + block_public_policy     = true
+      + bucket                  = (known after apply)
+      + id                      = (known after apply)
+      + ignore_public_acls      = true
+      + restrict_public_buckets = true
+    }
+
+  # aws_s3_bucket_public_access_block.support["artifacts"] will be created
+  + resource "aws_s3_bucket_public_access_block" "support" {
+      + block_public_acls       = true
+      + block_public_policy     = true
+      + bucket                  = (known after apply)
+      + id                      = (known after apply)
+      + ignore_public_acls      = true
+      + restrict_public_buckets = true
+    }
+
+  # aws_s3_bucket_public_access_block.support["results"] will be created
+  + resource "aws_s3_bucket_public_access_block" "support" {
+      + block_public_acls       = true
+      + block_public_policy     = true
+      + bucket                  = (known after apply)
+      + id                      = (known after apply)
+      + ignore_public_acls      = true
+      + restrict_public_buckets = true
+    }
+
+  # aws_s3_bucket_server_side_encryption_configuration.lake["raw"] will be created
+  + resource "aws_s3_bucket_server_side_encryption_configuration" "lake" {
+      + bucket = (known after apply)
+      + id     = (known after apply)
+
+      + rule {
+          + apply_server_side_encryption_by_default {
+              + sse_algorithm     = "AES256"
+                # (1 unchanged attribute hidden)
+            }
+        }
+    }
+
+  # aws_s3_bucket_server_side_encryption_configuration.lake["refined"] will be created
+  + resource "aws_s3_bucket_server_side_encryption_configuration" "lake" {
+      + bucket = (known after apply)
+      + id     = (known after apply)
+
+      + rule {
+          + apply_server_side_encryption_by_default {
+              + sse_algorithm     = "AES256"
+                # (1 unchanged attribute hidden)
+            }
+        }
+    }
+
+  # aws_s3_bucket_server_side_encryption_configuration.lake["trusted"] will be created
+  + resource "aws_s3_bucket_server_side_encryption_configuration" "lake" {
+      + bucket = (known after apply)
+      + id     = (known after apply)
+
+      + rule {
+          + apply_server_side_encryption_by_default {
+              + sse_algorithm     = "AES256"
+                # (1 unchanged attribute hidden)
+            }
+        }
+    }
+
+  # aws_s3_bucket_server_side_encryption_configuration.support["artifacts"] will be created
+  + resource "aws_s3_bucket_server_side_encryption_configuration" "support" {
+      + bucket = (known after apply)
+      + id     = (known after apply)
+
+      + rule {
+          + apply_server_side_encryption_by_default {
+              + sse_algorithm     = "AES256"
+                # (1 unchanged attribute hidden)
+            }
+        }
+    }
+
+  # aws_s3_bucket_server_side_encryption_configuration.support["results"] will be created
+  + resource "aws_s3_bucket_server_side_encryption_configuration" "support" {
+      + bucket = (known after apply)
+      + id     = (known after apply)
+
+      + rule {
+          + apply_server_side_encryption_by_default {
+              + sse_algorithm     = "AES256"
+                # (1 unchanged attribute hidden)
+            }
+        }
+    }
+
+  # aws_s3_bucket_versioning.artifacts will be created
+  + resource "aws_s3_bucket_versioning" "artifacts" {
+      + bucket = (known after apply)
+      + id     = (known after apply)
+
+      + versioning_configuration {
+          + mfa_delete = (known after apply)
+          + status     = "Enabled"
+        }
+    }
+
+  # aws_s3_bucket_versioning.raw will be created
+  + resource "aws_s3_bucket_versioning" "raw" {
+      + bucket = (known after apply)
+      + id     = (known after apply)
+
+      + versioning_configuration {
+          + mfa_delete = (known after apply)
+          + status     = "Enabled"
+        }
+    }
+
+  # aws_s3_object.pipeline_script will be created
+  + resource "aws_s3_object" "pipeline_script" {
+      + acl                    = (known after apply)
+      + arn                    = (known after apply)
+      + bucket                 = (known after apply)
+      + bucket_key_enabled     = (known after apply)
+      + checksum_crc32         = (known after apply)
+      + checksum_crc32c        = (known after apply)
+      + checksum_crc64nvme     = (known after apply)
+      + checksum_sha1          = (known after apply)
+      + checksum_sha256        = (known after apply)
+      + content_type           = (known after apply)
+      + etag                   = "335728a0a8759c911fc0bbcefee77964"
+      + force_destroy          = false
+      + id                     = (known after apply)
+      + key                    = "scripts/pipeline_orders.py"
+      + kms_key_id             = (known after apply)
+      + metadata               = {
+          + "sha256" = "8f7e09c80b1fa6e7eaec2065dae5817631516467bc908c615c04ac2b42f1a165"
+        }
+      + server_side_encryption = "AES256"
+      + source                 = "./glue/pipeline_orders.py"
+      + storage_class          = (known after apply)
+      + tags_all               = {
+          + "entrega"   = "av2"
+          + "grupo"     = "g09"
+          + "managedby" = "terraform"
+          + "projeto"   = "engenharia-de-dados"
+          + "turma"     = "eda262"
+        }
+      + version_id             = (known after apply)
+    }
+
+  # terraform_data.workspace_guard will be created
+  + resource "terraform_data" "workspace_guard" {
+      + id     = (known after apply)
+      + input  = "av2"
+      + output = (known after apply)
+    }
+
+Plan: 59 to add, 0 to change, 0 to destroy.
+
+Changes to Outputs:
+  + account_id            = "<ACCOUNT_ID>"
+  + artifacts_bucket      = (known after apply)
+  + athena_results_bucket = (known after apply)
+  + athena_workgroup      = "eda262-g09-av2"
+  + aws_region            = "us-east-1"
+  + database              = "eda262_g09_av2"
+  + glue_job              = "eda262-g09-av2-orders-pipeline"
+  + layer_roles           = {
+      + analyst   = "eda262-g09-av2-analyst"
+      + ingestion = "eda262-g09-av2-ingestion"
+      + pipeline  = "eda262-g09-av2-glue-pipeline"
+    }
+  + raw_bucket            = (known after apply)
+  + raw_table             = "raw_orders"
+  + refined_bucket        = (known after apply)
+  + refined_table         = "refined_daily_sales"
+  + resource_inventory    = {
+      + athena_workgroups           = 1
+      + glue_database               = 1
+      + glue_jobs                   = 1
+      + glue_tables                 = 3
+      + iam_roles                   = 3
+      + lakeformation_registrations = 3
+      + s3_buckets                  = 5
+    }
+  + trusted_bucket        = (known after apply)
+  + trusted_table         = "trusted_orders"
+  + workspace             = "av2"
+
+─────────────────────────────────────────────────────────────────────────────
+
+Saved the plan to: .runtime/av2-20261119T025835Z.tfplan
+
+To perform exactly these actions, run the following command to apply:
+    terraform apply ".runtime/av2-20261119T025835Z.tfplan"

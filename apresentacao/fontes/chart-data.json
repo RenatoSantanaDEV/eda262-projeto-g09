@@ -1,0 +1,1212 @@
+{
+  "rows": [
+    {
+      "order_date": "2026-09-01",
+      "status": "cancelled",
+      "order_count": "185",
+      "item_count": "280",
+      "quantity_total": "853",
+      "gross_sales": "844914.31"
+    },
+    {
+      "order_date": "2026-09-01",
+      "status": "delivered",
+      "order_count": "1534",
+      "item_count": "2350",
+      "quantity_total": "6935",
+      "gross_sales": "6926534.23"
+    },
+    {
+      "order_date": "2026-09-01",
+      "status": "paid",
+      "order_count": "1014",
+      "item_count": "1512",
+      "quantity_total": "4504",
+      "gross_sales": "4570221.12"
+    },
+    {
+      "order_date": "2026-09-01",
+      "status": "pending",
+      "order_count": "183",
+      "item_count": "287",
+      "quantity_total": "890",
+      "gross_sales": "892916.80"
+    },
+    {
+      "order_date": "2026-09-01",
+      "status": "shipped",
+      "order_count": "938",
+      "item_count": "1413",
+      "quantity_total": "4248",
+      "gross_sales": "4352149.76"
+    },
+    {
+      "order_date": "2026-09-02",
+      "status": "cancelled",
+      "order_count": "212",
+      "item_count": "328",
+      "quantity_total": "995",
+      "gross_sales": "990118.29"
+    },
+    {
+      "order_date": "2026-09-02",
+      "status": "delivered",
+      "order_count": "1565",
+      "item_count": "2361",
+      "quantity_total": "7126",
+      "gross_sales": "7081153.46"
+    },
+    {
+      "order_date": "2026-09-02",
+      "status": "paid",
+      "order_count": "943",
+      "item_count": "1410",
+      "quantity_total": "4225",
+      "gross_sales": "4328902.88"
+    },
+    {
+      "order_date": "2026-09-02",
+      "status": "pending",
+      "order_count": "190",
+      "item_count": "286",
+      "quantity_total": "858",
+      "gross_sales": "889952.56"
+    },
+    {
+      "order_date": "2026-09-02",
+      "status": "shipped",
+      "order_count": "943",
+      "item_count": "1435",
+      "quantity_total": "4339",
+      "gross_sales": "4308802.21"
+    },
+    {
+      "order_date": "2026-09-03",
+      "status": "cancelled",
+      "order_count": "185",
+      "item_count": "289",
+      "quantity_total": "883",
+      "gross_sales": "904837.06"
+    },
+    {
+      "order_date": "2026-09-03",
+      "status": "delivered",
+      "order_count": "1540",
+      "item_count": "2305",
+      "quantity_total": "6966",
+      "gross_sales": "6996790.00"
+    },
+    {
+      "order_date": "2026-09-03",
+      "status": "paid",
+      "order_count": "979",
+      "item_count": "1470",
+      "quantity_total": "4448",
+      "gross_sales": "4598447.75"
+    },
+    {
+      "order_date": "2026-09-03",
+      "status": "pending",
+      "order_count": "188",
+      "item_count": "280",
+      "quantity_total": "857",
+      "gross_sales": "901300.34"
+    },
+    {
+      "order_date": "2026-09-03",
+      "status": "shipped",
+      "order_count": "983",
+      "item_count": "1445",
+      "quantity_total": "4356",
+      "gross_sales": "4363476.13"
+    },
+    {
+      "order_date": "2026-09-04",
+      "status": "cancelled",
+      "order_count": "187",
+      "item_count": "279",
+      "quantity_total": "831",
+      "gross_sales": "827708.78"
+    },
+    {
+      "order_date": "2026-09-04",
+      "status": "delivered",
+      "order_count": "1574",
+      "item_count": "2384",
+      "quantity_total": "7179",
+      "gross_sales": "7309553.96"
+    },
+    {
+      "order_date": "2026-09-04",
+      "status": "paid",
+      "order_count": "1006",
+      "item_count": "1493",
+      "quantity_total": "4434",
+      "gross_sales": "4466733.06"
+    },
+    {
+      "order_date": "2026-09-04",
+      "status": "pending",
+      "order_count": "179",
+      "item_count": "262",
+      "quantity_total": "791",
+      "gross_sales": "817252.72"
+    },
+    {
+      "order_date": "2026-09-04",
+      "status": "shipped",
+      "order_count": "930",
+      "item_count": "1432",
+      "quantity_total": "4266",
+      "gross_sales": "4320157.73"
+    },
+    {
+      "order_date": "2026-09-05",
+      "status": "cancelled",
+      "order_count": "173",
+      "item_count": "285",
+      "quantity_total": "814",
+      "gross_sales": "878166.38"
+    },
+    {
+      "order_date": "2026-09-05",
+      "status": "delivered",
+      "order_count": "1475",
+      "item_count": "2208",
+      "quantity_total": "6635",
+      "gross_sales": "6732307.28"
+    },
+    {
+      "order_date": "2026-09-05",
+      "status": "paid",
+      "order_count": "1020",
+      "item_count": "1509",
+      "quantity_total": "4557",
+      "gross_sales": "4590412.90"
+    },
+    {
+      "order_date": "2026-09-05",
+      "status": "pending",
+      "order_count": "194",
+      "item_count": "293",
+      "quantity_total": "909",
+      "gross_sales": "891576.55"
+    },
+    {
+      "order_date": "2026-09-05",
+      "status": "shipped",
+      "order_count": "1007",
+      "item_count": "1522",
+      "quantity_total": "4592",
+      "gross_sales": "4698032.68"
+    },
+    {
+      "order_date": "2026-09-06",
+      "status": "cancelled",
+      "order_count": "201",
+      "item_count": "305",
+      "quantity_total": "888",
+      "gross_sales": "907617.82"
+    },
+    {
+      "order_date": "2026-09-06",
+      "status": "delivered",
+      "order_count": "1590",
+      "item_count": "2373",
+      "quantity_total": "7206",
+      "gross_sales": "7212436.37"
+    },
+    {
+      "order_date": "2026-09-06",
+      "status": "paid",
+      "order_count": "943",
+      "item_count": "1429",
+      "quantity_total": "4320",
+      "gross_sales": "4364023.38"
+    },
+    {
+      "order_date": "2026-09-06",
+      "status": "pending",
+      "order_count": "199",
+      "item_count": "303",
+      "quantity_total": "888",
+      "gross_sales": "912347.01"
+    },
+    {
+      "order_date": "2026-09-06",
+      "status": "shipped",
+      "order_count": "924",
+      "item_count": "1406",
+      "quantity_total": "4279",
+      "gross_sales": "4285687.52"
+    },
+    {
+      "order_date": "2026-09-07",
+      "status": "cancelled",
+      "order_count": "226",
+      "item_count": "348",
+      "quantity_total": "1034",
+      "gross_sales": "1055572.39"
+    },
+    {
+      "order_date": "2026-09-07",
+      "status": "delivered",
+      "order_count": "1585",
+      "item_count": "2398",
+      "quantity_total": "7089",
+      "gross_sales": "6949353.02"
+    },
+    {
+      "order_date": "2026-09-07",
+      "status": "paid",
+      "order_count": "926",
+      "item_count": "1399",
+      "quantity_total": "4198",
+      "gross_sales": "4140914.56"
+    },
+    {
+      "order_date": "2026-09-07",
+      "status": "pending",
+      "order_count": "196",
+      "item_count": "291",
+      "quantity_total": "854",
+      "gross_sales": "887363.00"
+    },
+    {
+      "order_date": "2026-09-07",
+      "status": "shipped",
+      "order_count": "941",
+      "item_count": "1421",
+      "quantity_total": "4324",
+      "gross_sales": "4297678.38"
+    },
+    {
+      "order_date": "2026-09-08",
+      "status": "cancelled",
+      "order_count": "206",
+      "item_count": "313",
+      "quantity_total": "949",
+      "gross_sales": "939566.80"
+    },
+    {
+      "order_date": "2026-09-08",
+      "status": "delivered",
+      "order_count": "1548",
+      "item_count": "2293",
+      "quantity_total": "6877",
+      "gross_sales": "6728558.72"
+    },
+    {
+      "order_date": "2026-09-08",
+      "status": "paid",
+      "order_count": "955",
+      "item_count": "1446",
+      "quantity_total": "4339",
+      "gross_sales": "4246619.00"
+    },
+    {
+      "order_date": "2026-09-08",
+      "status": "pending",
+      "order_count": "195",
+      "item_count": "297",
+      "quantity_total": "911",
+      "gross_sales": "924710.92"
+    },
+    {
+      "order_date": "2026-09-08",
+      "status": "shipped",
+      "order_count": "980",
+      "item_count": "1489",
+      "quantity_total": "4520",
+      "gross_sales": "4488488.13"
+    },
+    {
+      "order_date": "2026-09-09",
+      "status": "cancelled",
+      "order_count": "186",
+      "item_count": "292",
+      "quantity_total": "869",
+      "gross_sales": "853910.19"
+    },
+    {
+      "order_date": "2026-09-09",
+      "status": "delivered",
+      "order_count": "1627",
+      "item_count": "2446",
+      "quantity_total": "7206",
+      "gross_sales": "7152204.14"
+    },
+    {
+      "order_date": "2026-09-09",
+      "status": "paid",
+      "order_count": "924",
+      "item_count": "1363",
+      "quantity_total": "4057",
+      "gross_sales": "4048513.68"
+    },
+    {
+      "order_date": "2026-09-09",
+      "status": "pending",
+      "order_count": "198",
+      "item_count": "299",
+      "quantity_total": "890",
+      "gross_sales": "900003.99"
+    },
+    {
+      "order_date": "2026-09-09",
+      "status": "shipped",
+      "order_count": "934",
+      "item_count": "1403",
+      "quantity_total": "4242",
+      "gross_sales": "4196197.99"
+    },
+    {
+      "order_date": "2026-09-10",
+      "status": "cancelled",
+      "order_count": "205",
+      "item_count": "309",
+      "quantity_total": "874",
+      "gross_sales": "879154.53"
+    },
+    {
+      "order_date": "2026-09-10",
+      "status": "delivered",
+      "order_count": "1551",
+      "item_count": "2351",
+      "quantity_total": "7099",
+      "gross_sales": "7110420.45"
+    },
+    {
+      "order_date": "2026-09-10",
+      "status": "paid",
+      "order_count": "972",
+      "item_count": "1455",
+      "quantity_total": "4366",
+      "gross_sales": "4436973.47"
+    },
+    {
+      "order_date": "2026-09-10",
+      "status": "pending",
+      "order_count": "207",
+      "item_count": "306",
+      "quantity_total": "885",
+      "gross_sales": "910023.12"
+    },
+    {
+      "order_date": "2026-09-10",
+      "status": "shipped",
+      "order_count": "947",
+      "item_count": "1406",
+      "quantity_total": "4251",
+      "gross_sales": "4198822.60"
+    },
+    {
+      "order_date": "2026-09-11",
+      "status": "cancelled",
+      "order_count": "200",
+      "item_count": "292",
+      "quantity_total": "889",
+      "gross_sales": "895320.85"
+    },
+    {
+      "order_date": "2026-09-11",
+      "status": "delivered",
+      "order_count": "1539",
+      "item_count": "2284",
+      "quantity_total": "6780",
+      "gross_sales": "6844813.66"
+    },
+    {
+      "order_date": "2026-09-11",
+      "status": "paid",
+      "order_count": "1023",
+      "item_count": "1549",
+      "quantity_total": "4624",
+      "gross_sales": "4600434.79"
+    },
+    {
+      "order_date": "2026-09-11",
+      "status": "pending",
+      "order_count": "184",
+      "item_count": "271",
+      "quantity_total": "789",
+      "gross_sales": "761853.72"
+    },
+    {
+      "order_date": "2026-09-11",
+      "status": "shipped",
+      "order_count": "925",
+      "item_count": "1399",
+      "quantity_total": "4202",
+      "gross_sales": "4228756.04"
+    },
+    {
+      "order_date": "2026-09-12",
+      "status": "cancelled",
+      "order_count": "185",
+      "item_count": "288",
+      "quantity_total": "873",
+      "gross_sales": "887273.55"
+    },
+    {
+      "order_date": "2026-09-12",
+      "status": "delivered",
+      "order_count": "1544",
+      "item_count": "2372",
+      "quantity_total": "7117",
+      "gross_sales": "7269880.49"
+    },
+    {
+      "order_date": "2026-09-12",
+      "status": "paid",
+      "order_count": "998",
+      "item_count": "1518",
+      "quantity_total": "4551",
+      "gross_sales": "4455761.66"
+    },
+    {
+      "order_date": "2026-09-12",
+      "status": "pending",
+      "order_count": "167",
+      "item_count": "243",
+      "quantity_total": "759",
+      "gross_sales": "772790.69"
+    },
+    {
+      "order_date": "2026-09-12",
+      "status": "shipped",
+      "order_count": "947",
+      "item_count": "1430",
+      "quantity_total": "4327",
+      "gross_sales": "4243946.65"
+    },
+    {
+      "order_date": "2026-09-13",
+      "status": "cancelled",
+      "order_count": "195",
+      "item_count": "295",
+      "quantity_total": "877",
+      "gross_sales": "847704.77"
+    },
+    {
+      "order_date": "2026-09-13",
+      "status": "delivered",
+      "order_count": "1584",
+      "item_count": "2425",
+      "quantity_total": "7236",
+      "gross_sales": "7185999.42"
+    },
+    {
+      "order_date": "2026-09-13",
+      "status": "paid",
+      "order_count": "937",
+      "item_count": "1394",
+      "quantity_total": "4168",
+      "gross_sales": "4050402.40"
+    },
+    {
+      "order_date": "2026-09-13",
+      "status": "pending",
+      "order_count": "175",
+      "item_count": "262",
+      "quantity_total": "719",
+      "gross_sales": "676829.15"
+    },
+    {
+      "order_date": "2026-09-13",
+      "status": "shipped",
+      "order_count": "983",
+      "item_count": "1522",
+      "quantity_total": "4496",
+      "gross_sales": "4484200.80"
+    },
+    {
+      "order_date": "2026-09-14",
+      "status": "cancelled",
+      "order_count": "209",
+      "item_count": "327",
+      "quantity_total": "982",
+      "gross_sales": "964290.48"
+    },
+    {
+      "order_date": "2026-09-14",
+      "status": "delivered",
+      "order_count": "1541",
+      "item_count": "2382",
+      "quantity_total": "7182",
+      "gross_sales": "7184432.91"
+    },
+    {
+      "order_date": "2026-09-14",
+      "status": "paid",
+      "order_count": "980",
+      "item_count": "1506",
+      "quantity_total": "4478",
+      "gross_sales": "4390326.37"
+    },
+    {
+      "order_date": "2026-09-14",
+      "status": "pending",
+      "order_count": "205",
+      "item_count": "307",
+      "quantity_total": "955",
+      "gross_sales": "968605.67"
+    },
+    {
+      "order_date": "2026-09-14",
+      "status": "shipped",
+      "order_count": "928",
+      "item_count": "1398",
+      "quantity_total": "4111",
+      "gross_sales": "4155064.28"
+    },
+    {
+      "order_date": "2026-09-15",
+      "status": "cancelled",
+      "order_count": "188",
+      "item_count": "287",
+      "quantity_total": "838",
+      "gross_sales": "829241.84"
+    },
+    {
+      "order_date": "2026-09-15",
+      "status": "delivered",
+      "order_count": "1503",
+      "item_count": "2283",
+      "quantity_total": "6786",
+      "gross_sales": "6756683.15"
+    },
+    {
+      "order_date": "2026-09-15",
+      "status": "paid",
+      "order_count": "987",
+      "item_count": "1475",
+      "quantity_total": "4349",
+      "gross_sales": "4338780.40"
+    },
+    {
+      "order_date": "2026-09-15",
+      "status": "pending",
+      "order_count": "169",
+      "item_count": "259",
+      "quantity_total": "821",
+      "gross_sales": "810408.55"
+    },
+    {
+      "order_date": "2026-09-15",
+      "status": "shipped",
+      "order_count": "1013",
+      "item_count": "1517",
+      "quantity_total": "4632",
+      "gross_sales": "4588319.98"
+    },
+    {
+      "order_date": "2026-09-16",
+      "status": "cancelled",
+      "order_count": "181",
+      "item_count": "270",
+      "quantity_total": "775",
+      "gross_sales": "782656.49"
+    },
+    {
+      "order_date": "2026-09-16",
+      "status": "delivered",
+      "order_count": "1563",
+      "item_count": "2417",
+      "quantity_total": "7147",
+      "gross_sales": "7095177.47"
+    },
+    {
+      "order_date": "2026-09-16",
+      "status": "paid",
+      "order_count": "936",
+      "item_count": "1406",
+      "quantity_total": "4242",
+      "gross_sales": "4320032.88"
+    },
+    {
+      "order_date": "2026-09-16",
+      "status": "pending",
+      "order_count": "200",
+      "item_count": "310",
+      "quantity_total": "907",
+      "gross_sales": "906710.30"
+    },
+    {
+      "order_date": "2026-09-16",
+      "status": "shipped",
+      "order_count": "987",
+      "item_count": "1508",
+      "quantity_total": "4547",
+      "gross_sales": "4540897.67"
+    },
+    {
+      "order_date": "2026-09-17",
+      "status": "cancelled",
+      "order_count": "172",
+      "item_count": "265",
+      "quantity_total": "754",
+      "gross_sales": "745669.54"
+    },
+    {
+      "order_date": "2026-09-17",
+      "status": "delivered",
+      "order_count": "1505",
+      "item_count": "2252",
+      "quantity_total": "6708",
+      "gross_sales": "6734564.61"
+    },
+    {
+      "order_date": "2026-09-17",
+      "status": "paid",
+      "order_count": "979",
+      "item_count": "1491",
+      "quantity_total": "4496",
+      "gross_sales": "4383236.60"
+    },
+    {
+      "order_date": "2026-09-17",
+      "status": "pending",
+      "order_count": "210",
+      "item_count": "303",
+      "quantity_total": "916",
+      "gross_sales": "897314.79"
+    },
+    {
+      "order_date": "2026-09-17",
+      "status": "shipped",
+      "order_count": "998",
+      "item_count": "1462",
+      "quantity_total": "4354",
+      "gross_sales": "4438025.21"
+    },
+    {
+      "order_date": "2026-09-18",
+      "status": "cancelled",
+      "order_count": "172",
+      "item_count": "255",
+      "quantity_total": "760",
+      "gross_sales": "795591.74"
+    },
+    {
+      "order_date": "2026-09-18",
+      "status": "delivered",
+      "order_count": "1596",
+      "item_count": "2390",
+      "quantity_total": "7167",
+      "gross_sales": "7144645.99"
+    },
+    {
+      "order_date": "2026-09-18",
+      "status": "paid",
+      "order_count": "964",
+      "item_count": "1445",
+      "quantity_total": "4311",
+      "gross_sales": "4253070.00"
+    },
+    {
+      "order_date": "2026-09-18",
+      "status": "pending",
+      "order_count": "205",
+      "item_count": "316",
+      "quantity_total": "969",
+      "gross_sales": "948126.77"
+    },
+    {
+      "order_date": "2026-09-18",
+      "status": "shipped",
+      "order_count": "925",
+      "item_count": "1385",
+      "quantity_total": "4220",
+      "gross_sales": "4258303.70"
+    },
+    {
+      "order_date": "2026-09-19",
+      "status": "cancelled",
+      "order_count": "194",
+      "item_count": "300",
+      "quantity_total": "878",
+      "gross_sales": "960188.05"
+    },
+    {
+      "order_date": "2026-09-19",
+      "status": "delivered",
+      "order_count": "1575",
+      "item_count": "2360",
+      "quantity_total": "7061",
+      "gross_sales": "7025950.24"
+    },
+    {
+      "order_date": "2026-09-19",
+      "status": "paid",
+      "order_count": "947",
+      "item_count": "1415",
+      "quantity_total": "4232",
+      "gross_sales": "4314283.74"
+    },
+    {
+      "order_date": "2026-09-19",
+      "status": "pending",
+      "order_count": "196",
+      "item_count": "282",
+      "quantity_total": "868",
+      "gross_sales": "853848.68"
+    },
+    {
+      "order_date": "2026-09-19",
+      "status": "shipped",
+      "order_count": "961",
+      "item_count": "1423",
+      "quantity_total": "4290",
+      "gross_sales": "4354142.38"
+    },
+    {
+      "order_date": "2026-09-20",
+      "status": "cancelled",
+      "order_count": "181",
+      "item_count": "276",
+      "quantity_total": "823",
+      "gross_sales": "823341.48"
+    },
+    {
+      "order_date": "2026-09-20",
+      "status": "delivered",
+      "order_count": "1591",
+      "item_count": "2422",
+      "quantity_total": "7327",
+      "gross_sales": "7311868.03"
+    },
+    {
+      "order_date": "2026-09-20",
+      "status": "paid",
+      "order_count": "971",
+      "item_count": "1506",
+      "quantity_total": "4562",
+      "gross_sales": "4582917.50"
+    },
+    {
+      "order_date": "2026-09-20",
+      "status": "pending",
+      "order_count": "186",
+      "item_count": "287",
+      "quantity_total": "880",
+      "gross_sales": "942631.62"
+    },
+    {
+      "order_date": "2026-09-20",
+      "status": "shipped",
+      "order_count": "931",
+      "item_count": "1387",
+      "quantity_total": "4139",
+      "gross_sales": "4276286.48"
+    },
+    {
+      "order_date": "2026-09-21",
+      "status": "cancelled",
+      "order_count": "198",
+      "item_count": "302",
+      "quantity_total": "928",
+      "gross_sales": "892993.32"
+    },
+    {
+      "order_date": "2026-09-21",
+      "status": "delivered",
+      "order_count": "1523",
+      "item_count": "2248",
+      "quantity_total": "6676",
+      "gross_sales": "6659843.61"
+    },
+    {
+      "order_date": "2026-09-21",
+      "status": "paid",
+      "order_count": "976",
+      "item_count": "1483",
+      "quantity_total": "4478",
+      "gross_sales": "4579059.44"
+    },
+    {
+      "order_date": "2026-09-21",
+      "status": "pending",
+      "order_count": "214",
+      "item_count": "319",
+      "quantity_total": "969",
+      "gross_sales": "965923.29"
+    },
+    {
+      "order_date": "2026-09-21",
+      "status": "shipped",
+      "order_count": "954",
+      "item_count": "1409",
+      "quantity_total": "4267",
+      "gross_sales": "4323873.87"
+    },
+    {
+      "order_date": "2026-09-22",
+      "status": "cancelled",
+      "order_count": "203",
+      "item_count": "293",
+      "quantity_total": "859",
+      "gross_sales": "846811.11"
+    },
+    {
+      "order_date": "2026-09-22",
+      "status": "delivered",
+      "order_count": "1544",
+      "item_count": "2342",
+      "quantity_total": "7011",
+      "gross_sales": "7031330.84"
+    },
+    {
+      "order_date": "2026-09-22",
+      "status": "paid",
+      "order_count": "969",
+      "item_count": "1449",
+      "quantity_total": "4471",
+      "gross_sales": "4545610.05"
+    },
+    {
+      "order_date": "2026-09-22",
+      "status": "pending",
+      "order_count": "185",
+      "item_count": "270",
+      "quantity_total": "832",
+      "gross_sales": "836524.02"
+    },
+    {
+      "order_date": "2026-09-22",
+      "status": "shipped",
+      "order_count": "987",
+      "item_count": "1498",
+      "quantity_total": "4471",
+      "gross_sales": "4319417.81"
+    },
+    {
+      "order_date": "2026-09-23",
+      "status": "cancelled",
+      "order_count": "202",
+      "item_count": "314",
+      "quantity_total": "920",
+      "gross_sales": "955323.34"
+    },
+    {
+      "order_date": "2026-09-23",
+      "status": "delivered",
+      "order_count": "1514",
+      "item_count": "2263",
+      "quantity_total": "6915",
+      "gross_sales": "6924956.41"
+    },
+    {
+      "order_date": "2026-09-23",
+      "status": "paid",
+      "order_count": "1045",
+      "item_count": "1583",
+      "quantity_total": "4803",
+      "gross_sales": "4770646.36"
+    },
+    {
+      "order_date": "2026-09-23",
+      "status": "pending",
+      "order_count": "176",
+      "item_count": "270",
+      "quantity_total": "774",
+      "gross_sales": "828877.60"
+    },
+    {
+      "order_date": "2026-09-23",
+      "status": "shipped",
+      "order_count": "936",
+      "item_count": "1418",
+      "quantity_total": "4219",
+      "gross_sales": "4180855.32"
+    },
+    {
+      "order_date": "2026-09-24",
+      "status": "cancelled",
+      "order_count": "193",
+      "item_count": "283",
+      "quantity_total": "873",
+      "gross_sales": "890996.91"
+    },
+    {
+      "order_date": "2026-09-24",
+      "status": "delivered",
+      "order_count": "1534",
+      "item_count": "2309",
+      "quantity_total": "6929",
+      "gross_sales": "7128372.46"
+    },
+    {
+      "order_date": "2026-09-24",
+      "status": "paid",
+      "order_count": "980",
+      "item_count": "1482",
+      "quantity_total": "4436",
+      "gross_sales": "4515988.56"
+    },
+    {
+      "order_date": "2026-09-24",
+      "status": "pending",
+      "order_count": "203",
+      "item_count": "309",
+      "quantity_total": "948",
+      "gross_sales": "946464.06"
+    },
+    {
+      "order_date": "2026-09-24",
+      "status": "shipped",
+      "order_count": "942",
+      "item_count": "1426",
+      "quantity_total": "4192",
+      "gross_sales": "4117769.41"
+    },
+    {
+      "order_date": "2026-09-25",
+      "status": "cancelled",
+      "order_count": "219",
+      "item_count": "331",
+      "quantity_total": "984",
+      "gross_sales": "986712.20"
+    },
+    {
+      "order_date": "2026-09-25",
+      "status": "delivered",
+      "order_count": "1573",
+      "item_count": "2357",
+      "quantity_total": "7206",
+      "gross_sales": "7249402.02"
+    },
+    {
+      "order_date": "2026-09-25",
+      "status": "paid",
+      "order_count": "949",
+      "item_count": "1417",
+      "quantity_total": "4205",
+      "gross_sales": "4107042.25"
+    },
+    {
+      "order_date": "2026-09-25",
+      "status": "pending",
+      "order_count": "204",
+      "item_count": "312",
+      "quantity_total": "916",
+      "gross_sales": "908165.59"
+    },
+    {
+      "order_date": "2026-09-25",
+      "status": "shipped",
+      "order_count": "922",
+      "item_count": "1393",
+      "quantity_total": "4063",
+      "gross_sales": "3966434.13"
+    },
+    {
+      "order_date": "2026-09-26",
+      "status": "cancelled",
+      "order_count": "184",
+      "item_count": "289",
+      "quantity_total": "889",
+      "gross_sales": "912873.91"
+    },
+    {
+      "order_date": "2026-09-26",
+      "status": "delivered",
+      "order_count": "1524",
+      "item_count": "2298",
+      "quantity_total": "6858",
+      "gross_sales": "6905437.24"
+    },
+    {
+      "order_date": "2026-09-26",
+      "status": "paid",
+      "order_count": "973",
+      "item_count": "1421",
+      "quantity_total": "4254",
+      "gross_sales": "4395325.71"
+    },
+    {
+      "order_date": "2026-09-26",
+      "status": "pending",
+      "order_count": "199",
+      "item_count": "298",
+      "quantity_total": "920",
+      "gross_sales": "900984.11"
+    },
+    {
+      "order_date": "2026-09-26",
+      "status": "shipped",
+      "order_count": "996",
+      "item_count": "1502",
+      "quantity_total": "4570",
+      "gross_sales": "4577998.06"
+    },
+    {
+      "order_date": "2026-09-27",
+      "status": "cancelled",
+      "order_count": "188",
+      "item_count": "288",
+      "quantity_total": "870",
+      "gross_sales": "888238.94"
+    },
+    {
+      "order_date": "2026-09-27",
+      "status": "delivered",
+      "order_count": "1583",
+      "item_count": "2437",
+      "quantity_total": "7316",
+      "gross_sales": "7401566.13"
+    },
+    {
+      "order_date": "2026-09-27",
+      "status": "paid",
+      "order_count": "944",
+      "item_count": "1449",
+      "quantity_total": "4323",
+      "gross_sales": "4414760.58"
+    },
+    {
+      "order_date": "2026-09-27",
+      "status": "pending",
+      "order_count": "200",
+      "item_count": "300",
+      "quantity_total": "879",
+      "gross_sales": "879406.29"
+    },
+    {
+      "order_date": "2026-09-27",
+      "status": "shipped",
+      "order_count": "947",
+      "item_count": "1455",
+      "quantity_total": "4355",
+      "gross_sales": "4498205.06"
+    },
+    {
+      "order_date": "2026-09-28",
+      "status": "cancelled",
+      "order_count": "194",
+      "item_count": "301",
+      "quantity_total": "883",
+      "gross_sales": "907709.96"
+    },
+    {
+      "order_date": "2026-09-28",
+      "status": "delivered",
+      "order_count": "1523",
+      "item_count": "2316",
+      "quantity_total": "6754",
+      "gross_sales": "6853689.13"
+    },
+    {
+      "order_date": "2026-09-28",
+      "status": "paid",
+      "order_count": "980",
+      "item_count": "1465",
+      "quantity_total": "4355",
+      "gross_sales": "4430427.62"
+    },
+    {
+      "order_date": "2026-09-28",
+      "status": "pending",
+      "order_count": "206",
+      "item_count": "302",
+      "quantity_total": "910",
+      "gross_sales": "901893.01"
+    },
+    {
+      "order_date": "2026-09-28",
+      "status": "shipped",
+      "order_count": "965",
+      "item_count": "1465",
+      "quantity_total": "4450",
+      "gross_sales": "4454422.80"
+    },
+    {
+      "order_date": "2026-09-29",
+      "status": "cancelled",
+      "order_count": "193",
+      "item_count": "286",
+      "quantity_total": "894",
+      "gross_sales": "953761.76"
+    },
+    {
+      "order_date": "2026-09-29",
+      "status": "delivered",
+      "order_count": "1522",
+      "item_count": "2251",
+      "quantity_total": "6832",
+      "gross_sales": "6802556.65"
+    },
+    {
+      "order_date": "2026-09-29",
+      "status": "paid",
+      "order_count": "977",
+      "item_count": "1501",
+      "quantity_total": "4570",
+      "gross_sales": "4562102.55"
+    },
+    {
+      "order_date": "2026-09-29",
+      "status": "pending",
+      "order_count": "210",
+      "item_count": "311",
+      "quantity_total": "916",
+      "gross_sales": "889744.81"
+    },
+    {
+      "order_date": "2026-09-29",
+      "status": "shipped",
+      "order_count": "956",
+      "item_count": "1435",
+      "quantity_total": "4219",
+      "gross_sales": "4260302.65"
+    },
+    {
+      "order_date": "2026-09-30",
+      "status": "cancelled",
+      "order_count": "183",
+      "item_count": "274",
+      "quantity_total": "794",
+      "gross_sales": "819268.42"
+    },
+    {
+      "order_date": "2026-09-30",
+      "status": "delivered",
+      "order_count": "1547",
+      "item_count": "2299",
+      "quantity_total": "6904",
+      "gross_sales": "6873146.08"
+    },
+    {
+      "order_date": "2026-09-30",
+      "status": "paid",
+      "order_count": "985",
+      "item_count": "1485",
+      "quantity_total": "4463",
+      "gross_sales": "4500042.06"
+    },
+    {
+      "order_date": "2026-09-30",
+      "status": "pending",
+      "order_count": "195",
+      "item_count": "273",
+      "quantity_total": "831",
+      "gross_sales": "837314.17"
+    },
+    {
+      "order_date": "2026-09-30",
+      "status": "shipped",
+      "order_count": "956",
+      "item_count": "1420",
+      "quantity_total": "4234",
+      "gross_sales": "4329545.69"
+    }
+  ],
+  "totals": {
+    "cancelled": "26667535.21",
+    "delivered": "210583628.17",
+    "paid": "132302013.32",
+    "pending": "26361863.90",
+    "shipped": "130106261.12"
+  },
+  "grand_total": "526021301.72"
+}

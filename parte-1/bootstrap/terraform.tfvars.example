@@ -1,9 +1,5 @@
-# Copie para terraform.tfvars. Confirme a disponibilidade global do bucket
-# antes do apply; se ele já existir em outra conta, use outro nome iniciado por
-# eda262-g09- e replique o mesmo valor em ../backend.hcl.
 aws_region        = "us-east-1"
 group_id          = "g09"
 state_bucket_name = "eda262-g09-tfstate"
 
-# Use nulo para o padrão eda262-g09-terraform-locks.
 lock_table_name_override = null

@@ -1,0 +1,28 @@
+{
+  "code_sha256": "68a7e9d629a3b6d08a9e5e73ea47a6feeee0af5cd27a60acb406a4dc3eee89c2",
+  "content_sha256": {
+    "quarantine_selected": "3efe9dacbc0be6b452084e5de7f641b81c32d1cae8f74753ef07599801eaebbf",
+    "refined": "9d6b5eb69c167873663f5d5dba94f64e631890036c97f689a088796ab05b24a3",
+    "trusted": "f184058d0a5783679a2631cd1c33b712d90134c1119474da3dc5cd9b9aa30ed9"
+  },
+  "duplicates_removed_selected": 60,
+  "generated_at_utc": "2026-11-22T00:34:51.879437+00:00",
+  "job_run_id": "jr_ef3c133058bf09f23f357ed9dda62d77ba8250bca8971543039c77620bcda8de",
+  "mode": "BACKFILL",
+  "partitions_written": 1,
+  "raw_rows_read": 187854,
+  "refined_groups_after_run": 150,
+  "refined_groups_written": 5,
+  "rejected_rows_selected": 316,
+  "rejected_rows_without_order_date": 1661,
+  "requested_days": [
+    "2026-09-15"
+  ],
+  "trusted_distinct_keys_after_run": 174878,
+  "trusted_rows_after_run": 174878,
+  "trusted_rows_written": 5821,
+  "valid_rows_before_dedup_selected": 5881,
+  "written_days": [
+    "2026-09-15"
+  ]
+}

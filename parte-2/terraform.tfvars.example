@@ -1,0 +1,13 @@
+
+aws_region    = "us-east-1"
+group_id      = "g09"
+glue_workers  = 2
+
+raw_projection_start   = "2026-09-01"
+raw_projection_end     = "2026-10-15"
+event_projection_start = "2026-09-01"
+event_projection_end   = "2026-09-30"
+
+athena_bytes_cutoff = 10485760
+
+

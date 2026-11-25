@@ -1,0 +1,27 @@
+{
+    "JobRun": {
+        "Id": "jr_bb11f49762ab6d0491eade56930c30b9d9bf25307ba15ba61e5a53e12711b2d9",
+        "Attempt": 0,
+        "JobName": "eda262-g09-av2-orders-pipeline",
+        "JobMode": "SCRIPT",
+        "JobRunQueuingEnabled": false,
+        "StartedOn": 1795055993.053,
+        "LastModifiedOn": 1795056131.426,
+        "CompletedOn": 1795056131.426,
+        "JobRunState": "SUCCEEDED",
+        "Arguments": {
+            "--MODE": "FULL",
+            "--DAYS": "all"
+        },
+        "PredecessorRuns": [],
+        "AllocatedCapacity": 2,
+        "ExecutionTime": 132,
+        "Timeout": 30,
+        "MaxCapacity": 2.0,
+        "WorkerType": "G.1X",
+        "NumberOfWorkers": 2,
+        "LogGroupName": "/aws-glue/jobs",
+        "GlueVersion": "4.0",
+        "DPUSeconds": 264.0
+    }
+}

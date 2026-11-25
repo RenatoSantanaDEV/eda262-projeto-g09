@@ -1,313 +1,484 @@
-# Decisões de Engenharia — AV1 — g09
-
-As medições locais abaixo são reproduzíveis sobre os arquivos versionados. A
-stack também foi executada na conta acadêmica do grupo em `us-east-1`, e os
-resultados reais estão registrados sem credenciais em `evidencias/`.
-
-## Identificação
-
-- Grupo: **g09**
-- Representante: **Renato Santana**
-- Integrantes: **João Augusto Pimentel, Renato Santana, Raphael Barros e Lara
-  Pessoa**
-- Cenário: **pedidos de e-commerce**
-- Pergunta: **Qual foi o valor bruto de vendas por dia e por status dos pedidos?**
-- Região obrigatória: **N. Virginia (`us-east-1`)**
-
-## Grão e chave
-
-Uma linha representa **um pedido consolidado com um único tipo de item**. Essa
-restrição deixa `quantity * unit_price` semanticamente consistente com o valor
-bruto do pedido.
-
-- Chave natural: `order_id`.
-- Linhas no arquivo trusted: **12**.
-- Valores distintos de `order_id`: **12**.
-- Duplicatas da chave no arquivo trusted: **0**.
-- Nulos: **0 em todas as oito colunas**.
-
-O `customer_id` é sintético. Não há nome, e-mail, telefone, CPF ou endereço
-detalhado no conjunto de demonstração.
-
-## Schema declarado
-
-O schema está em `parte-1/scenario.auto.tfvars` e é aplicado diretamente à
-tabela Glue, sem inferência e sem Crawler:
-
-- `order_id string`
-- `customer_id string`
-- `order_timestamp timestamp`
-- `status string`
-- `quantity int`
-- `unit_price decimal(10,2)`
-- `city string`
-- `state string`
-
-Usar `decimal(10,2)` evita a imprecisão binária de `double` no cálculo
-financeiro. A precisão comporta preços unitários de até R$ 99.999.999,99, muito
-acima do maior preço do arquivo sintético, **R$ 999,90**.
-
-## Qualidade dos dados
-
-`dados/pedidos.csv` é a única fonte enviada a `trusted/`. Ela possui:
-
-- **12 linhas de dados** e uma linha de cabeçalho;
-- **895 bytes**;
-- **4 datas** distintas;
-- cinco status normalizados: `pending`, `paid`, `shipped`, `delivered` e
-  `cancelled`;
-- quantidade mínima **1** e máxima **5**;
-- preço unitário mínimo **R$ 19,99** e máximo **R$ 999,90**.
-
-`dados/exemplos-sujeira.csv` possui **9 linhas de dados** e **642 bytes**, mas
-não é carregado. Ele documenta duplicata, variações de status, quantidade zero
-ou negativa, preço negativo/malformado e timestamp malformado sem contaminar a
-consulta demonstrativa.
-
-## Formato
-
-- Formato: **CSV com cabeçalho e delimitador vírgula**.
-- Arquivos carregados: **1**.
-- Tamanho carregado: **895 bytes**.
-
-CSV foi mantido porque Parquet não é exigido na AV1 e o volume demonstrativo é
-inferior a 1 KiB. Ainda não foi feita comparação medida com Parquet; portanto,
-nenhuma economia é alegada.
-
-## Particionamento
-
-A Parte 1 não usa partições. O arquivo possui somente **895 bytes** e quatro
-datas; criar partições para essa demonstração aumentaria a quantidade de
-objetos sem ganho mensurável relevante. A decisão deve ser revista com dados em
-escala real.
-
-## Infraestrutura e nomenclatura
-
-- Infraestrutura integralmente declarada em Terraform.
-- Módulo: `parte-1/modules/data_lake`.
-- Estado remoto: S3 `eda262-g09-tfstate` com lock DynamoDB
-  `eda262-g09-terraform-locks`.
-- Workspace: obrigatório e diferente de `default`; a entrega usa `av1`.
-- Bucket trusted: `eda262-g09-lake-trusted`.
-- Bucket de resultados: `eda262-g09-athena-results`.
-- Workgroup: `eda262-g09-athena`, com limite de 10.485.760 bytes (10 MiB) lidos
-  por consulta.
-- Banco Glue: `eda262_g09_pedidos_ecommerce_catalog`; underscores são usados
-  para compatibilidade com identificadores do Athena.
-- Tabela: `trusted`.
-- Tags obrigatórias: `turma=eda262`, `grupo=g09`,
-  `projeto=engenharia-de-dados`.
-- Região: validação bloqueia qualquer valor diferente de `us-east-1`.
-- Arquivo de dados: referenciado por caminho relativo a `parte-1`
-  (`path.root`), para que plano e estado não dependam da máquina.
-
-## Resultado verificado no Athena
-
-A consulta agrupa por data e status. Os valores calculados localmente foram
-confirmados por uma execução real no Athena em 01/10/2026:
-
-| Data | Status | Valor bruto (R$) |
-|---|---|---:|
-| 2026-09-28 | cancelled | 118,50 |
-| 2026-09-28 | paid | 159,80 |
-| 2026-09-28 | shipped | 249,90 |
-| 2026-09-29 | delivered | 899,00 |
-| 2026-09-29 | paid | 100,00 |
-| 2026-09-29 | shipped | 240,00 |
-| 2026-09-30 | delivered | 99,95 |
-| 2026-09-30 | paid | 301,00 |
-| 2026-09-30 | pending | 59,90 |
-| 2026-10-01 | cancelled | 999,90 |
-| 2026-10-01 | paid | 137,70 |
-| 2026-10-01 | shipped | 349,00 |
-
-Pedidos cancelados continuam visíveis em sua própria categoria; a consulta não
-os trata como receita realizada nem os oculta.
-
-## Custo medido da consulta no Athena
-
-- Query execution ID: `5c11fe2f-ba30-457e-aa26-0055b3970cb1`.
-- Data/hora de submissão: **01/10/2026 23:43:29 -03:00**.
-- Estado: **SUCCEEDED**.
-- Tempo total: **608 ms**.
-- Tempo de engine: **414 ms**.
-- Dados processados informados pelo Athena: **895 bytes**.
-- Reuso de resultado anterior: **não**.
-- Saída: `s3://eda262-g09-athena-results/results/5c11fe2f-ba30-457e-aa26-0055b3970cb1.csv`.
-
-O preço sob demanda publicado pela AWS é **US$ 5 por TB verificado**. A
-estimativa registrada aplica um piso de **10 MB por consulta** e, por isso, é um
-teto conservador para os 895 bytes informados pelo Athena:
-
-`US$ 5 × 10 MB ÷ 1 TB ≈ US$ 0,00005`
-
-Sem o piso, o mesmo cálculo daria
-`US$ 5 × 895 bytes ÷ 1 TB ≈ US$ 0,0000000045`. Em releitura da página de preços
-em 02/10/2026, o trecho que cita o mínimo de 10 MB descreve consultas a fontes
-de dados federadas; a regra para dados no S3 precisa ser confirmada antes de
-tratar o piso como faturamento certo. Nas duas leituras o custo desta consulta
-fica abaixo de US$ 0,0001.
-
-Fonte consultada em 01/10/2026 e relida em 02/10/2026:
-<https://aws.amazon.com/pt/athena/pricing/>.
-
-## Destroy limpo
-
-- Workspace: `av1`.
-- Plano original: `0 to add, 0 to change, 14 to destroy`.
-- Resultado final: estado da stack com **0 recursos**.
-- S3 `eda262-g09-lake-trusted`: ausente após o destroy.
-- S3 `eda262-g09-athena-results`: ausente após o destroy.
-- Glue database e tabela trusted: ausentes após o destroy.
-- Athena workgroup: ausente após o destroy.
-- Recursos órfãos da stack: **0**.
-
-A primeira tentativa revelou que o workgroup não podia ser removido enquanto
-mantinha histórico de consulta. O módulo foi corrigido com
-`force_destroy = true`, validado e reaplicado somente ao workgroup antes da
-conclusão do destroy. O backend remoto foi deliberadamente mantido: S3
-`eda262-g09-tfstate` e DynamoDB `eda262-g09-terraform-locks` continuam ativos
-para preservar o estado e o mecanismo de lock do projeto.
-
-O roteiro para remover o backend, ainda não executado, está no `README.md`,
-etapa 7.
-
-## Mudanças após a execução de 01/10/2026
-
-As evidências descrevem a stack como ela foi aplicada em 01/10/2026. Depois
-disso o código recebeu três ajustes, **ainda não reaplicados na AWS**:
-
-| Ajuste | Antes | Agora | Efeito sobre o que foi evidenciado |
-|---|---|---|---|
-| Caminho do CSV | caminho absoluto da máquina (`abspath`) | relativo a `parte-1` (`path.root`) | nenhum recurso novo; mesmo arquivo de 895 bytes, mesma chave `trusted/pedidos.csv` |
-| Limite de bytes por consulta | sem limite (`null`) | 10.485.760 bytes | atributo do workgroup já existente; a stack continua com 14 recursos |
-| Validação de variáveis | cutoff mínimo de 10.000.000 | cutoff mínimo de 10.485.760; `source` precisa ser relativo | só rejeita entradas inválidas antes do plano |
-
-Nomes de recursos, schema, dados e consulta não mudaram. A contagem de 14
-recursos, o Query execution ID, os 895 bytes, os 608 ms e o custo estimado
-continuam sendo os da execução real; uma nova execução exige novas medições.
-
-## Limitações e trade-offs
-
-Os números da AV1 valem para o conjunto de demonstração e não devem ser
-extrapolados. Cada item registra a decisão, o número que a sustenta e o que ela
-deixa de cobrir.
-
-### Dataset sintético e pequeno
-
-- Decisão: 12 pedidos sintéticos, suficientes para validar catálogo, consulta e
-  custo sem expor dados reais.
-- Número: 895 bytes, 608 ms de tempo total e 414 ms de engine.
-- Limitação: com esse volume, tempo e custo refletem o custo fixo de uma
-  consulta, não o comportamento em escala. Nenhuma conclusão de desempenho é
-  alegada.
-
-### Grão de pedido com um único tipo de item
-
-- Decisão: uma linha por pedido, com `order_id` como chave.
-- Número: 12 linhas, 12 valores distintos de `order_id`.
-- Limitação: `quantity * unit_price` só equivale ao valor do pedido porque cada
-  pedido tem um item. Pedidos com vários itens exigiriam o grão pedido-item,
-  chave composta e soma por pedido antes de agregar por dia.
-
-### Cancelados incluídos no valor bruto
-
-- Decisão: a consulta mantém todos os status, cada um em sua categoria.
-- Número: 2 dos 12 pedidos estão `cancelled` e somam R$ 1.118,40 de
-  R$ 3.714,65, ou 30,1% do valor bruto. Sem eles o total seria R$ 2.596,25.
-- Limitação: valor bruto não é receita realizada. Quem consome o resultado
-  precisa filtrar por status para chegar à receita.
-
-### Fuso horário
-
-- Decisão: `order_timestamp` é gravado e lido sem fuso; o dia é a data literal
-  do arquivo.
-- Número: os horários vão de 08:20 a 18:45, então um deslocamento de até 5
-  horas para frente ou 8 horas para trás não mudaria nenhum pedido de dia.
-- Limitação: o arquivo não declara o fuso de origem. Com pedidos próximos da
-  meia-noite, o fuso teria de ser fixado antes de agrupar por dia.
-
-### CSV em vez de Parquet, sem particionamento
-
-- Decisão: um único CSV, sem partições.
-- Número: a consulta usa 4 das 8 colunas, que somam 386 dos 724 bytes de valores
-  do arquivo (53%). Particionar por data geraria 4 objetos com 197 a 212 bytes
-  de dados cada, e a pergunta lê todos os dias.
-- Limitação: não há comparação medida com Parquet nem com tabela particionada;
-  nenhuma economia é alegada. A decisão deve ser refeita com medição quando o
-  volume ultrapassar o que uma leitura completa justifica.
-
-### SerDe
-
-- Decisão: `LazySimpleSerDe` com delimitador vírgula e cabeçalho ignorado.
-- Número: as 13 linhas do arquivo têm exatamente 7 vírgulas e nenhuma aspa.
-- Limitação: esse SerDe não trata aspas nem vírgula dentro de campo, e pelo
-  comportamento padrão do Hive um valor que não converte para o tipo declarado é
-  lido como nulo, sem erro (não exercitado na AV1). Por isso
-  `exemplos-sujeira.csv` fica fora de `trusted/`. O `OpenCSVSerde` trataria
-  aspas, mas só reconhece `timestamp` em formato numérico UNIX, o que obrigaria
-  a mudar o arquivo ou o schema.
-
-### Criptografia
-
-- Decisão: SSE-S3 (AES-256) no bucket do lake, no bucket de resultados, no
-  objeto enviado e no bucket de estado; resultados do Athena com `SSE_S3`.
-- Limitação: sem chave KMS própria não há controle de acesso nem auditoria por
-  chave, e não há política de bucket exigindo TLS. É aceitável para dado
-  sintético sem PII e deve ser revisto com dados reais.
-
-### Versionamento
-
-- Decisão: versionamento ligado no bucket do lake e no bucket de estado;
-  desligado no bucket de resultados.
-- Número: o apply envia 1 objeto ao lake, que fica com 1 versão.
-- Limitação: versões antigas ocupam espaço e só saem com `force_destroy` ou
-  limpeza explícita. No bucket de estado isso torna a remoção do backend um
-  procedimento à parte (`README.md`, etapa 7). Resultados do Athena não têm
-  histórico porque podem ser recalculados.
-
-### `force_destroy`
-
-- Decisão: `force_destroy = true` nos dois buckets da stack e no workgroup.
-- Número: sem ele no workgroup, o primeiro destroy removeu 9 dos 14 recursos e
-  parou; com ele, os 5 restantes saíram.
-- Limitação: a opção apaga dados e histórico sem confirmação adicional. Serve a
-  uma stack acadêmica descartável; em produção ficaria desligada. O destroy em
-  etapa única com o código atual ainda não foi reexecutado.
-
-### Limite de bytes por consulta
-
-- Decisão: `athena_bytes_scanned_cutoff = 10485760` (10 MiB). O provider AWS
-  5.100.0 recusa valores menores; a API do Athena aceita a partir de 10.000.000.
-- Número: o limite é cerca de 11,7 mil vezes os 895 bytes medidos.
-- Limitação: o limite foi acrescentado depois da execução de 01/10/2026, quando
-  o workgroup não tinha limite, e ainda não foi aplicado na AWS. Ele cancela uma
-  consulta que passe do teto, mas não limita o gasto acumulado de várias
-  consultas.
-
-### Expiração dos resultados
-
-- Decisão: não há regra de ciclo de vida no bucket de resultados.
-- Número: a regra seria um 15º recurso e invalidaria a evidência de 14.
-- Limitação: enquanto a stack fica ativa, os resultados se acumulam. Na AV1 isso
-  é contido pelo destroy, que remove o bucket com `force_destroy`.
-
-### Backend com lock no DynamoDB
-
-- Decisão: estado em S3 com lock em DynamoDB, como a disciplina exige.
-- Número: 5 recursos no bootstrap; a execução real usou Terraform 1.16.4.
-- Limitação: a documentação atual do backend S3 marca o lock por DynamoDB como
-  obsoleto e indica o lock nativo do S3 (`use_lockfile`). Como `required_version`
-  aceita qualquer 1.x a partir de 1.5, uma versão futura que remova
-  `dynamodb_table` quebraria o `init`; a saída é fixar a versão testada ou
-  migrar quando a disciplina permitir. O estado do próprio bootstrap é local e
-  não versionado: se for perdido, o backend só volta a ser gerenciado por
-  importação (`README.md`, etapa 1).
-
-### Nomes fixos e workspace
-
-- Decisão: nomes no padrão `eda262-g09-*`, sem o nome do workspace.
-- Limitação: dois workspaces não podem coexistir na mesma conta, porque
-  disputariam os mesmos nomes, e nomes de bucket são globais. A configuração só
-  bloqueia o workspace `default`; `av1` é a convenção da entrega, conferida pelo
-  verificador no modo operacional.
+# Decisões técnicas - versão de fechamento
+
+A seção a seguir registra as decisões novas de 21/11/2026. As medições e
+limitações citadas mais abaixo pertencem ao histórico de 18-19/11; o estado
+atual verificável está em ENTREGA-ATUAL.md.
+
+## Decisões da revisão final
+
+1. **Separação entre transformação e execução.** Normalizar, validar,
+   deduplicar e agregar são funções testáveis sem inicializar Glue/S3. Dez
+   testes Spark cobrem decimal, nulos, datas inválidas, desempates,
+   particionamento, backfill, limpeza de quarentena e conteúdo.
+2. **Relatório por execução.** Cada run grava uma chave própria com seu
+   `JOB_RUN_ID` e SHA do código. O identificador reservado é lido da resposta
+   de `getResolvedOptions`, sem registrá-lo novamente na lista de argumentos.
+   A primeira tentativa real detectou esse conflito de integração; ela falhou
+   antes de processar os dados e foi corrigida, com log preservado.
+3. **Prova de idempotência mais forte.** Além das quatro métricas, calculamos
+   SHA-256 sobre os hashes ordenados das linhas completas. A multiplicidade
+   faz parte da assinatura. O custo é uma ordenação distribuída e a leitura
+   sequencial dos hashes pelo driver; adequado ao experimento de 175 mil
+   itens, sem afirmar escalabilidade ilimitada.
+4. **Snapshots consistentes com o relatório.** Quarentena vazia também é
+   gravada, eliminando rejeições antigas. FULL usa overwrite estático;
+   BACKFILL usa overwrite dinâmico. Nenhuma data solicitada pode ficar sem
+   linha válida e ser silenciosamente ignorada. Sem dados válidos, o job
+   falha e preserva os destinos. As camadas são escritas sequencialmente:
+   não há transação atômica entre buckets, e leitores devem aguardar sucesso.
+5. **Grants conferidos pela API.** O plano sem `ignore_changes` tentou
+   recriar dois grants com `ALL`, enquanto `list-permissions` mostrou apenas
+   `DESCRIBE`, sem grant option. Essa diferença do provider justifica manter
+   a exceção. A comparação exata dos três papéis e dos grants de
+   compatibilidade é obrigatória após implantação e passou na AWS. Não
+   alteramos o singleton global da conta compartilhada.
+6. **Compatibilidade restrita ao projeto.** `scripts/harden_catalog.sh`
+   lista o que removeria por padrão; `--apply` remove apenas grants
+   `IAM_ALLOWED_PRINCIPALS` do database `eda262_g09_av2` e suas tabelas.
+   O script recusa outro database e preserva administradores/outros grupos.
+   Deve ser executado após um apply em uma conta nova, antes da verificação.
+7. **Limites operacionais explícitos.** Polling limitado a 2.400 s por padrão,
+   incluindo falha terminal `EXPIRED` e erro de API. Timeout local não cancela
+   automaticamente o job: o operador deve verificar o run informado.
+   Falha do sanitizador ou da gravação de evidência reprova o teste.
+
+## Registro histórico preservado
+
+# Decisões de Engenharia — AV2 — Grupo 09
+
+Renato Santana (representante), João Augusto Pimentel, Raphael Barros e Lara
+Pessoa.
+
+Pergunta de negócio: **qual foi o valor bruto de vendas por dia e status dos
+pedidos?**
+
+Os números locais são reproduzíveis com seed `20261118`. A validação AWS final
+foi feita em **19/11/2026**, na conta acadêmica do grupo, em `us-east-1`, após
+destroy e recriação da stack. As saídas sanitizadas estão em
+`evidencias/av2/brutas/`; nenhum número remoto foi reconstruído de memória.
+
+## Estado atual
+
+O ciclo final removeu 59 recursos da stack, aprovou 12 checks pós-destroy,
+recriou os mesmos 59 recursos com a policy runtime mínima do Glue e obteve
+`No changes` na reconciliação. O backend e as configurações globais do Lake
+Formation permaneceram inalterados.
+
+O pipeline revisado possui SHA-256
+`8f7e09c80b1fa6e7eaec2065dae5817631516467bc908c615c04ac2b42f1a165` e MD5
+`335728a0a8759c911fc0bbcefee77964`. O arquivo
+`evidencias/av2/brutas/code-sha256.txt` registra os hashes locais dos artefatos
+autorais; os relatórios Glue revisados repetem o SHA-256 do pipeline.
+
+Após a recriação, duas execuções FULL, idempotência, backfill, consulta Athena e
+seis chamadas reais da função de ingestão foram aprovadas. Os resultados atuais
+aparecem primeiro nas seções abaixo; as medições de 18/11 e da rodada
+incremental anterior permanecem identificadas como históricas. O dataset e
+todos os identificadores de clientes são sintéticos. O valor bruto inclui
+`cancelled` em uma categoria separada e não é receita reconhecida.
+
+## 1. Grão e chaves
+
+### Raw
+
+Um evento recebido de um item de pedido. Reentregas são preservadas. A partição
+`arrival_date` representa o dia de chegada, não o dia do pedido.
+
+### Trusted
+
+Uma linha por item vigente do pedido. A chave composta é
+`(order_id, order_item_id)`; o evento de maior `updated_at` vence,
+`arrival_date` é o segundo critério e o SHA-256 do conteúdo normalizado é o
+desempate final. Essa chave permite que um pedido possua vários itens sem
+somá-los como pedidos independentes.
+
+### Refined
+
+Uma linha por `(order_date, status)`, com:
+
+- pedidos distintos;
+- itens;
+- unidades;
+- valor bruto `SUM(quantity * unit_price)`.
+
+### Números locais
+
+- pedidos base: **120.000**;
+- itens base: **185.938**;
+- eventos raw, incluindo reentregas: **187.854**;
+- reentregas plantadas: **1.916**;
+- eventos válidos antes da deduplicação: **176.680**;
+- duplicatas válidas removíveis: **1.802**;
+- linhas trusted esperadas: **174.878**;
+- grupos refined esperados: **150** (30 dias × 5 status).
+
+Aceitamos perder o histórico de versões na trusted: ele permanece íntegro na
+raw, enquanto a trusted expõe apenas o estado mais recente de cada item.
+
+## 2. Limpeza real
+
+O pipeline não apenas converte formato. Ele:
+
+1. remove espaços e normaliza status para minúsculas e UF para maiúsculas;
+2. converte preço com vírgula para decimal;
+3. tipa timestamps, quantidade e preço;
+4. rejeita chave/cliente/cidade vazios, timestamp inválido, status fora da
+   lista, quantidade não positiva, preço não positivo e UF inválida;
+5. grava rejeitados em `raw/quality/rejected/`;
+6. deduplica pela chave composta.
+
+Medição do gerador:
+
+- eventos normalizáveis plantados: **10.861**;
+- eventos inválidos/rejeitáveis: **11.174**;
+- valor bruto esperado após limpeza e deduplicação: **R$ 526.021.301,72**.
+
+Medições reais das execuções FULL pós-recriação:
+
+- `raw_rows_read`: **187.854**;
+- `rejected_rows_selected`: **11.174**;
+- `valid_rows_before_dedup_selected`: **176.680**;
+- `duplicates_removed_selected`: **1.802**;
+- `trusted_rows_after_run`: **174.878**;
+- `trusted_distinct_keys_after_run`: **174.878**;
+- partições trusted: **30**;
+- grupos refined: **150**.
+
+Esses valores coincidem com as contagens e os totais do resumo local do
+gerador; não foi feita comparação registro a registro. Evidências:
+`generation-summary.json`, `pipeline-full-20261119T030340Z-report.json` e
+`pipeline-full-20261119T030719Z-report.json`.
+
+## 3. Idempotência
+
+A carga local gera os mesmos objetos e usa `aws s3 sync`, portanto não cria
+chaves novas a cada execução. No Glue, bookmarks ficam desabilitados de forma
+intencional: o job relê a fonte, deduplica deterministicamente e usa overwrite
+dinâmico por `order_date`. Reexecutar troca as mesmas partições em vez de
+acrescentar arquivos lógicos.
+
+O teste `scripts/test_idempotency.sh` compara antes/depois:
+
+- linhas trusted;
+- chaves distintas;
+- partições;
+- valor bruto.
+
+Resultado pós-recriação em 19/11: **PASSOU**. Antes e depois das duas
+reexecuções havia
+**174.878 linhas**, **174.878 chaves distintas**, **30 partições** e valor
+bruto de **R$ 526.021.301,72**. Evidência:
+`idempotency-20261119T030334Z.json`, com `passed: true`. A evidência
+`idempotency-20261119T023658Z.json` permanece somente como histórico da rodada
+anterior.
+
+## 4. Particionamento e backfill
+
+- Raw: `arrival_date`, porque chegada e evento podem divergir.
+- Trusted: `order_date`, alinhada aos filtros e ao backfill.
+- Refined: `order_date`, alinhada à pergunta diária.
+
+O conjunto possui **33 partições raw de chegada** e **30 dias de evento**. O
+backfill padrão reconstrói `2026-09-15`, que possui **6.197 eventos raw**; **216**
+deles chegaram mais de dois dias depois. O modo `BACKFILL` lê a raw, seleciona
+o dia do evento, deduplica e sobrescreve somente essa partição na trusted e na
+refined.
+
+Resultado pós-recriação em 19/11 do backfill de `2026-09-15`:
+
+- partições escritas: **1**;
+- eventos válidos antes da deduplicação: **5.881**;
+- duplicatas removidas na partição: **60**;
+- linhas rejeitadas na partição: **316**;
+- linhas trusted da partição: **5.821**;
+- grupos refined da partição: **5**;
+- total global depois: **174.878 linhas e 174.878 chaves distintas**;
+- grupos refined depois: **150**.
+
+O job terminou em **107 s**, com **214 DPU-s**. Evidência:
+`pipeline-backfill-20261119T031009Z-report.json`. O snapshot anterior à
+reescrita foi capturado em `backfill-recreated-before-objects.json`. A
+reconciliação `backfill-recreated-isolation.json` confirmou que os 29 objetos
+não selecionados permaneceram idênticos por chave, ETag, tamanho e
+`LastModified` em cada camada trusted e refined. Isso prova isolamento de
+objetos/partições, não comparação registro a registro.
+
+Aceitamos o custo de reler a raw para assegurar que chegadas tardias sejam
+incorporadas sem depender de uma lista de arquivos manual.
+
+## 5. Formato
+
+- Raw: NDJSON, apropriado para eventos imutáveis e inspeção do original.
+- Trusted/refined: Parquet com schema explícito, compressão padrão do Spark e
+  leitura colunar no Athena.
+
+Tamanhos medidos no S3 após o job:
+
+- raw NDJSON: **46.543.442 bytes**, 33 objetos;
+- trusted Parquet: **5.584.100 bytes**, 30 objetos — redução de **88,0%**
+  contra a raw;
+- refined Parquet: **50.858 bytes**, 30 objetos — redução de **99,89%**
+  contra a raw.
+
+O dataset volumoso é gerado localmente e não exige versionar um CSV gigante.
+Os tamanhos atuais e os hashes do ciclo pós-recriação estão em
+`inventory-recreated-final.json`.
+
+## 6. Lake Formation e menor privilégio
+
+Há três registros de localização, um por bucket de camada:
+
+- ingestão: `DATA_LOCATION_ACCESS` apenas na raw;
+- pipeline Glue: localização nas três camadas e `SELECT/DESCRIBE` das tabelas;
+- analista: `SELECT/DESCRIBE` apenas na tabela refined; o IAM limita o S3 à
+  refined e ao bucket de resultados.
+
+IAM e Lake Formation são usados juntos; conceder somente um deles não basta. O
+Terraform histórico cadastrou o executor como administrador do Lake Formation
+e criou os grants declarados. O verificador antigo, porém, só conferia a
+presença dos recursos no código. O verificador atual pagina a listagem global
+de `list-permissions` e filtra somente os três ARNs do g09. A captura derivada
+`lakeformation-g09-review.json` confirmou o formato real da API; a validação
+paginada pós-recriação foi aprovada no fechamento de **26 PASSA, 0 FALHA**, que
+também executou **5 testes unitários**. Evidência:
+`final-verification-20261119T115835Z.txt`.
+
+A revisão independente de 19/11 mostrou que aqueles filtros exigiam a presença
+dos grants, mas aceitavam extras: `ALL` e grant options nos databases e
+`SELECT` com `TableWildcard` para o analyst. Decisão: o modo `--aws` passou a
+comparar o conjunto exato de permissões por principal e recurso:
+
+| Papel | Conjunto aceito |
+|---|---|
+| ingestion | `DATA_LOCATION_ACCESS` somente na raw |
+| pipeline | três localizações, `DESCRIBE` no database, `SELECT` e `DESCRIBE` nas três tabelas |
+| analyst | `DESCRIBE` no database, `SELECT` e `DESCRIBE` somente na refined |
+
+São rejeitados permissões extras, `ALL`, qualquer grant option (inclusive
+`DESCRIBE` sobre um `DESCRIBE` permitido), `TableWildcard`, colunas restritas
+ou excluídas, grants em outros recursos e recursos sem `CatalogId` ou de outro
+catálogo. O tipo de recurso faz parte da regra: `DESCRIBE` só vale em `Table`;
+`SELECT` vale em `Table` ou em `TableWithColumns` com `ColumnWildcard` igual a
+`{}` na tabela exata, que é como a API devolve um `SELECT` de tabela inteira.
+Assim, trocar `SELECT` para `Table` e `DESCRIBE` para `TableWithColumns`
+reprova. A paginação
+com limite de 100 páginas e detecção de token repetido foi preservada. Número:
+**30 testes locais** cobrem a captura real sanitizada, a representação
+combinada, os dois casos reproduzidos na revisão, a troca de tipo de recurso,
+`CatalogId` ausente, grant option isolado, `TableWildcard` isolado do pipeline
+e outros desvios, além de paginação com `aws` simulado. A nova comparação **ainda não foi executada na
+AWS**; o 26/0 acima continua sendo a medição da versão anterior.
+
+Os grants de database mantêm `ignore_changes` em `permissions` e
+`permissions_with_grant_option`. Remover essa proteção sem um plano real contra
+o estado poderia gerar atualização ou recriação de grants, e nenhuma mudança de
+privilégio real foi autorizada nesta correção. A divergência que o
+`ignore_changes` esconderia do Terraform passa a ser detectada pelo verificador
+exato. O grant `ALL` do executor no database continua fora da verificação de
+papéis: ele pertence ao administrador que cria e remove as tabelas.
+
+A conta acadêmica é compartilhada e contém recursos de outros grupos. Por isso,
+o singleton global `aws_lakeformation_data_lake_settings` não pode permanecer
+sob ownership desta stack. A revisão usa `removed` com `destroy = false`: após
+backup e apply, o Terraform esquece somente o endereço no estado e não envia
+alteração ao Lake Formation. A lista remota de administradores é preservada
+exatamente como está, pois o baseline anterior é desconhecido. O principal de
+execução já ser administrador do Lake Formation passa a ser pré-requisito.
+
+A migração foi aplicada com **0 adicionar, 0 alterar e 0 destruir**. O hash
+global antes/depois permaneceu idêntico, conforme
+`lf-global-preserved-review.json`. Após a recriação, a matriz funcional
+confirmou **17/17** checks em `access-matrix-20261119T115835Z.json`: 6 chamadas
+reais do analyst e 11 simulações IAM da ingestion. O analyst consultou refined,
+não consultou raw/trusted e não leu seus objetos. A evidência anterior
+`access-matrix-20261119T023530Z.json` permanece apenas como histórico.
+
+Após a recriação, um teste separado assumiu a função de ingestão e aprovou
+**6/6 chamadas reais**: `Put`, `Get`, `List` e `Delete` em um objeto sintético
+exclusivo da raw, com `Get` negado em objetos reais trusted/refined. O cleanup,
+executado pelo principal original, removeu as duas versões/marcadores somente
+dessa chave e confirmou zero resíduo. Evidência:
+`ingestion-access-real-20261119T031029Z.json`. Esse teste reduz a limitação da
+simulação IAM, mas não transforma a carga volumosa em uma execução pela função.
+Somados sem misturar seus métodos, são **12 acessos reais** (6 analyst + 6
+ingestion) e **11 avaliações simuladas**.
+
+IAM controla a leitura e escrita dos objetos; `DATA_LOCATION_ACCESS` governa o
+uso das localizações pelo catálogo, não escrita S3. A policy gerenciada
+`AWSGlueServiceRole` foi substituída por policy inline: escrita de logs somente
+em `/aws-glue/*`, descrição de logs e `cloudwatch:PutMetricData` limitada ao
+namespace `Glue`. As permissões S3, catálogo e Lake Formation continuam nos
+statements restritos do projeto, preservando 59 recursos gerenciados.
+
+O executor suportado nesta entrega é um usuário IAM preexistente como
+administrador do Lake Formation. ARNs de sessão SSO/STS não são convertidos
+automaticamente; o operador deve interromper antes do plano quando o preflight
+retornar `arn:aws:sts` ou o usuário não estiver em `DataLakeAdmins`.
+
+## 7. Custo
+
+### Geração e armazenamento
+
+O dataset tem **46.543.442 bytes** na raw. No ciclo pós-recriação, os dois FULL
+e o BACKFILL somaram **752 DPU-s**. Com a tarifa de exemplo de **US$ 0,44 por
+DPU-h**, a estimativa é `752 / 3.600 × 0,44 = US$ 0,0919111`. A captura final
+acumulada contém 11 runs e soma **2.556 DPU-s**, ou **US$ 0,3124**; inclui as
+oito execuções preservadas da rodada anterior. Isso não é uma fatura e exclui
+S3, CloudWatch, Athena e outras chamadas. Fontes:
+`glue-cost-estimate-final.json`, `glue-cost-estimate-review.json` e
+<https://aws.amazon.com/glue/pricing/>.
+
+### Athena
+
+O script `run_query.sh` captura:
+
+- Query execution ID;
+- bytes examinados;
+- tempo total e de engine;
+- reutilização de resultado;
+- resultado JSON.
+
+Meta declarada: a consulta da pergunta de negócio deve ler **menos de 1 MiB**
+e custar no máximo **US$ 0,00005**. O workgroup impõe o menor teto aceito pela
+API/provider: **10 MiB (10.485.760 bytes)**.
+
+Medição revisada em 19/11/2026, `us-east-1`:
+
+- Query execution ID: `73a2ef12-0fb8-477f-b293-6c70a5d0d404`;
+- estado: `SUCCEEDED`;
+- bytes processados: **10.060 bytes**;
+- tempo total: **1.115 ms**; engine: **977 ms**;
+- resultado reutilizado: **não**;
+- preço oficial consultado: **US$ 5/TB**;
+- custo proporcional: `10.060 / 1.000.000.000.000 × US$ 5` =
+  **US$ 0,0000000503**;
+- estimativa pelo mínimo de 10 MB: aproximadamente **US$ 0,00005**.
+
+A meta de leitura foi atendida. Evidências: arquivos
+`athena-20261119T032256Z-*`. A referência da AWS registra US$ 5/TB,
+arredondamento ao MB e mínimo de 10 MB por consulta:
+<https://docs.aws.amazon.com/whitepapers/latest/big-data-analytics-options/amazon-athena.html>.
+O valor de US$ 0,00005 é uma estimativa, não custo faturado comprovado. O cutoff
+de 10 MiB é uma proteção operacional e não uma garantia de orçamento.
+
+## 8. Provisionamento e destroy
+
+Inventário lógico esperado:
+
+- 5 buckets;
+- 1 database e 3 tabelas Glue;
+- 1 job Glue;
+- 1 workgroup Athena;
+- 3 papéis IAM;
+- 3 registros Lake Formation.
+
+Políticas, grants, criptografia, bloqueios públicos e objetos de script são
+recursos auxiliares. A execução histórica continha **60 recursos gerenciados**
+e **11 data sources**, ou **71 entradas**. Após a migração segura do singleton
+global, o inventário atual é **59 recursos gerenciados** e **11 data sources**,
+ou **70 entradas**. O apply de forget terminou em **0/0/0** e preservou o hash
+global. O inventário independente, as tags nos 12 recursos compatíveis e o
+plano **No changes** foram confirmados em `inventory-code-review.json` e
+`terraform-review-no-drift.txt`.
+
+Esse fechamento incremental antecedeu a troca de `AWSGlueServiceRole` pela
+policy runtime mínima. O ciclo real descrito a seguir é a prova atual dessa
+configuração; os arquivos incrementais permanecem apenas como histórico.
+
+Destroy limpo — **CONCLUÍDO EM 19/11/2026**:
+
+- plano: **0 criar, 0 alterar, 59 remover**;
+- resultado: **59 removidos**;
+- pós-destroy: **12 PASSA, 0 FALHA**;
+- estado: **0 recursos**;
+- localizações Lake Formation do g09: **0**;
+- hash global Lake Formation: **inalterado**;
+- backend: bucket S3 `Enabled` e DynamoDB `ACTIVE`;
+- recursos órfãos detectados: **0**.
+
+Fontes: `terraform-destroy-review-executed.txt`,
+`post-destroy-review-executed.txt` e
+`post-destroy-scope-preservation.json`.
+
+O plano de recriação `20261119T025835Z` foi validado com **59 criar, 0 alterar
+e 0 destruir**, incluindo a policy runtime mínima. O apply pareado terminou às
+`20261119T030118Z` com **59 adicionados, 0 alterados e 0 destruídos**.
+
+Fontes: `terraform-plan-20261119T025835Z.txt`,
+`terraform-apply-plan-20261119T025835Z-at-20261119T030118Z.txt` e
+`terraform-plan-apply-20261119T025835Z-at-20261119T030118Z.json`.
+
+A reconciliação pós-recriação retornou `No changes` em
+`terraform-recreated-no-drift.txt`. `inventory-recreated-final.json` confirmou
+**59 recursos**, **11 data sources**, tags corretas nos **12 recursos
+compatíveis**, tamanhos esperados, SHA-256 igual no arquivo local, objeto S3,
+configuração Glue e metadata, hash global LF preservado e nenhuma associação
+`AWSGlueServiceRole`.
+
+O backend remoto possui ciclo de vida separado e não é removido pelo destroy da
+stack.
+
+### Modularização
+
+A AV1 já empacotava a stack em `parte-1/modules/data_lake`. Para manter essa
+organização no projeto incremental, a stack AV2 passou para
+`parte-2/modules/data_lake`. A raiz conserva backend, provider, tags padrão,
+variáveis, os 16 outputs com os mesmos nomes e o bloco `removed` do singleton
+global. `moved.tf` declara **36 blocos**, um por recurso, que cobrem as **59
+instâncias** do plano de recriação, inclusive as de `for_each`; os 11 data
+sources passaram para o módulo sem alterar sua quantidade. O caminho do script
+Glue é passado pela raiz para manter `./glue/pipeline_orders.py` no estado, e o
+arquivo do pipeline permanece byte a byte igual (SHA-256 `8f7e09…`).
+
+Resultado esperado na conta compartilhada: plano apenas com movimentações e
+**0 adicionar, 0 alterar e 0 destruir**. Isso foi conferido estaticamente contra
+`terraform-plan-20261119T025835Z.txt` por testes locais, mas o plano real ainda
+não foi executado.
+
+### Conta dedicada
+
+O procedimento regular continua exigindo backend e administrador do Lake
+Formation preexistentes. Para uma conta dedicada, `parte-2/conta-dedicada`
+oferece um caminho opt-in: confirmação dupla do ID da conta, bloqueio da conta
+compartilhada, exigência de usuário IAM, pré-checagem somente leitura e
+fail-closed, reuso do bootstrap separado de `parte-1/bootstrap` e registro
+opcional do administrador do Lake Formation com simulação por padrão. A
+pré-checagem confirma o dono dos buckets com `--expected-bucket-owner`, exige
+versionamento `Enabled` no backend e tabela de lock `ACTIVE` com `LockID`,
+lista com paginação os registros do Lake Formation dos três buckets e procura
+database, job, workgroup e papéis conflitantes; acesso negado nunca conta como
+ausência.
+
+O backend real da AV2 é o de `parte-1/bootstrap` (`eda262-g09-tfstate` e
+`eda262-g09-terraform-locks`), e `parte-2/backend.hcl.example` foi corrigido
+para esses nomes. `parte-2/bootstrap`, com `eda262-g09-av2-tfstate`, é uma
+alternativa não usada pela entrega. A chave `parte-2/terraform.tfstate` do
+exemplo não aparece nas evidências e deve ser conferida com o `backend.hcl`
+local antes do próximo `init`. A configuração global do Lake
+Formation não volta para a stack regular. Os buckets mantêm o padrão
+acadêmico; como nomes S3 são globais, a stack não pode existir em duas contas ao
+mesmo tempo, e a liberação precisa ser coordenada com o destroy na conta de
+origem. Nenhum passo foi executado em outra conta.
+
+## 9. Limitações da evidência atual
+
+- O ciclo real prova destroy/recriação da stack do g09, mas não que toda a conta
+  AWS compartilhada estivesse vazia; o backend remoto possui ciclo de vida
+  separado.
+- O administrador Lake Formation é um pré-requisito externo. A stack não deve
+  assumir ownership nem modificar configurações globais de uma conta
+  compartilhada.
+- A publicação remota, o commit/tag final e o envio são etapas administrativas
+  fora das evidências técnicas desta execução.
+- A modularização, o verificador exato de grants e o procedimento de conta
+  dedicada posteriores à medição foram validados apenas localmente. Falta um
+  plano real sem mudanças, uma execução `--aws` e, se o avaliador exigir, um
+  ensaio em conta dedicada.
+- A função de ingestão foi provada com seis chamadas S3 reais sobre um objeto
+  sintético exclusivo; a carga volumosa foi executada com as credenciais
+  operacionais do grupo, não pela função assumida.
+- Os dados são sintéticos e cobrem 30 dias. As medições não demonstram
+  desempenho, custo ou qualidade com dados de produção.
+- O contrato educacional assume `order_timestamp` imutável. O FULL não promete
+  remover partições ausentes da raw; o BACKFILL não reconcilia uma chave movida
+  para outro dia; a quarentena é snapshot por modo, sem texto de motivo.

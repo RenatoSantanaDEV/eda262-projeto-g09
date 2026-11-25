@@ -1,0 +1,6 @@
+{
+  "global_settings_unchanged": true,
+  "before_sha256": "ec98b95a50aae83de2ff33921d6826e0eaa8294dbce414a3dbfa1e753c8a75a2",
+  "after_sha256": "ec98b95a50aae83de2ff33921d6826e0eaa8294dbce414a3dbfa1e753c8a75a2",
+  "operation": "Remove Terraform ownership only; no remote singleton update or destruction"
+}

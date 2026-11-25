@@ -1,0 +1,20 @@
+{
+  "before": "2026-11-19T03:11:07.134614+00:00",
+  "after": "2026-11-19T11:57:01.661059+00:00",
+  "selected_partition": "order_date=2026-09-15",
+  "layers": {
+    "trusted": {
+      "nonselected_objects_unchanged": true,
+      "unchanged_nonselected_count": 29,
+      "changed_keys_count": 2,
+      "changed_keys_only_selected_partition": true
+    },
+    "refined": {
+      "nonselected_objects_unchanged": true,
+      "unchanged_nonselected_count": 29,
+      "changed_keys_count": 2,
+      "changed_keys_only_selected_partition": true
+    }
+  },
+  "passed": true
+}

@@ -1,0 +1,259 @@
+{
+  "derived_from": "lakeformation-permissions-review.json",
+  "source_sha256": "ab380bf8e974395ac189046ae91d3e0b7ef19a0f87d9e4ac5595e0c1db4d3a1c",
+  "source_next_token_present": true,
+  "complete_global_pagination": false,
+  "scope": "somente principals role/eda262-g09- presentes na primeira pagina capturada",
+  "PrincipalResourcePermissions": [
+    {
+      "Principal": {
+        "DataLakePrincipalIdentifier": "arn:aws:iam::<ACCOUNT_ID>:role/eda262-g09-av2-analyst"
+      },
+      "Resource": {
+        "Database": {
+          "CatalogId": "<ACCOUNT_ID>",
+          "Name": "eda262_g09_av2"
+        }
+      },
+      "Permissions": [
+        "DESCRIBE"
+      ],
+      "PermissionsWithGrantOption": [],
+      "LastUpdated": 1795023997.447,
+      "LastUpdatedBy": "arn:aws:iam::<ACCOUNT_ID>:user/eda-grupo09"
+    },
+    {
+      "Principal": {
+        "DataLakePrincipalIdentifier": "arn:aws:iam::<ACCOUNT_ID>:role/eda262-g09-av2-glue-pipeline"
+      },
+      "Resource": {
+        "Database": {
+          "CatalogId": "<ACCOUNT_ID>",
+          "Name": "eda262_g09_av2"
+        }
+      },
+      "Permissions": [
+        "DESCRIBE"
+      ],
+      "PermissionsWithGrantOption": [],
+      "LastUpdated": 1795023997.585,
+      "LastUpdatedBy": "arn:aws:iam::<ACCOUNT_ID>:user/eda-grupo09"
+    },
+    {
+      "Principal": {
+        "DataLakePrincipalIdentifier": "arn:aws:iam::<ACCOUNT_ID>:role/eda262-g09-av2-glue-pipeline"
+      },
+      "Resource": {
+        "DataLocation": {
+          "CatalogId": "<ACCOUNT_ID>",
+          "ResourceArn": "arn:aws:s3:::eda262-g09-lake-raw"
+        }
+      },
+      "Permissions": [
+        "DATA_LOCATION_ACCESS"
+      ],
+      "PermissionsWithGrantOption": [],
+      "LastUpdated": 1795023880.238,
+      "LastUpdatedBy": "arn:aws:iam::<ACCOUNT_ID>:user/eda-grupo09"
+    },
+    {
+      "Principal": {
+        "DataLakePrincipalIdentifier": "arn:aws:iam::<ACCOUNT_ID>:role/eda262-g09-av2-ingestion"
+      },
+      "Resource": {
+        "DataLocation": {
+          "CatalogId": "<ACCOUNT_ID>",
+          "ResourceArn": "arn:aws:s3:::eda262-g09-lake-raw"
+        }
+      },
+      "Permissions": [
+        "DATA_LOCATION_ACCESS"
+      ],
+      "PermissionsWithGrantOption": [],
+      "LastUpdated": 1795023880.224,
+      "LastUpdatedBy": "arn:aws:iam::<ACCOUNT_ID>:user/eda-grupo09"
+    },
+    {
+      "Principal": {
+        "DataLakePrincipalIdentifier": "arn:aws:iam::<ACCOUNT_ID>:role/eda262-g09-av2-glue-pipeline"
+      },
+      "Resource": {
+        "DataLocation": {
+          "CatalogId": "<ACCOUNT_ID>",
+          "ResourceArn": "arn:aws:s3:::eda262-g09-lake-refined"
+        }
+      },
+      "Permissions": [
+        "DATA_LOCATION_ACCESS"
+      ],
+      "PermissionsWithGrantOption": [],
+      "LastUpdated": 1795023880.221,
+      "LastUpdatedBy": "arn:aws:iam::<ACCOUNT_ID>:user/eda-grupo09"
+    },
+    {
+      "Principal": {
+        "DataLakePrincipalIdentifier": "arn:aws:iam::<ACCOUNT_ID>:role/eda262-g09-av2-glue-pipeline"
+      },
+      "Resource": {
+        "DataLocation": {
+          "CatalogId": "<ACCOUNT_ID>",
+          "ResourceArn": "arn:aws:s3:::eda262-g09-lake-trusted"
+        }
+      },
+      "Permissions": [
+        "DATA_LOCATION_ACCESS"
+      ],
+      "PermissionsWithGrantOption": [],
+      "LastUpdated": 1795023880.216,
+      "LastUpdatedBy": "arn:aws:iam::<ACCOUNT_ID>:user/eda-grupo09"
+    },
+    {
+      "Principal": {
+        "DataLakePrincipalIdentifier": "arn:aws:iam::<ACCOUNT_ID>:role/eda262-g09-av2-glue-pipeline"
+      },
+      "Resource": {
+        "Table": {
+          "CatalogId": "<ACCOUNT_ID>",
+          "DatabaseName": "eda262_g09_av2",
+          "Name": "raw_orders"
+        }
+      },
+      "Permissions": [
+        "DESCRIBE"
+      ],
+      "PermissionsWithGrantOption": [],
+      "LastUpdated": 1795023999.107,
+      "LastUpdatedBy": "arn:aws:iam::<ACCOUNT_ID>:user/eda-grupo09"
+    },
+    {
+      "Principal": {
+        "DataLakePrincipalIdentifier": "arn:aws:iam::<ACCOUNT_ID>:role/eda262-g09-av2-glue-pipeline"
+      },
+      "Resource": {
+        "TableWithColumns": {
+          "CatalogId": "<ACCOUNT_ID>",
+          "DatabaseName": "eda262_g09_av2",
+          "Name": "raw_orders",
+          "ColumnWildcard": {}
+        }
+      },
+      "Permissions": [
+        "SELECT"
+      ],
+      "PermissionsWithGrantOption": [],
+      "LastUpdated": 1795023999.107,
+      "LastUpdatedBy": "arn:aws:iam::<ACCOUNT_ID>:user/eda-grupo09"
+    },
+    {
+      "Principal": {
+        "DataLakePrincipalIdentifier": "arn:aws:iam::<ACCOUNT_ID>:role/eda262-g09-av2-glue-pipeline"
+      },
+      "Resource": {
+        "Table": {
+          "CatalogId": "<ACCOUNT_ID>",
+          "DatabaseName": "eda262_g09_av2",
+          "Name": "trusted_orders"
+        }
+      },
+      "Permissions": [
+        "DESCRIBE"
+      ],
+      "PermissionsWithGrantOption": [],
+      "LastUpdated": 1795023999.076,
+      "LastUpdatedBy": "arn:aws:iam::<ACCOUNT_ID>:user/eda-grupo09"
+    },
+    {
+      "Principal": {
+        "DataLakePrincipalIdentifier": "arn:aws:iam::<ACCOUNT_ID>:role/eda262-g09-av2-glue-pipeline"
+      },
+      "Resource": {
+        "TableWithColumns": {
+          "CatalogId": "<ACCOUNT_ID>",
+          "DatabaseName": "eda262_g09_av2",
+          "Name": "trusted_orders",
+          "ColumnWildcard": {}
+        }
+      },
+      "Permissions": [
+        "SELECT"
+      ],
+      "PermissionsWithGrantOption": [],
+      "LastUpdated": 1795023999.076,
+      "LastUpdatedBy": "arn:aws:iam::<ACCOUNT_ID>:user/eda-grupo09"
+    },
+    {
+      "Principal": {
+        "DataLakePrincipalIdentifier": "arn:aws:iam::<ACCOUNT_ID>:role/eda262-g09-av2-analyst"
+      },
+      "Resource": {
+        "Table": {
+          "CatalogId": "<ACCOUNT_ID>",
+          "DatabaseName": "eda262_g09_av2",
+          "Name": "refined_daily_sales"
+        }
+      },
+      "Permissions": [
+        "DESCRIBE"
+      ],
+      "PermissionsWithGrantOption": [],
+      "LastUpdated": 1795023998.981,
+      "LastUpdatedBy": "arn:aws:iam::<ACCOUNT_ID>:user/eda-grupo09"
+    },
+    {
+      "Principal": {
+        "DataLakePrincipalIdentifier": "arn:aws:iam::<ACCOUNT_ID>:role/eda262-g09-av2-analyst"
+      },
+      "Resource": {
+        "TableWithColumns": {
+          "CatalogId": "<ACCOUNT_ID>",
+          "DatabaseName": "eda262_g09_av2",
+          "Name": "refined_daily_sales",
+          "ColumnWildcard": {}
+        }
+      },
+      "Permissions": [
+        "SELECT"
+      ],
+      "PermissionsWithGrantOption": [],
+      "LastUpdated": 1795023998.981,
+      "LastUpdatedBy": "arn:aws:iam::<ACCOUNT_ID>:user/eda-grupo09"
+    },
+    {
+      "Principal": {
+        "DataLakePrincipalIdentifier": "arn:aws:iam::<ACCOUNT_ID>:role/eda262-g09-av2-glue-pipeline"
+      },
+      "Resource": {
+        "Table": {
+          "CatalogId": "<ACCOUNT_ID>",
+          "DatabaseName": "eda262_g09_av2",
+          "Name": "refined_daily_sales"
+        }
+      },
+      "Permissions": [
+        "DESCRIBE"
+      ],
+      "PermissionsWithGrantOption": [],
+      "LastUpdated": 1795023999.075,
+      "LastUpdatedBy": "arn:aws:iam::<ACCOUNT_ID>:user/eda-grupo09"
+    },
+    {
+      "Principal": {
+        "DataLakePrincipalIdentifier": "arn:aws:iam::<ACCOUNT_ID>:role/eda262-g09-av2-glue-pipeline"
+      },
+      "Resource": {
+        "TableWithColumns": {
+          "CatalogId": "<ACCOUNT_ID>",
+          "DatabaseName": "eda262_g09_av2",
+          "Name": "refined_daily_sales",
+          "ColumnWildcard": {}
+        }
+      },
+      "Permissions": [
+        "SELECT"
+      ],
+      "PermissionsWithGrantOption": [],
+      "LastUpdated": 1795023999.075,
+      "LastUpdatedBy": "arn:aws:iam::<ACCOUNT_ID>:user/eda-grupo09"
+    }
+  ]
+}

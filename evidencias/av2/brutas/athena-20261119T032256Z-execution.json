@@ -1,0 +1,44 @@
+{
+    "QueryExecution": {
+        "QueryExecutionId": "73a2ef12-0fb8-477f-b293-6c70a5d0d404",
+        "Query": "SELECT\n  order_date,\n  status,\n  order_count,\n  item_count,\n  quantity_total,\n  gross_sales\nFROM \"eda262_g09_av2\".\"refined_daily_sales\"\nWHERE order_date BETWEEN '2026-09-01' AND '2026-09-30'\nORDER BY order_date, status",
+        "StatementType": "DML",
+        "ResultConfiguration": {
+            "OutputLocation": "s3://eda262-g09-athena-results-av2/results/73a2ef12-0fb8-477f-b293-6c70a5d0d404.csv",
+            "EncryptionConfiguration": {
+                "EncryptionOption": "SSE_S3"
+            }
+        },
+        "ResultReuseConfiguration": {
+            "ResultReuseByAgeConfiguration": {
+                "Enabled": false
+            }
+        },
+        "QueryExecutionContext": {
+            "Database": "eda262_g09_av2"
+        },
+        "Status": {
+            "State": "SUCCEEDED",
+            "SubmissionDateTime": 1795058582.288,
+            "CompletionDateTime": 1795058583.403
+        },
+        "Statistics": {
+            "EngineExecutionTimeInMillis": 977,
+            "DataScannedInBytes": 10060,
+            "TotalExecutionTimeInMillis": 1115,
+            "QueryQueueTimeInMillis": 64,
+            "ServicePreProcessingTimeInMillis": 49,
+            "QueryPlanningTimeInMillis": 496,
+            "ServiceProcessingTimeInMillis": 25,
+            "ResultReuseInformation": {
+                "ReusedPreviousResult": false
+            }
+        },
+        "WorkGroup": "eda262-g09-av2",
+        "EngineVersion": {
+            "SelectedEngineVersion": "AUTO",
+            "EffectiveEngineVersion": "Athena engine version 3"
+        },
+        "SubstatementType": "SELECT"
+    }
+}

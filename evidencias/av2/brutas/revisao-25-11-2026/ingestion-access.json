@@ -1,0 +1,50 @@
+{
+  "check_count": 6,
+  "checks": [
+    {
+      "actual": "allowed",
+      "expected": "allowed",
+      "name": "ingestion_put_raw",
+      "passed": true
+    },
+    {
+      "actual": "allowed",
+      "expected": "allowed",
+      "name": "ingestion_get_raw",
+      "passed": true
+    },
+    {
+      "actual": "allowed",
+      "expected": "allowed",
+      "name": "ingestion_list_raw",
+      "passed": true
+    },
+    {
+      "actual": "allowed",
+      "expected": "allowed",
+      "name": "ingestion_delete_raw",
+      "passed": true
+    },
+    {
+      "actual": "denied",
+      "expected": "denied",
+      "name": "ingestion_get_trusted",
+      "passed": true
+    },
+    {
+      "actual": "denied",
+      "expected": "denied",
+      "name": "ingestion_get_refined",
+      "passed": true
+    }
+  ],
+  "cleanup": {
+    "remaining_probe_versions": 0,
+    "status": "passed",
+    "versions_and_delete_markers_removed": 2
+  },
+  "generated_at_utc": "20261125T164237Z",
+  "passed": true,
+  "probe_scope": "raw/orders/_access-check-<uuid>.ndjson",
+  "region": "us-east-1"
+}

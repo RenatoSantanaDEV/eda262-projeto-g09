@@ -1,0 +1,39 @@
+Verificação AV2 g09 — padrão local, sem acesso AWS
+
+PASSA [estrutura] parte-2 presente
+PASSA [decisoes] DECISOES.md canônico da AV2 presente
+PASSA [decisoes] histórico AV1 preservado
+PASSA [consulta] SQL da pergunta presente
+PASSA [camadas] buckets raw, trusted e refined seguem o padrão obrigatório
+PASSA [formato] trusted/refined em Parquet e tabelas particionadas
+PASSA [idempotencia] deduplicação determinística, overwrite dinâmico e teste não vazio
+PASSA [modulo] stack AV2 encapsulada em modules/data_lake com 36 blocos moved e removed global na raiz
+PASSA [backfill] backfill seletivo de partição implementado
+PASSA [limpeza] normalização, validação e quarentena implementadas
+PASSA [lakeformation-declaracao] recursos e grants por camada estão declarados; use --aws para validar a API
+PASSA [tags] tags obrigatórias declaradas
+PASSA [regiao] us-east-1 é obrigatório
+PASSA [backend] backend remoto S3 + DynamoDB documentado
+PASSA [scripts] scripts operacionais presentes
+PASSA [conta-dedicada] procedimento opt-in presente, com bloqueio da conta compartilhada e simulação por padrão
+PASSA [seguranca] nenhum arquivo com nome típico de credencial
+PASSA [seguranca] nenhum padrão de credencial AWS encontrado
+.....................................................................................
+----------------------------------------------------------------------
+Ran 85 tests in 9.940s
+
+OK
+PASSA [testes] testes unitários Python
+PASSA [terraform-fmt] terraform fmt -check
+PASSA [terraform-validate] terraform validate
+PASSA [aws] cinco buckets existem
+PASSA [aws] database Glue existe
+PASSA [aws] três tabelas Glue existem
+PASSA [aws] job Glue existe
+PASSA [aws] workgroup Athena existe
+PASSA [lakeformation-api] ingestion: somente DATA_LOCATION_ACCESS na raw; sem extras, ALL, grant options ou wildcard
+PASSA [lakeformation-api] pipeline: três localizações, DESCRIBE no database e SELECT/DESCRIBE nas três tabelas; sem extras, ALL, grant options ou wildcard
+PASSA [lakeformation-api] analyst: DESCRIBE no database e SELECT/DESCRIBE somente na refined; sem extras, ALL, grant options ou wildcard
+PASSA [lakeformation-api] compatibilidade: sem grants IAMAllowedPrincipals nos recursos do projeto
+
+Resultado: 30 PASSA, 0 FALHA

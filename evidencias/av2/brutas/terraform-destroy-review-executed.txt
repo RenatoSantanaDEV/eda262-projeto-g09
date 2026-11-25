@@ -1,0 +1,126 @@
+
+Warning: Deprecated Parameter
+
+The parameter "dynamodb_table" is deprecated. Use parameter "use_lockfile"
+instead.
+Acquiring state lock. This may take a few moments...
+aws_s3_bucket_server_side_encryption_configuration.lake["refined"]: Destroying... [id=eda262-g09-lake-refined]
+aws_s3_bucket_policy.support_tls["artifacts"]: Destroying... [id=eda262-g09-artifacts-av2]
+aws_lakeformation_permissions.analyst_database: Destroying... [id=2748688198]
+aws_lakeformation_permissions.pipeline_tables["refined"]: Destroying... [id=3222528145]
+aws_lakeformation_permissions.ingestion_raw_location: Destroying... [id=721147546]
+aws_s3_bucket_server_side_encryption_configuration.lake["raw"]: Destroying... [id=eda262-g09-lake-raw]
+aws_s3_bucket_policy.lake_tls["trusted"]: Destroying... [id=eda262-g09-lake-trusted]
+aws_s3_bucket_ownership_controls.lake["raw"]: Destroying... [id=eda262-g09-lake-raw]
+aws_s3_bucket_versioning.artifacts: Destroying... [id=eda262-g09-artifacts-av2]
+aws_lakeformation_permissions.pipeline_database: Destroying... [id=158768476]
+aws_lakeformation_permissions.pipeline_database: Destruction complete after 1s
+aws_lakeformation_permissions.pipeline_tables["raw"]: Destroying... [id=2461719153]
+aws_lakeformation_permissions.analyst_database: Destruction complete after 1s
+aws_s3_bucket_ownership_controls.support["results"]: Destroying... [id=eda262-g09-athena-results-av2]
+aws_s3_bucket_server_side_encryption_configuration.lake["refined"]: Destruction complete after 1s
+aws_s3_bucket_server_side_encryption_configuration.lake["raw"]: Destruction complete after 1s
+aws_athena_workgroup.av2: Destroying... [id=eda262-g09-av2]
+aws_s3_bucket_versioning.raw: Destroying... [id=eda262-g09-lake-raw]
+aws_lakeformation_permissions.ingestion_raw_location: Destruction complete after 1s
+aws_s3_bucket_policy.lake_tls["refined"]: Destroying... [id=eda262-g09-lake-refined]
+aws_s3_bucket_versioning.artifacts: Destruction complete after 1s
+aws_glue_job.orders_pipeline: Destroying... [id=eda262-g09-av2-orders-pipeline]
+aws_s3_bucket_policy.lake_tls["trusted"]: Destruction complete after 1s
+aws_lakeformation_permissions.pipeline_tables["trusted"]: Destroying... [id=1063386954]
+aws_s3_bucket_versioning.raw: Destruction complete after 0s
+aws_iam_role_policy.ingestion: Destroying... [id=eda262-g09-av2-ingestion:raw-only]
+aws_lakeformation_permissions.pipeline_tables["refined"]: Destruction complete after 1s
+aws_s3_bucket_ownership_controls.lake["trusted"]: Destroying... [id=eda262-g09-lake-trusted]
+aws_lakeformation_permissions.pipeline_tables["raw"]: Destruction complete after 0s
+aws_s3_bucket_ownership_controls.support["artifacts"]: Destroying... [id=eda262-g09-artifacts-av2]
+aws_s3_bucket_policy.lake_tls["refined"]: Destruction complete after 0s
+aws_s3_bucket_policy.lake_tls["raw"]: Destroying... [id=eda262-g09-lake-raw]
+aws_s3_bucket_ownership_controls.lake["raw"]: Destruction complete after 1s
+aws_s3_bucket_policy.support_tls["results"]: Destroying... [id=eda262-g09-athena-results-av2]
+aws_s3_bucket_policy.support_tls["artifacts"]: Destruction complete after 1s
+aws_s3_bucket_ownership_controls.lake["refined"]: Destroying... [id=eda262-g09-lake-refined]
+aws_s3_bucket_ownership_controls.support["results"]: Destruction complete after 1s
+aws_lakeformation_permissions.analyst_refined_table: Destroying... [id=1170272987]
+aws_s3_bucket_ownership_controls.lake["trusted"]: Destruction complete after 1s
+aws_s3_bucket_server_side_encryption_configuration.lake["trusted"]: Destroying... [id=eda262-g09-lake-trusted]
+aws_lakeformation_permissions.pipeline_tables["trusted"]: Destruction complete after 1s
+aws_iam_role_policy.analyst: Destroying... [id=eda262-g09-av2-analyst:refined-query-only]
+aws_glue_job.orders_pipeline: Destruction complete after 1s
+aws_s3_bucket_ownership_controls.support["artifacts"]: Destruction complete after 1s
+aws_glue_catalog_table.raw_orders: Destroying... [id=<ACCOUNT_ID>:eda262_g09_av2:raw_orders]
+aws_glue_catalog_table.trusted_orders: Destroying... [id=<ACCOUNT_ID>:eda262_g09_av2:trusted_orders]
+aws_s3_bucket_policy.lake_tls["raw"]: Destruction complete after 1s
+aws_lakeformation_permissions.pipeline_locations["trusted"]: Destroying... [id=1777273172]
+aws_athena_workgroup.av2: Destruction complete after 1s
+aws_lakeformation_permissions.pipeline_locations["raw"]: Destroying... [id=3444900111]
+aws_s3_bucket_ownership_controls.lake["refined"]: Destruction complete after 1s
+aws_s3_object.pipeline_script: Destroying... [id=scripts/pipeline_orders.py]
+aws_s3_bucket_server_side_encryption_configuration.lake["trusted"]: Destruction complete after 0s
+aws_lakeformation_permissions.pipeline_locations["refined"]: Destroying... [id=1199335212]
+aws_s3_bucket_policy.support_tls["results"]: Destruction complete after 1s
+aws_iam_role_policy.pipeline: Destroying... [id=eda262-g09-av2-glue-pipeline:lake-pipeline]
+aws_iam_role_policy.ingestion: Destruction complete after 1s
+aws_iam_role_policy_attachment.pipeline_glue: Destroying... [id=eda262-g09-av2-glue-pipeline-20261118174154150300000001]
+aws_glue_catalog_table.trusted_orders: Destruction complete after 0s
+aws_s3_bucket_public_access_block.lake["trusted"]: Destroying... [id=eda262-g09-lake-trusted]
+aws_iam_role_policy.analyst: Destruction complete after 0s
+aws_s3_bucket_public_access_block.lake["refined"]: Destroying... [id=eda262-g09-lake-refined]
+aws_lakeformation_permissions.analyst_refined_table: Destruction complete after 0s
+aws_s3_bucket_public_access_block.lake["raw"]: Destroying... [id=eda262-g09-lake-raw]
+aws_glue_catalog_table.raw_orders: Destruction complete after 0s
+aws_s3_bucket_public_access_block.support["artifacts"]: Destroying... [id=eda262-g09-artifacts-av2]
+aws_lakeformation_permissions.pipeline_locations["trusted"]: Destruction complete after 0s
+aws_s3_bucket_public_access_block.support["results"]: Destroying... [id=eda262-g09-athena-results-av2]
+aws_iam_role_policy.pipeline: Destruction complete after 0s
+aws_iam_role.ingestion: Destroying... [id=eda262-g09-av2-ingestion]
+aws_s3_object.pipeline_script: Destruction complete after 0s
+aws_iam_role.analyst: Destroying... [id=eda262-g09-av2-analyst]
+aws_lakeformation_permissions.pipeline_locations["refined"]: Destruction complete after 0s
+aws_glue_catalog_table.refined_sales: Destroying... [id=<ACCOUNT_ID>:eda262_g09_av2:refined_daily_sales]
+aws_iam_role_policy_attachment.pipeline_glue: Destruction complete after 0s
+aws_s3_bucket_server_side_encryption_configuration.support["results"]: Destroying... [id=eda262-g09-athena-results-av2]
+aws_s3_bucket_public_access_block.lake["trusted"]: Destruction complete after 0s
+aws_s3_bucket_server_side_encryption_configuration.support["artifacts"]: Destroying... [id=eda262-g09-artifacts-av2]
+aws_s3_bucket_public_access_block.lake["raw"]: Destruction complete after 0s
+aws_s3_bucket_public_access_block.support["artifacts"]: Destruction complete after 0s
+aws_lakeformation_permissions.pipeline_locations["raw"]: Destruction complete after 0s
+aws_s3_bucket_public_access_block.lake["refined"]: Destruction complete after 0s
+aws_iam_role.pipeline: Destroying... [id=eda262-g09-av2-glue-pipeline]
+aws_s3_bucket_public_access_block.support["results"]: Destruction complete after 0s
+aws_s3_bucket_server_side_encryption_configuration.support["results"]: Destruction complete after 1s
+aws_s3_bucket_server_side_encryption_configuration.support["artifacts"]: Destruction complete after 1s
+aws_s3_bucket.support["artifacts"]: Destroying... [id=eda262-g09-artifacts-av2]
+aws_s3_bucket.support["results"]: Destroying... [id=eda262-g09-athena-results-av2]
+aws_glue_catalog_table.refined_sales: Destruction complete after 1s
+aws_lakeformation_permissions.executor_locations["raw"]: Destroying... [id=3828044134]
+aws_lakeformation_permissions.executor_locations["refined"]: Destroying... [id=2665495809]
+aws_lakeformation_permissions.executor_locations["trusted"]: Destroying... [id=2960348025]
+aws_lakeformation_permissions.executor_database: Destroying... [id=2126954045]
+aws_iam_role.ingestion: Destruction complete after 1s
+aws_lakeformation_permissions.executor_locations["refined"]: Destruction complete after 0s
+aws_lakeformation_permissions.executor_locations["trusted"]: Destruction complete after 0s
+aws_iam_role.analyst: Destruction complete after 1s
+aws_lakeformation_permissions.executor_locations["raw"]: Destruction complete after 0s
+aws_lakeformation_resource.layer["raw"]: Destroying... [id=arn:aws:s3:::eda262-g09-lake-raw]
+aws_lakeformation_resource.layer["trusted"]: Destroying... [id=arn:aws:s3:::eda262-g09-lake-trusted]
+aws_lakeformation_resource.layer["refined"]: Destroying... [id=arn:aws:s3:::eda262-g09-lake-refined]
+aws_iam_role.pipeline: Destruction complete after 1s
+aws_lakeformation_resource.layer["trusted"]: Destruction complete after 0s
+aws_lakeformation_resource.layer["raw"]: Destruction complete after 0s
+aws_s3_bucket.support["artifacts"]: Destruction complete after 1s
+aws_s3_bucket.support["results"]: Destruction complete after 1s
+aws_lakeformation_permissions.executor_database: Destruction complete after 2s
+aws_glue_catalog_database.av2: Destroying... [id=<ACCOUNT_ID>:eda262_g09_av2]
+aws_glue_catalog_database.av2: Destruction complete after 0s
+aws_lakeformation_resource.layer["refined"]: Destruction complete after 4s
+aws_s3_bucket.lake["refined"]: Destroying... [id=eda262-g09-lake-refined]
+aws_s3_bucket.lake["raw"]: Destroying... [id=eda262-g09-lake-raw]
+aws_s3_bucket.lake["trusted"]: Destroying... [id=eda262-g09-lake-trusted]
+aws_s3_bucket.lake["refined"]: Destruction complete after 1s
+aws_s3_bucket.lake["trusted"]: Destruction complete after 1s
+aws_s3_bucket.lake["raw"]: Destruction complete after 3s
+terraform_data.workspace_guard: Destroying... [id=ae4ffe4c-a26e-ee52-f919-a38fa443ce7a]
+terraform_data.workspace_guard: Destruction complete after 0s
+
+Apply complete! Resources: 0 added, 0 changed, 59 destroyed.

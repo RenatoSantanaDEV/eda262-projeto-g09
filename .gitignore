@@ -3,6 +3,10 @@
 **/*.tfstate
 **/*.tfstate.*
 **/*.tfplan
+**/.runtime/
+**/.generated/
+**/__pycache__/
+*.pyc
 **/backend.hcl
 **/terraform.tfvars
 .env
@@ -26,3 +30,8 @@ evidencias/*.json
 evidencias/*.txt
 evidencias/*.png
 !evidencias/README.md
+evidencias/av2/_local/
+/evidencias/av2/brutas/lakeformation-permissions-review.json
+
+# Evidências AV2 reais só devem sair de scripts que passam pelo sanitizador.
+# O diretório brutas é intencionalmente versionável após revisão humana.

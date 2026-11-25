@@ -1,0 +1,39 @@
+loaded_at_utc=2026-11-18T17:47:33Z
+region=us-east-1
+bucket=eda262-g09-lake-raw
+2026-11-18 14:47:26    1414787 orders/arrival_date=2026-09-01/orders.ndjson
+2026-11-18 14:47:25    1529707 orders/arrival_date=2026-09-02/orders.ndjson
+2026-11-18 14:47:26    1531869 orders/arrival_date=2026-09-03/orders.ndjson
+2026-11-18 14:47:26    1560003 orders/arrival_date=2026-09-04/orders.ndjson
+2026-11-18 14:47:26    1534964 orders/arrival_date=2026-09-05/orders.ndjson
+2026-11-18 14:47:26    1549573 orders/arrival_date=2026-09-06/orders.ndjson
+2026-11-18 14:47:27    1560347 orders/arrival_date=2026-09-07/orders.ndjson
+2026-11-18 14:47:27    1549529 orders/arrival_date=2026-09-08/orders.ndjson
+2026-11-18 14:47:26    1556598 orders/arrival_date=2026-09-09/orders.ndjson
+2026-11-18 14:47:26    1553720 orders/arrival_date=2026-09-10/orders.ndjson
+2026-11-18 14:47:30    1530475 orders/arrival_date=2026-09-11/orders.ndjson
+2026-11-18 14:47:31    1555411 orders/arrival_date=2026-09-12/orders.ndjson
+2026-11-18 14:47:31    1573607 orders/arrival_date=2026-09-13/orders.ndjson
+2026-11-18 14:47:31    1568102 orders/arrival_date=2026-09-14/orders.ndjson
+2026-11-18 14:47:31    1516182 orders/arrival_date=2026-09-15/orders.ndjson
+2026-11-18 14:47:31    1563518 orders/arrival_date=2026-09-16/orders.ndjson
+2026-11-18 14:47:31    1538081 orders/arrival_date=2026-09-17/orders.ndjson
+2026-11-18 14:47:31    1541257 orders/arrival_date=2026-09-18/orders.ndjson
+2026-11-18 14:47:31    1536352 orders/arrival_date=2026-09-19/orders.ndjson
+2026-11-18 14:47:31    1627975 orders/arrival_date=2026-09-20/orders.ndjson
+2026-11-18 14:47:31    1527558 orders/arrival_date=2026-09-21/orders.ndjson
+2026-11-18 14:47:32    1555321 orders/arrival_date=2026-09-22/orders.ndjson
+2026-11-18 14:47:31    1558020 orders/arrival_date=2026-09-23/orders.ndjson
+2026-11-18 14:47:32    1543987 orders/arrival_date=2026-09-24/orders.ndjson
+2026-11-18 14:47:32    1540090 orders/arrival_date=2026-09-25/orders.ndjson
+2026-11-18 14:47:32    1560692 orders/arrival_date=2026-09-26/orders.ndjson
+2026-11-18 14:47:33    1562906 orders/arrival_date=2026-09-27/orders.ndjson
+2026-11-18 14:47:33    1560622 orders/arrival_date=2026-09-28/orders.ndjson
+2026-11-18 14:47:33    1541698 orders/arrival_date=2026-09-29/orders.ndjson
+2026-11-18 14:47:33    1528508 orders/arrival_date=2026-09-30/orders.ndjson
+2026-11-18 14:47:33     139610 orders/arrival_date=2026-10-01/orders.ndjson
+2026-11-18 14:47:33      31603 orders/arrival_date=2026-10-02/orders.ndjson
+2026-11-18 14:47:34        770 orders/arrival_date=2026-10-03/orders.ndjson
+
+Total Objects: 33
+   Total Size: 46543442

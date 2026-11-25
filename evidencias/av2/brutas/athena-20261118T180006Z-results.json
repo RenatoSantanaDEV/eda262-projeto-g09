@@ -1,0 +1,3405 @@
+{
+    "ResultSet": {
+        "Rows": [
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "order_date"
+                    },
+                    {
+                        "VarCharValue": "status"
+                    },
+                    {
+                        "VarCharValue": "order_count"
+                    },
+                    {
+                        "VarCharValue": "item_count"
+                    },
+                    {
+                        "VarCharValue": "quantity_total"
+                    },
+                    {
+                        "VarCharValue": "gross_sales"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-01"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "185"
+                    },
+                    {
+                        "VarCharValue": "280"
+                    },
+                    {
+                        "VarCharValue": "853"
+                    },
+                    {
+                        "VarCharValue": "844914.31"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-01"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1534"
+                    },
+                    {
+                        "VarCharValue": "2350"
+                    },
+                    {
+                        "VarCharValue": "6935"
+                    },
+                    {
+                        "VarCharValue": "6926534.23"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-01"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "1014"
+                    },
+                    {
+                        "VarCharValue": "1512"
+                    },
+                    {
+                        "VarCharValue": "4504"
+                    },
+                    {
+                        "VarCharValue": "4570221.12"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-01"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "183"
+                    },
+                    {
+                        "VarCharValue": "287"
+                    },
+                    {
+                        "VarCharValue": "890"
+                    },
+                    {
+                        "VarCharValue": "892916.80"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-01"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "938"
+                    },
+                    {
+                        "VarCharValue": "1413"
+                    },
+                    {
+                        "VarCharValue": "4248"
+                    },
+                    {
+                        "VarCharValue": "4352149.76"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-02"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "212"
+                    },
+                    {
+                        "VarCharValue": "328"
+                    },
+                    {
+                        "VarCharValue": "995"
+                    },
+                    {
+                        "VarCharValue": "990118.29"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-02"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1565"
+                    },
+                    {
+                        "VarCharValue": "2361"
+                    },
+                    {
+                        "VarCharValue": "7126"
+                    },
+                    {
+                        "VarCharValue": "7081153.46"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-02"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "943"
+                    },
+                    {
+                        "VarCharValue": "1410"
+                    },
+                    {
+                        "VarCharValue": "4225"
+                    },
+                    {
+                        "VarCharValue": "4328902.88"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-02"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "190"
+                    },
+                    {
+                        "VarCharValue": "286"
+                    },
+                    {
+                        "VarCharValue": "858"
+                    },
+                    {
+                        "VarCharValue": "889952.56"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-02"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "943"
+                    },
+                    {
+                        "VarCharValue": "1435"
+                    },
+                    {
+                        "VarCharValue": "4339"
+                    },
+                    {
+                        "VarCharValue": "4308802.21"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-03"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "185"
+                    },
+                    {
+                        "VarCharValue": "289"
+                    },
+                    {
+                        "VarCharValue": "883"
+                    },
+                    {
+                        "VarCharValue": "904837.06"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-03"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1540"
+                    },
+                    {
+                        "VarCharValue": "2305"
+                    },
+                    {
+                        "VarCharValue": "6966"
+                    },
+                    {
+                        "VarCharValue": "6996790.00"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-03"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "979"
+                    },
+                    {
+                        "VarCharValue": "1470"
+                    },
+                    {
+                        "VarCharValue": "4448"
+                    },
+                    {
+                        "VarCharValue": "4598447.75"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-03"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "188"
+                    },
+                    {
+                        "VarCharValue": "280"
+                    },
+                    {
+                        "VarCharValue": "857"
+                    },
+                    {
+                        "VarCharValue": "901300.34"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-03"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "983"
+                    },
+                    {
+                        "VarCharValue": "1445"
+                    },
+                    {
+                        "VarCharValue": "4356"
+                    },
+                    {
+                        "VarCharValue": "4363476.13"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-04"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "187"
+                    },
+                    {
+                        "VarCharValue": "279"
+                    },
+                    {
+                        "VarCharValue": "831"
+                    },
+                    {
+                        "VarCharValue": "827708.78"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-04"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1574"
+                    },
+                    {
+                        "VarCharValue": "2384"
+                    },
+                    {
+                        "VarCharValue": "7179"
+                    },
+                    {
+                        "VarCharValue": "7309553.96"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-04"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "1006"
+                    },
+                    {
+                        "VarCharValue": "1493"
+                    },
+                    {
+                        "VarCharValue": "4434"
+                    },
+                    {
+                        "VarCharValue": "4466733.06"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-04"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "179"
+                    },
+                    {
+                        "VarCharValue": "262"
+                    },
+                    {
+                        "VarCharValue": "791"
+                    },
+                    {
+                        "VarCharValue": "817252.72"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-04"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "930"
+                    },
+                    {
+                        "VarCharValue": "1432"
+                    },
+                    {
+                        "VarCharValue": "4266"
+                    },
+                    {
+                        "VarCharValue": "4320157.73"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-05"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "173"
+                    },
+                    {
+                        "VarCharValue": "285"
+                    },
+                    {
+                        "VarCharValue": "814"
+                    },
+                    {
+                        "VarCharValue": "878166.38"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-05"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1475"
+                    },
+                    {
+                        "VarCharValue": "2208"
+                    },
+                    {
+                        "VarCharValue": "6635"
+                    },
+                    {
+                        "VarCharValue": "6732307.28"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-05"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "1020"
+                    },
+                    {
+                        "VarCharValue": "1509"
+                    },
+                    {
+                        "VarCharValue": "4557"
+                    },
+                    {
+                        "VarCharValue": "4590412.90"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-05"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "194"
+                    },
+                    {
+                        "VarCharValue": "293"
+                    },
+                    {
+                        "VarCharValue": "909"
+                    },
+                    {
+                        "VarCharValue": "891576.55"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-05"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "1007"
+                    },
+                    {
+                        "VarCharValue": "1522"
+                    },
+                    {
+                        "VarCharValue": "4592"
+                    },
+                    {
+                        "VarCharValue": "4698032.68"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-06"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "201"
+                    },
+                    {
+                        "VarCharValue": "305"
+                    },
+                    {
+                        "VarCharValue": "888"
+                    },
+                    {
+                        "VarCharValue": "907617.82"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-06"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1590"
+                    },
+                    {
+                        "VarCharValue": "2373"
+                    },
+                    {
+                        "VarCharValue": "7206"
+                    },
+                    {
+                        "VarCharValue": "7212436.37"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-06"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "943"
+                    },
+                    {
+                        "VarCharValue": "1429"
+                    },
+                    {
+                        "VarCharValue": "4320"
+                    },
+                    {
+                        "VarCharValue": "4364023.38"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-06"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "199"
+                    },
+                    {
+                        "VarCharValue": "303"
+                    },
+                    {
+                        "VarCharValue": "888"
+                    },
+                    {
+                        "VarCharValue": "912347.01"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-06"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "924"
+                    },
+                    {
+                        "VarCharValue": "1406"
+                    },
+                    {
+                        "VarCharValue": "4279"
+                    },
+                    {
+                        "VarCharValue": "4285687.52"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-07"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "226"
+                    },
+                    {
+                        "VarCharValue": "348"
+                    },
+                    {
+                        "VarCharValue": "1034"
+                    },
+                    {
+                        "VarCharValue": "1055572.39"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-07"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1585"
+                    },
+                    {
+                        "VarCharValue": "2398"
+                    },
+                    {
+                        "VarCharValue": "7089"
+                    },
+                    {
+                        "VarCharValue": "6949353.02"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-07"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "926"
+                    },
+                    {
+                        "VarCharValue": "1399"
+                    },
+                    {
+                        "VarCharValue": "4198"
+                    },
+                    {
+                        "VarCharValue": "4140914.56"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-07"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "196"
+                    },
+                    {
+                        "VarCharValue": "291"
+                    },
+                    {
+                        "VarCharValue": "854"
+                    },
+                    {
+                        "VarCharValue": "887363.00"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-07"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "941"
+                    },
+                    {
+                        "VarCharValue": "1421"
+                    },
+                    {
+                        "VarCharValue": "4324"
+                    },
+                    {
+                        "VarCharValue": "4297678.38"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-08"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "206"
+                    },
+                    {
+                        "VarCharValue": "313"
+                    },
+                    {
+                        "VarCharValue": "949"
+                    },
+                    {
+                        "VarCharValue": "939566.80"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-08"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1548"
+                    },
+                    {
+                        "VarCharValue": "2293"
+                    },
+                    {
+                        "VarCharValue": "6877"
+                    },
+                    {
+                        "VarCharValue": "6728558.72"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-08"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "955"
+                    },
+                    {
+                        "VarCharValue": "1446"
+                    },
+                    {
+                        "VarCharValue": "4339"
+                    },
+                    {
+                        "VarCharValue": "4246619.00"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-08"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "195"
+                    },
+                    {
+                        "VarCharValue": "297"
+                    },
+                    {
+                        "VarCharValue": "911"
+                    },
+                    {
+                        "VarCharValue": "924710.92"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-08"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "980"
+                    },
+                    {
+                        "VarCharValue": "1489"
+                    },
+                    {
+                        "VarCharValue": "4520"
+                    },
+                    {
+                        "VarCharValue": "4488488.13"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-09"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "186"
+                    },
+                    {
+                        "VarCharValue": "292"
+                    },
+                    {
+                        "VarCharValue": "869"
+                    },
+                    {
+                        "VarCharValue": "853910.19"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-09"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1627"
+                    },
+                    {
+                        "VarCharValue": "2446"
+                    },
+                    {
+                        "VarCharValue": "7206"
+                    },
+                    {
+                        "VarCharValue": "7152204.14"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-09"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "924"
+                    },
+                    {
+                        "VarCharValue": "1363"
+                    },
+                    {
+                        "VarCharValue": "4057"
+                    },
+                    {
+                        "VarCharValue": "4048513.68"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-09"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "198"
+                    },
+                    {
+                        "VarCharValue": "299"
+                    },
+                    {
+                        "VarCharValue": "890"
+                    },
+                    {
+                        "VarCharValue": "900003.99"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-09"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "934"
+                    },
+                    {
+                        "VarCharValue": "1403"
+                    },
+                    {
+                        "VarCharValue": "4242"
+                    },
+                    {
+                        "VarCharValue": "4196197.99"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-10"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "205"
+                    },
+                    {
+                        "VarCharValue": "309"
+                    },
+                    {
+                        "VarCharValue": "874"
+                    },
+                    {
+                        "VarCharValue": "879154.53"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-10"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1551"
+                    },
+                    {
+                        "VarCharValue": "2351"
+                    },
+                    {
+                        "VarCharValue": "7099"
+                    },
+                    {
+                        "VarCharValue": "7110420.45"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-10"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "972"
+                    },
+                    {
+                        "VarCharValue": "1455"
+                    },
+                    {
+                        "VarCharValue": "4366"
+                    },
+                    {
+                        "VarCharValue": "4436973.47"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-10"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "207"
+                    },
+                    {
+                        "VarCharValue": "306"
+                    },
+                    {
+                        "VarCharValue": "885"
+                    },
+                    {
+                        "VarCharValue": "910023.12"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-10"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "947"
+                    },
+                    {
+                        "VarCharValue": "1406"
+                    },
+                    {
+                        "VarCharValue": "4251"
+                    },
+                    {
+                        "VarCharValue": "4198822.60"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-11"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "200"
+                    },
+                    {
+                        "VarCharValue": "292"
+                    },
+                    {
+                        "VarCharValue": "889"
+                    },
+                    {
+                        "VarCharValue": "895320.85"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-11"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1539"
+                    },
+                    {
+                        "VarCharValue": "2284"
+                    },
+                    {
+                        "VarCharValue": "6780"
+                    },
+                    {
+                        "VarCharValue": "6844813.66"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-11"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "1023"
+                    },
+                    {
+                        "VarCharValue": "1549"
+                    },
+                    {
+                        "VarCharValue": "4624"
+                    },
+                    {
+                        "VarCharValue": "4600434.79"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-11"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "184"
+                    },
+                    {
+                        "VarCharValue": "271"
+                    },
+                    {
+                        "VarCharValue": "789"
+                    },
+                    {
+                        "VarCharValue": "761853.72"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-11"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "925"
+                    },
+                    {
+                        "VarCharValue": "1399"
+                    },
+                    {
+                        "VarCharValue": "4202"
+                    },
+                    {
+                        "VarCharValue": "4228756.04"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-12"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "185"
+                    },
+                    {
+                        "VarCharValue": "288"
+                    },
+                    {
+                        "VarCharValue": "873"
+                    },
+                    {
+                        "VarCharValue": "887273.55"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-12"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1544"
+                    },
+                    {
+                        "VarCharValue": "2372"
+                    },
+                    {
+                        "VarCharValue": "7117"
+                    },
+                    {
+                        "VarCharValue": "7269880.49"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-12"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "998"
+                    },
+                    {
+                        "VarCharValue": "1518"
+                    },
+                    {
+                        "VarCharValue": "4551"
+                    },
+                    {
+                        "VarCharValue": "4455761.66"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-12"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "167"
+                    },
+                    {
+                        "VarCharValue": "243"
+                    },
+                    {
+                        "VarCharValue": "759"
+                    },
+                    {
+                        "VarCharValue": "772790.69"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-12"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "947"
+                    },
+                    {
+                        "VarCharValue": "1430"
+                    },
+                    {
+                        "VarCharValue": "4327"
+                    },
+                    {
+                        "VarCharValue": "4243946.65"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-13"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "195"
+                    },
+                    {
+                        "VarCharValue": "295"
+                    },
+                    {
+                        "VarCharValue": "877"
+                    },
+                    {
+                        "VarCharValue": "847704.77"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-13"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1584"
+                    },
+                    {
+                        "VarCharValue": "2425"
+                    },
+                    {
+                        "VarCharValue": "7236"
+                    },
+                    {
+                        "VarCharValue": "7185999.42"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-13"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "937"
+                    },
+                    {
+                        "VarCharValue": "1394"
+                    },
+                    {
+                        "VarCharValue": "4168"
+                    },
+                    {
+                        "VarCharValue": "4050402.40"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-13"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "175"
+                    },
+                    {
+                        "VarCharValue": "262"
+                    },
+                    {
+                        "VarCharValue": "719"
+                    },
+                    {
+                        "VarCharValue": "676829.15"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-13"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "983"
+                    },
+                    {
+                        "VarCharValue": "1522"
+                    },
+                    {
+                        "VarCharValue": "4496"
+                    },
+                    {
+                        "VarCharValue": "4484200.80"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-14"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "209"
+                    },
+                    {
+                        "VarCharValue": "327"
+                    },
+                    {
+                        "VarCharValue": "982"
+                    },
+                    {
+                        "VarCharValue": "964290.48"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-14"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1541"
+                    },
+                    {
+                        "VarCharValue": "2382"
+                    },
+                    {
+                        "VarCharValue": "7182"
+                    },
+                    {
+                        "VarCharValue": "7184432.91"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-14"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "980"
+                    },
+                    {
+                        "VarCharValue": "1506"
+                    },
+                    {
+                        "VarCharValue": "4478"
+                    },
+                    {
+                        "VarCharValue": "4390326.37"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-14"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "205"
+                    },
+                    {
+                        "VarCharValue": "307"
+                    },
+                    {
+                        "VarCharValue": "955"
+                    },
+                    {
+                        "VarCharValue": "968605.67"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-14"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "928"
+                    },
+                    {
+                        "VarCharValue": "1398"
+                    },
+                    {
+                        "VarCharValue": "4111"
+                    },
+                    {
+                        "VarCharValue": "4155064.28"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-15"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "188"
+                    },
+                    {
+                        "VarCharValue": "287"
+                    },
+                    {
+                        "VarCharValue": "838"
+                    },
+                    {
+                        "VarCharValue": "829241.84"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-15"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1503"
+                    },
+                    {
+                        "VarCharValue": "2283"
+                    },
+                    {
+                        "VarCharValue": "6786"
+                    },
+                    {
+                        "VarCharValue": "6756683.15"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-15"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "987"
+                    },
+                    {
+                        "VarCharValue": "1475"
+                    },
+                    {
+                        "VarCharValue": "4349"
+                    },
+                    {
+                        "VarCharValue": "4338780.40"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-15"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "169"
+                    },
+                    {
+                        "VarCharValue": "259"
+                    },
+                    {
+                        "VarCharValue": "821"
+                    },
+                    {
+                        "VarCharValue": "810408.55"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-15"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "1013"
+                    },
+                    {
+                        "VarCharValue": "1517"
+                    },
+                    {
+                        "VarCharValue": "4632"
+                    },
+                    {
+                        "VarCharValue": "4588319.98"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-16"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "181"
+                    },
+                    {
+                        "VarCharValue": "270"
+                    },
+                    {
+                        "VarCharValue": "775"
+                    },
+                    {
+                        "VarCharValue": "782656.49"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-16"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1563"
+                    },
+                    {
+                        "VarCharValue": "2417"
+                    },
+                    {
+                        "VarCharValue": "7147"
+                    },
+                    {
+                        "VarCharValue": "7095177.47"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-16"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "936"
+                    },
+                    {
+                        "VarCharValue": "1406"
+                    },
+                    {
+                        "VarCharValue": "4242"
+                    },
+                    {
+                        "VarCharValue": "4320032.88"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-16"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "200"
+                    },
+                    {
+                        "VarCharValue": "310"
+                    },
+                    {
+                        "VarCharValue": "907"
+                    },
+                    {
+                        "VarCharValue": "906710.30"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-16"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "987"
+                    },
+                    {
+                        "VarCharValue": "1508"
+                    },
+                    {
+                        "VarCharValue": "4547"
+                    },
+                    {
+                        "VarCharValue": "4540897.67"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-17"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "172"
+                    },
+                    {
+                        "VarCharValue": "265"
+                    },
+                    {
+                        "VarCharValue": "754"
+                    },
+                    {
+                        "VarCharValue": "745669.54"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-17"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1505"
+                    },
+                    {
+                        "VarCharValue": "2252"
+                    },
+                    {
+                        "VarCharValue": "6708"
+                    },
+                    {
+                        "VarCharValue": "6734564.61"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-17"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "979"
+                    },
+                    {
+                        "VarCharValue": "1491"
+                    },
+                    {
+                        "VarCharValue": "4496"
+                    },
+                    {
+                        "VarCharValue": "4383236.60"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-17"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "210"
+                    },
+                    {
+                        "VarCharValue": "303"
+                    },
+                    {
+                        "VarCharValue": "916"
+                    },
+                    {
+                        "VarCharValue": "897314.79"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-17"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "998"
+                    },
+                    {
+                        "VarCharValue": "1462"
+                    },
+                    {
+                        "VarCharValue": "4354"
+                    },
+                    {
+                        "VarCharValue": "4438025.21"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-18"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "172"
+                    },
+                    {
+                        "VarCharValue": "255"
+                    },
+                    {
+                        "VarCharValue": "760"
+                    },
+                    {
+                        "VarCharValue": "795591.74"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-18"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1596"
+                    },
+                    {
+                        "VarCharValue": "2390"
+                    },
+                    {
+                        "VarCharValue": "7167"
+                    },
+                    {
+                        "VarCharValue": "7144645.99"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-18"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "964"
+                    },
+                    {
+                        "VarCharValue": "1445"
+                    },
+                    {
+                        "VarCharValue": "4311"
+                    },
+                    {
+                        "VarCharValue": "4253070.00"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-18"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "205"
+                    },
+                    {
+                        "VarCharValue": "316"
+                    },
+                    {
+                        "VarCharValue": "969"
+                    },
+                    {
+                        "VarCharValue": "948126.77"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-18"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "925"
+                    },
+                    {
+                        "VarCharValue": "1385"
+                    },
+                    {
+                        "VarCharValue": "4220"
+                    },
+                    {
+                        "VarCharValue": "4258303.70"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-19"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "194"
+                    },
+                    {
+                        "VarCharValue": "300"
+                    },
+                    {
+                        "VarCharValue": "878"
+                    },
+                    {
+                        "VarCharValue": "960188.05"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-19"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1575"
+                    },
+                    {
+                        "VarCharValue": "2360"
+                    },
+                    {
+                        "VarCharValue": "7061"
+                    },
+                    {
+                        "VarCharValue": "7025950.24"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-19"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "947"
+                    },
+                    {
+                        "VarCharValue": "1415"
+                    },
+                    {
+                        "VarCharValue": "4232"
+                    },
+                    {
+                        "VarCharValue": "4314283.74"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-19"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "196"
+                    },
+                    {
+                        "VarCharValue": "282"
+                    },
+                    {
+                        "VarCharValue": "868"
+                    },
+                    {
+                        "VarCharValue": "853848.68"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-19"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "961"
+                    },
+                    {
+                        "VarCharValue": "1423"
+                    },
+                    {
+                        "VarCharValue": "4290"
+                    },
+                    {
+                        "VarCharValue": "4354142.38"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-20"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "181"
+                    },
+                    {
+                        "VarCharValue": "276"
+                    },
+                    {
+                        "VarCharValue": "823"
+                    },
+                    {
+                        "VarCharValue": "823341.48"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-20"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1591"
+                    },
+                    {
+                        "VarCharValue": "2422"
+                    },
+                    {
+                        "VarCharValue": "7327"
+                    },
+                    {
+                        "VarCharValue": "7311868.03"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-20"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "971"
+                    },
+                    {
+                        "VarCharValue": "1506"
+                    },
+                    {
+                        "VarCharValue": "4562"
+                    },
+                    {
+                        "VarCharValue": "4582917.50"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-20"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "186"
+                    },
+                    {
+                        "VarCharValue": "287"
+                    },
+                    {
+                        "VarCharValue": "880"
+                    },
+                    {
+                        "VarCharValue": "942631.62"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-20"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "931"
+                    },
+                    {
+                        "VarCharValue": "1387"
+                    },
+                    {
+                        "VarCharValue": "4139"
+                    },
+                    {
+                        "VarCharValue": "4276286.48"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-21"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "198"
+                    },
+                    {
+                        "VarCharValue": "302"
+                    },
+                    {
+                        "VarCharValue": "928"
+                    },
+                    {
+                        "VarCharValue": "892993.32"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-21"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1523"
+                    },
+                    {
+                        "VarCharValue": "2248"
+                    },
+                    {
+                        "VarCharValue": "6676"
+                    },
+                    {
+                        "VarCharValue": "6659843.61"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-21"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "976"
+                    },
+                    {
+                        "VarCharValue": "1483"
+                    },
+                    {
+                        "VarCharValue": "4478"
+                    },
+                    {
+                        "VarCharValue": "4579059.44"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-21"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "214"
+                    },
+                    {
+                        "VarCharValue": "319"
+                    },
+                    {
+                        "VarCharValue": "969"
+                    },
+                    {
+                        "VarCharValue": "965923.29"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-21"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "954"
+                    },
+                    {
+                        "VarCharValue": "1409"
+                    },
+                    {
+                        "VarCharValue": "4267"
+                    },
+                    {
+                        "VarCharValue": "4323873.87"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-22"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "203"
+                    },
+                    {
+                        "VarCharValue": "293"
+                    },
+                    {
+                        "VarCharValue": "859"
+                    },
+                    {
+                        "VarCharValue": "846811.11"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-22"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1544"
+                    },
+                    {
+                        "VarCharValue": "2342"
+                    },
+                    {
+                        "VarCharValue": "7011"
+                    },
+                    {
+                        "VarCharValue": "7031330.84"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-22"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "969"
+                    },
+                    {
+                        "VarCharValue": "1449"
+                    },
+                    {
+                        "VarCharValue": "4471"
+                    },
+                    {
+                        "VarCharValue": "4545610.05"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-22"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "185"
+                    },
+                    {
+                        "VarCharValue": "270"
+                    },
+                    {
+                        "VarCharValue": "832"
+                    },
+                    {
+                        "VarCharValue": "836524.02"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-22"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "987"
+                    },
+                    {
+                        "VarCharValue": "1498"
+                    },
+                    {
+                        "VarCharValue": "4471"
+                    },
+                    {
+                        "VarCharValue": "4319417.81"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-23"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "202"
+                    },
+                    {
+                        "VarCharValue": "314"
+                    },
+                    {
+                        "VarCharValue": "920"
+                    },
+                    {
+                        "VarCharValue": "955323.34"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-23"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1514"
+                    },
+                    {
+                        "VarCharValue": "2263"
+                    },
+                    {
+                        "VarCharValue": "6915"
+                    },
+                    {
+                        "VarCharValue": "6924956.41"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-23"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "1045"
+                    },
+                    {
+                        "VarCharValue": "1583"
+                    },
+                    {
+                        "VarCharValue": "4803"
+                    },
+                    {
+                        "VarCharValue": "4770646.36"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-23"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "176"
+                    },
+                    {
+                        "VarCharValue": "270"
+                    },
+                    {
+                        "VarCharValue": "774"
+                    },
+                    {
+                        "VarCharValue": "828877.60"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-23"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "936"
+                    },
+                    {
+                        "VarCharValue": "1418"
+                    },
+                    {
+                        "VarCharValue": "4219"
+                    },
+                    {
+                        "VarCharValue": "4180855.32"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-24"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "193"
+                    },
+                    {
+                        "VarCharValue": "283"
+                    },
+                    {
+                        "VarCharValue": "873"
+                    },
+                    {
+                        "VarCharValue": "890996.91"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-24"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1534"
+                    },
+                    {
+                        "VarCharValue": "2309"
+                    },
+                    {
+                        "VarCharValue": "6929"
+                    },
+                    {
+                        "VarCharValue": "7128372.46"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-24"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "980"
+                    },
+                    {
+                        "VarCharValue": "1482"
+                    },
+                    {
+                        "VarCharValue": "4436"
+                    },
+                    {
+                        "VarCharValue": "4515988.56"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-24"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "203"
+                    },
+                    {
+                        "VarCharValue": "309"
+                    },
+                    {
+                        "VarCharValue": "948"
+                    },
+                    {
+                        "VarCharValue": "946464.06"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-24"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "942"
+                    },
+                    {
+                        "VarCharValue": "1426"
+                    },
+                    {
+                        "VarCharValue": "4192"
+                    },
+                    {
+                        "VarCharValue": "4117769.41"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-25"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "219"
+                    },
+                    {
+                        "VarCharValue": "331"
+                    },
+                    {
+                        "VarCharValue": "984"
+                    },
+                    {
+                        "VarCharValue": "986712.20"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-25"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1573"
+                    },
+                    {
+                        "VarCharValue": "2357"
+                    },
+                    {
+                        "VarCharValue": "7206"
+                    },
+                    {
+                        "VarCharValue": "7249402.02"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-25"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "949"
+                    },
+                    {
+                        "VarCharValue": "1417"
+                    },
+                    {
+                        "VarCharValue": "4205"
+                    },
+                    {
+                        "VarCharValue": "4107042.25"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-25"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "204"
+                    },
+                    {
+                        "VarCharValue": "312"
+                    },
+                    {
+                        "VarCharValue": "916"
+                    },
+                    {
+                        "VarCharValue": "908165.59"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-25"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "922"
+                    },
+                    {
+                        "VarCharValue": "1393"
+                    },
+                    {
+                        "VarCharValue": "4063"
+                    },
+                    {
+                        "VarCharValue": "3966434.13"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-26"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "184"
+                    },
+                    {
+                        "VarCharValue": "289"
+                    },
+                    {
+                        "VarCharValue": "889"
+                    },
+                    {
+                        "VarCharValue": "912873.91"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-26"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1524"
+                    },
+                    {
+                        "VarCharValue": "2298"
+                    },
+                    {
+                        "VarCharValue": "6858"
+                    },
+                    {
+                        "VarCharValue": "6905437.24"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-26"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "973"
+                    },
+                    {
+                        "VarCharValue": "1421"
+                    },
+                    {
+                        "VarCharValue": "4254"
+                    },
+                    {
+                        "VarCharValue": "4395325.71"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-26"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "199"
+                    },
+                    {
+                        "VarCharValue": "298"
+                    },
+                    {
+                        "VarCharValue": "920"
+                    },
+                    {
+                        "VarCharValue": "900984.11"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-26"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "996"
+                    },
+                    {
+                        "VarCharValue": "1502"
+                    },
+                    {
+                        "VarCharValue": "4570"
+                    },
+                    {
+                        "VarCharValue": "4577998.06"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-27"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "188"
+                    },
+                    {
+                        "VarCharValue": "288"
+                    },
+                    {
+                        "VarCharValue": "870"
+                    },
+                    {
+                        "VarCharValue": "888238.94"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-27"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1583"
+                    },
+                    {
+                        "VarCharValue": "2437"
+                    },
+                    {
+                        "VarCharValue": "7316"
+                    },
+                    {
+                        "VarCharValue": "7401566.13"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-27"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "944"
+                    },
+                    {
+                        "VarCharValue": "1449"
+                    },
+                    {
+                        "VarCharValue": "4323"
+                    },
+                    {
+                        "VarCharValue": "4414760.58"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-27"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "200"
+                    },
+                    {
+                        "VarCharValue": "300"
+                    },
+                    {
+                        "VarCharValue": "879"
+                    },
+                    {
+                        "VarCharValue": "879406.29"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-27"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "947"
+                    },
+                    {
+                        "VarCharValue": "1455"
+                    },
+                    {
+                        "VarCharValue": "4355"
+                    },
+                    {
+                        "VarCharValue": "4498205.06"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-28"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "194"
+                    },
+                    {
+                        "VarCharValue": "301"
+                    },
+                    {
+                        "VarCharValue": "883"
+                    },
+                    {
+                        "VarCharValue": "907709.96"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-28"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1523"
+                    },
+                    {
+                        "VarCharValue": "2316"
+                    },
+                    {
+                        "VarCharValue": "6754"
+                    },
+                    {
+                        "VarCharValue": "6853689.13"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-28"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "980"
+                    },
+                    {
+                        "VarCharValue": "1465"
+                    },
+                    {
+                        "VarCharValue": "4355"
+                    },
+                    {
+                        "VarCharValue": "4430427.62"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-28"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "206"
+                    },
+                    {
+                        "VarCharValue": "302"
+                    },
+                    {
+                        "VarCharValue": "910"
+                    },
+                    {
+                        "VarCharValue": "901893.01"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-28"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "965"
+                    },
+                    {
+                        "VarCharValue": "1465"
+                    },
+                    {
+                        "VarCharValue": "4450"
+                    },
+                    {
+                        "VarCharValue": "4454422.80"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-29"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "193"
+                    },
+                    {
+                        "VarCharValue": "286"
+                    },
+                    {
+                        "VarCharValue": "894"
+                    },
+                    {
+                        "VarCharValue": "953761.76"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-29"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1522"
+                    },
+                    {
+                        "VarCharValue": "2251"
+                    },
+                    {
+                        "VarCharValue": "6832"
+                    },
+                    {
+                        "VarCharValue": "6802556.65"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-29"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "977"
+                    },
+                    {
+                        "VarCharValue": "1501"
+                    },
+                    {
+                        "VarCharValue": "4570"
+                    },
+                    {
+                        "VarCharValue": "4562102.55"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-29"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "210"
+                    },
+                    {
+                        "VarCharValue": "311"
+                    },
+                    {
+                        "VarCharValue": "916"
+                    },
+                    {
+                        "VarCharValue": "889744.81"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-29"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "956"
+                    },
+                    {
+                        "VarCharValue": "1435"
+                    },
+                    {
+                        "VarCharValue": "4219"
+                    },
+                    {
+                        "VarCharValue": "4260302.65"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-30"
+                    },
+                    {
+                        "VarCharValue": "cancelled"
+                    },
+                    {
+                        "VarCharValue": "183"
+                    },
+                    {
+                        "VarCharValue": "274"
+                    },
+                    {
+                        "VarCharValue": "794"
+                    },
+                    {
+                        "VarCharValue": "819268.42"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-30"
+                    },
+                    {
+                        "VarCharValue": "delivered"
+                    },
+                    {
+                        "VarCharValue": "1547"
+                    },
+                    {
+                        "VarCharValue": "2299"
+                    },
+                    {
+                        "VarCharValue": "6904"
+                    },
+                    {
+                        "VarCharValue": "6873146.08"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-30"
+                    },
+                    {
+                        "VarCharValue": "paid"
+                    },
+                    {
+                        "VarCharValue": "985"
+                    },
+                    {
+                        "VarCharValue": "1485"
+                    },
+                    {
+                        "VarCharValue": "4463"
+                    },
+                    {
+                        "VarCharValue": "4500042.06"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-30"
+                    },
+                    {
+                        "VarCharValue": "pending"
+                    },
+                    {
+                        "VarCharValue": "195"
+                    },
+                    {
+                        "VarCharValue": "273"
+                    },
+                    {
+                        "VarCharValue": "831"
+                    },
+                    {
+                        "VarCharValue": "837314.17"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "2026-09-30"
+                    },
+                    {
+                        "VarCharValue": "shipped"
+                    },
+                    {
+                        "VarCharValue": "956"
+                    },
+                    {
+                        "VarCharValue": "1420"
+                    },
+                    {
+                        "VarCharValue": "4234"
+                    },
+                    {
+                        "VarCharValue": "4329545.69"
+                    }
+                ]
+            }
+        ],
+        "ResultSetMetadata": {
+            "ColumnInfo": [
+                {
+                    "CatalogName": "hive",
+                    "SchemaName": "",
+                    "TableName": "",
+                    "Name": "order_date",
+                    "Label": "order_date",
+                    "Type": "varchar",
+                    "Precision": 2147483647,
+                    "Scale": 0,
+                    "Nullable": "UNKNOWN",
+                    "CaseSensitive": true
+                },
+                {
+                    "CatalogName": "hive",
+                    "SchemaName": "",
+                    "TableName": "",
+                    "Name": "status",
+                    "Label": "status",
+                    "Type": "varchar",
+                    "Precision": 2147483647,
+                    "Scale": 0,
+                    "Nullable": "UNKNOWN",
+                    "CaseSensitive": true
+                },
+                {
+                    "CatalogName": "hive",
+                    "SchemaName": "",
+                    "TableName": "",
+                    "Name": "order_count",
+                    "Label": "order_count",
+                    "Type": "bigint",
+                    "Precision": 19,
+                    "Scale": 0,
+                    "Nullable": "UNKNOWN",
+                    "CaseSensitive": false
+                },
+                {
+                    "CatalogName": "hive",
+                    "SchemaName": "",
+                    "TableName": "",
+                    "Name": "item_count",
+                    "Label": "item_count",
+                    "Type": "bigint",
+                    "Precision": 19,
+                    "Scale": 0,
+                    "Nullable": "UNKNOWN",
+                    "CaseSensitive": false
+                },
+                {
+                    "CatalogName": "hive",
+                    "SchemaName": "",
+                    "TableName": "",
+                    "Name": "quantity_total",
+                    "Label": "quantity_total",
+                    "Type": "bigint",
+                    "Precision": 19,
+                    "Scale": 0,
+                    "Nullable": "UNKNOWN",
+                    "CaseSensitive": false
+                },
+                {
+                    "CatalogName": "hive",
+                    "SchemaName": "",
+                    "TableName": "",
+                    "Name": "gross_sales",
+                    "Label": "gross_sales",
+                    "Type": "decimal",
+                    "Precision": 18,
+                    "Scale": 2,
+                    "Nullable": "UNKNOWN",
+                    "CaseSensitive": false
+                }
+            ]
+        }
+    },
+    "UpdateCount": 0
+}

@@ -1,0 +1,2 @@
+Remover compatibilidade IAM_ALLOWED_PRINCIPALS em Database do banco eda262_g09_av2
+Tratamento de compatibilidade concluído (--plan), somente banco eda262_g09_av2.

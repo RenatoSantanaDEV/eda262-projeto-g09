@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "sha256": {
+    "local": "68a7e9d629a3b6d08a9e5e73ea47a6feeee0af5cd27a60acb406a4dc3eee89c2",
+    "s3_body": "68a7e9d629a3b6d08a9e5e73ea47a6feeee0af5cd27a60acb406a4dc3eee89c2",
+    "s3_metadata": "68a7e9d629a3b6d08a9e5e73ea47a6feeee0af5cd27a60acb406a4dc3eee89c2",
+    "glue_argument": "68a7e9d629a3b6d08a9e5e73ea47a6feeee0af5cd27a60acb406a4dc3eee89c2"
+  }
+}

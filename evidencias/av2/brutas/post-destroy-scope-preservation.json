@@ -1,0 +1,9 @@
+{
+  "managed_resources_after_destroy": 0,
+  "g09_lakeformation_locations_remaining": [],
+  "global_lf_settings_unchanged": true,
+  "global_lf_before_sha256": "ec98b95a50aae83de2ff33921d6826e0eaa8294dbce414a3dbfa1e753c8a75a2",
+  "global_lf_after_sha256": "ec98b95a50aae83de2ff33921d6826e0eaa8294dbce414a3dbfa1e753c8a75a2",
+  "backend_s3_versioning": "Enabled",
+  "backend_dynamodb_status": "ACTIVE"
+}

@@ -1,0 +1,604 @@
+{
+  "after": {
+    "refined": {
+      "daily_sales/order_date=2026-09-01/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"9b6ab6e0cdb24e52add1edea6d121748-1\"",
+        "LastModified": "2026-11-22T00:31:48.000Z",
+        "Size": 1693
+      },
+      "daily_sales/order_date=2026-09-02/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"d810a39b4ad29c495f13b4e49bb88234-1\"",
+        "LastModified": "2026-11-22T00:31:48.000Z",
+        "Size": 1719
+      },
+      "daily_sales/order_date=2026-09-03/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"7d386c881d4f22f446b271de7195d7b3-1\"",
+        "LastModified": "2026-11-22T00:31:48.000Z",
+        "Size": 1693
+      },
+      "daily_sales/order_date=2026-09-04/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"1de1eca810e47371fcde8928afd619f3-1\"",
+        "LastModified": "2026-11-22T00:31:48.000Z",
+        "Size": 1693
+      },
+      "daily_sales/order_date=2026-09-05/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"a49cbfa459feeac3b7fd6799f3059adc-1\"",
+        "LastModified": "2026-11-22T00:31:48.000Z",
+        "Size": 1688
+      },
+      "daily_sales/order_date=2026-09-06/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"688a825f82f02fb8c50ce14b948143b6-1\"",
+        "LastModified": "2026-11-22T00:31:48.000Z",
+        "Size": 1722
+      },
+      "daily_sales/order_date=2026-09-07/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"5514bc2e5cd08c48975773cbbb9d5b49-1\"",
+        "LastModified": "2026-11-22T00:31:48.000Z",
+        "Size": 1692
+      },
+      "daily_sales/order_date=2026-09-08/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"0d8c8d81416856591d1846b3a33298b3-1\"",
+        "LastModified": "2026-11-22T00:31:48.000Z",
+        "Size": 1690
+      },
+      "daily_sales/order_date=2026-09-09/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"22f91e979a2f4192c664c0a800dc3c84-1\"",
+        "LastModified": "2026-11-22T00:31:48.000Z",
+        "Size": 1691
+      },
+      "daily_sales/order_date=2026-09-10/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"29ac51a6cf89abd76e8ec59a5262cd70-1\"",
+        "LastModified": "2026-11-22T00:31:49.000Z",
+        "Size": 1694
+      },
+      "daily_sales/order_date=2026-09-11/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"594be336b8984da7a6db401fba31799d-1\"",
+        "LastModified": "2026-11-22T00:31:49.000Z",
+        "Size": 1692
+      },
+      "daily_sales/order_date=2026-09-12/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"9e83b949f03da8bf3cf81abe2311a080-1\"",
+        "LastModified": "2026-11-22T00:31:49.000Z",
+        "Size": 1690
+      },
+      "daily_sales/order_date=2026-09-13/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"bc3c2d776919f504aff02616a182503c-1\"",
+        "LastModified": "2026-11-22T00:31:49.000Z",
+        "Size": 1694
+      },
+      "daily_sales/order_date=2026-09-14/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"ac4566f4cb76072463005394a3ad5f3c-1\"",
+        "LastModified": "2026-11-22T00:31:49.000Z",
+        "Size": 1692
+      },
+      "daily_sales/order_date=2026-09-16/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"aab79671769adde3a89f774276597888-1\"",
+        "LastModified": "2026-11-22T00:31:49.000Z",
+        "Size": 1687
+      },
+      "daily_sales/order_date=2026-09-17/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"c3dc735a9131e49aeb4efc195debedee-1\"",
+        "LastModified": "2026-11-22T00:31:49.000Z",
+        "Size": 1691
+      },
+      "daily_sales/order_date=2026-09-18/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"e2998d5da21ec737052dd688885c95ac-1\"",
+        "LastModified": "2026-11-22T00:31:49.000Z",
+        "Size": 1691
+      },
+      "daily_sales/order_date=2026-09-19/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"d8050521d680f539394bdafbafaa4688-1\"",
+        "LastModified": "2026-11-22T00:31:49.000Z",
+        "Size": 1693
+      },
+      "daily_sales/order_date=2026-09-20/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"ec8419fee5e9c0265f38608dd478681a-1\"",
+        "LastModified": "2026-11-22T00:31:49.000Z",
+        "Size": 1687
+      },
+      "daily_sales/order_date=2026-09-21/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"b32b2779c62e89d380becacb47303e11-1\"",
+        "LastModified": "2026-11-22T00:31:49.000Z",
+        "Size": 1695
+      },
+      "daily_sales/order_date=2026-09-22/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"6e6359c487f304cc1cc0aa5f87e94379-1\"",
+        "LastModified": "2026-11-22T00:31:49.000Z",
+        "Size": 1722
+      },
+      "daily_sales/order_date=2026-09-23/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"f80364124244a2d49b569a2283ab0618-1\"",
+        "LastModified": "2026-11-22T00:31:50.000Z",
+        "Size": 1688
+      },
+      "daily_sales/order_date=2026-09-24/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"50f7f391cf574b2355d84ed5bcee1890-1\"",
+        "LastModified": "2026-11-22T00:31:50.000Z",
+        "Size": 1691
+      },
+      "daily_sales/order_date=2026-09-25/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"b7863e0eb4d2aa2a27e92bb1a46b06ac-1\"",
+        "LastModified": "2026-11-22T00:31:50.000Z",
+        "Size": 1691
+      },
+      "daily_sales/order_date=2026-09-26/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"2dee37428aa3ae385bb4af0cd5d7d13e-1\"",
+        "LastModified": "2026-11-22T00:31:50.000Z",
+        "Size": 1694
+      },
+      "daily_sales/order_date=2026-09-27/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"7001562cf70a9eff08731a57363aa836-1\"",
+        "LastModified": "2026-11-22T00:31:50.000Z",
+        "Size": 1693
+      },
+      "daily_sales/order_date=2026-09-28/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"5e30b7690a41758bb47cfa3ec9be1389-1\"",
+        "LastModified": "2026-11-22T00:31:50.000Z",
+        "Size": 1720
+      },
+      "daily_sales/order_date=2026-09-29/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"43c6d2dd1f6f26bd7e996d6698a011ab-1\"",
+        "LastModified": "2026-11-22T00:31:50.000Z",
+        "Size": 1685
+      },
+      "daily_sales/order_date=2026-09-30/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"2caeffc5fa5445570dcde2f117663a38-1\"",
+        "LastModified": "2026-11-22T00:31:50.000Z",
+        "Size": 1692
+      }
+    },
+    "trusted": {
+      "orders/order_date=2026-09-01/part-00002-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"d4372d1bfd6beea5611a8adaa7716444-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 186189
+      },
+      "orders/order_date=2026-09-02/part-00001-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"0f777b22b95e983615928f2f2f6a0916-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 186152
+      },
+      "orders/order_date=2026-09-03/part-00001-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"4adc3dc01a7cc182c1bae62f5cf6319f-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 184113
+      },
+      "orders/order_date=2026-09-04/part-00001-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"3a670cec01fa173823dcdf7ccacd9624-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 187199
+      },
+      "orders/order_date=2026-09-05/part-00001-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"e98016c54969fbf224dad6d9e1194067-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 186157
+      },
+      "orders/order_date=2026-09-06/part-00002-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"986cae6985c168165f805b0d7ad3bebb-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 185510
+      },
+      "orders/order_date=2026-09-07/part-00002-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"1846b2184ea89138d2e8d78d4920bc98-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 187326
+      },
+      "orders/order_date=2026-09-08/part-00001-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"d22dfc55646d1b4d39316df5c54e4988-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 185869
+      },
+      "orders/order_date=2026-09-09/part-00001-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"44cccb64ec692e2cfa4f0ee259885983-1\"",
+        "LastModified": "2026-11-22T00:31:43.000Z",
+        "Size": 185708
+      },
+      "orders/order_date=2026-09-10/part-00002-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"f7523b6c77bde31db717088782a448a8-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 186522
+      },
+      "orders/order_date=2026-09-11/part-00002-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"1510792fc3821fce4ac50c5976a0cfcf-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 186108
+      },
+      "orders/order_date=2026-09-12/part-00000-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"f5e6a4ca93c1e95f908a0e1b30b8f261-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 186194
+      },
+      "orders/order_date=2026-09-13/part-00003-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"38c02538028f429658621b286f4d5fde-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 186823
+      },
+      "orders/order_date=2026-09-14/part-00003-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"b653cab5d1392e7e3c7c6a6a0183368f-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 187941
+      },
+      "orders/order_date=2026-09-16/part-00003-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"794e95d6a9a51f1adeecdd79712b8262-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 188138
+      },
+      "orders/order_date=2026-09-17/part-00000-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"1c5281221f2dd0d834e2ee78ee94721a-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 185087
+      },
+      "orders/order_date=2026-09-18/part-00003-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"a312c26c1d4586e087808a2d52c4e078-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 184521
+      },
+      "orders/order_date=2026-09-19/part-00002-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"efebe852ac69e07f1c88cf530b39586a-1\"",
+        "LastModified": "2026-11-22T00:31:43.000Z",
+        "Size": 185625
+      },
+      "orders/order_date=2026-09-20/part-00000-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"a5d2632f0ee32390bc1760db11d105b2-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 186927
+      },
+      "orders/order_date=2026-09-21/part-00003-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"da1a65ad27447f43d66c78912d65017c-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 185128
+      },
+      "orders/order_date=2026-09-22/part-00002-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"b60fbc5e045985e6f15e58d27115af48-1\"",
+        "LastModified": "2026-11-22T00:31:43.000Z",
+        "Size": 187155
+      },
+      "orders/order_date=2026-09-23/part-00003-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"2a9ca8f6b1dbcb7da5cc3268994943ac-1\"",
+        "LastModified": "2026-11-22T00:31:43.000Z",
+        "Size": 185560
+      },
+      "orders/order_date=2026-09-24/part-00002-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"9060e54e7b45b302b66aaf53f292f8f0-1\"",
+        "LastModified": "2026-11-22T00:31:43.000Z",
+        "Size": 185546
+      },
+      "orders/order_date=2026-09-25/part-00001-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"75eff29ee1f40b2bfcd69ac72f5042de-1\"",
+        "LastModified": "2026-11-22T00:31:43.000Z",
+        "Size": 186218
+      },
+      "orders/order_date=2026-09-26/part-00003-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"61547ec52bbf097d543b98004b3c4c83-1\"",
+        "LastModified": "2026-11-22T00:31:43.000Z",
+        "Size": 185915
+      },
+      "orders/order_date=2026-09-27/part-00003-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"c180ee556100770b51d001a69355457d-1\"",
+        "LastModified": "2026-11-22T00:31:43.000Z",
+        "Size": 188367
+      },
+      "orders/order_date=2026-09-28/part-00003-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"f8097b44611b2b2af112f27fbeb0dcb4-1\"",
+        "LastModified": "2026-11-22T00:31:43.000Z",
+        "Size": 185280
+      },
+      "orders/order_date=2026-09-29/part-00003-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"8c04f7cac6e875f7d34771c3bc29d59e-1\"",
+        "LastModified": "2026-11-22T00:31:43.000Z",
+        "Size": 185504
+      },
+      "orders/order_date=2026-09-30/part-00000-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"f5b89f457d531d6b2dbf83255c5315f5-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 184722
+      }
+    }
+  },
+  "before": {
+    "refined": {
+      "daily_sales/order_date=2026-09-01/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"9b6ab6e0cdb24e52add1edea6d121748-1\"",
+        "LastModified": "2026-11-22T00:31:48.000Z",
+        "Size": 1693
+      },
+      "daily_sales/order_date=2026-09-02/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"d810a39b4ad29c495f13b4e49bb88234-1\"",
+        "LastModified": "2026-11-22T00:31:48.000Z",
+        "Size": 1719
+      },
+      "daily_sales/order_date=2026-09-03/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"7d386c881d4f22f446b271de7195d7b3-1\"",
+        "LastModified": "2026-11-22T00:31:48.000Z",
+        "Size": 1693
+      },
+      "daily_sales/order_date=2026-09-04/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"1de1eca810e47371fcde8928afd619f3-1\"",
+        "LastModified": "2026-11-22T00:31:48.000Z",
+        "Size": 1693
+      },
+      "daily_sales/order_date=2026-09-05/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"a49cbfa459feeac3b7fd6799f3059adc-1\"",
+        "LastModified": "2026-11-22T00:31:48.000Z",
+        "Size": 1688
+      },
+      "daily_sales/order_date=2026-09-06/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"688a825f82f02fb8c50ce14b948143b6-1\"",
+        "LastModified": "2026-11-22T00:31:48.000Z",
+        "Size": 1722
+      },
+      "daily_sales/order_date=2026-09-07/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"5514bc2e5cd08c48975773cbbb9d5b49-1\"",
+        "LastModified": "2026-11-22T00:31:48.000Z",
+        "Size": 1692
+      },
+      "daily_sales/order_date=2026-09-08/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"0d8c8d81416856591d1846b3a33298b3-1\"",
+        "LastModified": "2026-11-22T00:31:48.000Z",
+        "Size": 1690
+      },
+      "daily_sales/order_date=2026-09-09/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"22f91e979a2f4192c664c0a800dc3c84-1\"",
+        "LastModified": "2026-11-22T00:31:48.000Z",
+        "Size": 1691
+      },
+      "daily_sales/order_date=2026-09-10/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"29ac51a6cf89abd76e8ec59a5262cd70-1\"",
+        "LastModified": "2026-11-22T00:31:49.000Z",
+        "Size": 1694
+      },
+      "daily_sales/order_date=2026-09-11/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"594be336b8984da7a6db401fba31799d-1\"",
+        "LastModified": "2026-11-22T00:31:49.000Z",
+        "Size": 1692
+      },
+      "daily_sales/order_date=2026-09-12/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"9e83b949f03da8bf3cf81abe2311a080-1\"",
+        "LastModified": "2026-11-22T00:31:49.000Z",
+        "Size": 1690
+      },
+      "daily_sales/order_date=2026-09-13/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"bc3c2d776919f504aff02616a182503c-1\"",
+        "LastModified": "2026-11-22T00:31:49.000Z",
+        "Size": 1694
+      },
+      "daily_sales/order_date=2026-09-14/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"ac4566f4cb76072463005394a3ad5f3c-1\"",
+        "LastModified": "2026-11-22T00:31:49.000Z",
+        "Size": 1692
+      },
+      "daily_sales/order_date=2026-09-16/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"aab79671769adde3a89f774276597888-1\"",
+        "LastModified": "2026-11-22T00:31:49.000Z",
+        "Size": 1687
+      },
+      "daily_sales/order_date=2026-09-17/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"c3dc735a9131e49aeb4efc195debedee-1\"",
+        "LastModified": "2026-11-22T00:31:49.000Z",
+        "Size": 1691
+      },
+      "daily_sales/order_date=2026-09-18/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"e2998d5da21ec737052dd688885c95ac-1\"",
+        "LastModified": "2026-11-22T00:31:49.000Z",
+        "Size": 1691
+      },
+      "daily_sales/order_date=2026-09-19/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"d8050521d680f539394bdafbafaa4688-1\"",
+        "LastModified": "2026-11-22T00:31:49.000Z",
+        "Size": 1693
+      },
+      "daily_sales/order_date=2026-09-20/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"ec8419fee5e9c0265f38608dd478681a-1\"",
+        "LastModified": "2026-11-22T00:31:49.000Z",
+        "Size": 1687
+      },
+      "daily_sales/order_date=2026-09-21/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"b32b2779c62e89d380becacb47303e11-1\"",
+        "LastModified": "2026-11-22T00:31:49.000Z",
+        "Size": 1695
+      },
+      "daily_sales/order_date=2026-09-22/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"6e6359c487f304cc1cc0aa5f87e94379-1\"",
+        "LastModified": "2026-11-22T00:31:49.000Z",
+        "Size": 1722
+      },
+      "daily_sales/order_date=2026-09-23/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"f80364124244a2d49b569a2283ab0618-1\"",
+        "LastModified": "2026-11-22T00:31:50.000Z",
+        "Size": 1688
+      },
+      "daily_sales/order_date=2026-09-24/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"50f7f391cf574b2355d84ed5bcee1890-1\"",
+        "LastModified": "2026-11-22T00:31:50.000Z",
+        "Size": 1691
+      },
+      "daily_sales/order_date=2026-09-25/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"b7863e0eb4d2aa2a27e92bb1a46b06ac-1\"",
+        "LastModified": "2026-11-22T00:31:50.000Z",
+        "Size": 1691
+      },
+      "daily_sales/order_date=2026-09-26/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"2dee37428aa3ae385bb4af0cd5d7d13e-1\"",
+        "LastModified": "2026-11-22T00:31:50.000Z",
+        "Size": 1694
+      },
+      "daily_sales/order_date=2026-09-27/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"7001562cf70a9eff08731a57363aa836-1\"",
+        "LastModified": "2026-11-22T00:31:50.000Z",
+        "Size": 1693
+      },
+      "daily_sales/order_date=2026-09-28/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"5e30b7690a41758bb47cfa3ec9be1389-1\"",
+        "LastModified": "2026-11-22T00:31:50.000Z",
+        "Size": 1720
+      },
+      "daily_sales/order_date=2026-09-29/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"43c6d2dd1f6f26bd7e996d6698a011ab-1\"",
+        "LastModified": "2026-11-22T00:31:50.000Z",
+        "Size": 1685
+      },
+      "daily_sales/order_date=2026-09-30/part-00000-27e57eda-2bd7-45b1-a8a4-88ca522e7c62.c000.snappy.parquet": {
+        "ETag": "\"2caeffc5fa5445570dcde2f117663a38-1\"",
+        "LastModified": "2026-11-22T00:31:50.000Z",
+        "Size": 1692
+      }
+    },
+    "trusted": {
+      "orders/order_date=2026-09-01/part-00002-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"d4372d1bfd6beea5611a8adaa7716444-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 186189
+      },
+      "orders/order_date=2026-09-02/part-00001-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"0f777b22b95e983615928f2f2f6a0916-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 186152
+      },
+      "orders/order_date=2026-09-03/part-00001-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"4adc3dc01a7cc182c1bae62f5cf6319f-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 184113
+      },
+      "orders/order_date=2026-09-04/part-00001-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"3a670cec01fa173823dcdf7ccacd9624-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 187199
+      },
+      "orders/order_date=2026-09-05/part-00001-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"e98016c54969fbf224dad6d9e1194067-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 186157
+      },
+      "orders/order_date=2026-09-06/part-00002-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"986cae6985c168165f805b0d7ad3bebb-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 185510
+      },
+      "orders/order_date=2026-09-07/part-00002-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"1846b2184ea89138d2e8d78d4920bc98-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 187326
+      },
+      "orders/order_date=2026-09-08/part-00001-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"d22dfc55646d1b4d39316df5c54e4988-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 185869
+      },
+      "orders/order_date=2026-09-09/part-00001-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"44cccb64ec692e2cfa4f0ee259885983-1\"",
+        "LastModified": "2026-11-22T00:31:43.000Z",
+        "Size": 185708
+      },
+      "orders/order_date=2026-09-10/part-00002-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"f7523b6c77bde31db717088782a448a8-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 186522
+      },
+      "orders/order_date=2026-09-11/part-00002-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"1510792fc3821fce4ac50c5976a0cfcf-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 186108
+      },
+      "orders/order_date=2026-09-12/part-00000-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"f5e6a4ca93c1e95f908a0e1b30b8f261-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 186194
+      },
+      "orders/order_date=2026-09-13/part-00003-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"38c02538028f429658621b286f4d5fde-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 186823
+      },
+      "orders/order_date=2026-09-14/part-00003-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"b653cab5d1392e7e3c7c6a6a0183368f-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 187941
+      },
+      "orders/order_date=2026-09-16/part-00003-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"794e95d6a9a51f1adeecdd79712b8262-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 188138
+      },
+      "orders/order_date=2026-09-17/part-00000-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"1c5281221f2dd0d834e2ee78ee94721a-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 185087
+      },
+      "orders/order_date=2026-09-18/part-00003-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"a312c26c1d4586e087808a2d52c4e078-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 184521
+      },
+      "orders/order_date=2026-09-19/part-00002-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"efebe852ac69e07f1c88cf530b39586a-1\"",
+        "LastModified": "2026-11-22T00:31:43.000Z",
+        "Size": 185625
+      },
+      "orders/order_date=2026-09-20/part-00000-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"a5d2632f0ee32390bc1760db11d105b2-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 186927
+      },
+      "orders/order_date=2026-09-21/part-00003-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"da1a65ad27447f43d66c78912d65017c-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 185128
+      },
+      "orders/order_date=2026-09-22/part-00002-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"b60fbc5e045985e6f15e58d27115af48-1\"",
+        "LastModified": "2026-11-22T00:31:43.000Z",
+        "Size": 187155
+      },
+      "orders/order_date=2026-09-23/part-00003-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"2a9ca8f6b1dbcb7da5cc3268994943ac-1\"",
+        "LastModified": "2026-11-22T00:31:43.000Z",
+        "Size": 185560
+      },
+      "orders/order_date=2026-09-24/part-00002-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"9060e54e7b45b302b66aaf53f292f8f0-1\"",
+        "LastModified": "2026-11-22T00:31:43.000Z",
+        "Size": 185546
+      },
+      "orders/order_date=2026-09-25/part-00001-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"75eff29ee1f40b2bfcd69ac72f5042de-1\"",
+        "LastModified": "2026-11-22T00:31:43.000Z",
+        "Size": 186218
+      },
+      "orders/order_date=2026-09-26/part-00003-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"61547ec52bbf097d543b98004b3c4c83-1\"",
+        "LastModified": "2026-11-22T00:31:43.000Z",
+        "Size": 185915
+      },
+      "orders/order_date=2026-09-27/part-00003-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"c180ee556100770b51d001a69355457d-1\"",
+        "LastModified": "2026-11-22T00:31:43.000Z",
+        "Size": 188367
+      },
+      "orders/order_date=2026-09-28/part-00003-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"f8097b44611b2b2af112f27fbeb0dcb4-1\"",
+        "LastModified": "2026-11-22T00:31:43.000Z",
+        "Size": 185280
+      },
+      "orders/order_date=2026-09-29/part-00003-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"8c04f7cac6e875f7d34771c3bc29d59e-1\"",
+        "LastModified": "2026-11-22T00:31:43.000Z",
+        "Size": 185504
+      },
+      "orders/order_date=2026-09-30/part-00000-bf8acf37-f681-48f2-9e98-375fc57b4629.c000.snappy.parquet": {
+        "ETag": "\"f5b89f457d531d6b2dbf83255c5315f5-1\"",
+        "LastModified": "2026-11-22T00:31:42.000Z",
+        "Size": 184722
+      }
+    }
+  },
+  "passed": true,
+  "selected_day": "2026-09-15",
+  "unchanged_objects": {
+    "refined": 29,
+    "trusted": 29
+  },
+  "unselected_partitions": {
+    "refined": 29,
+    "trusted": 29
+  }
+}

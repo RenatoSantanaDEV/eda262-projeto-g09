@@ -1,0 +1,34 @@
+{
+  "captured_at_utc": "2026-11-19T11:57:01.661059+00:00",
+  "managed_resource_count": 59,
+  "data_source_count": 11,
+  "taggable_resources_checked": 12,
+  "missing_required_tags": [],
+  "layers": {
+    "raw": {
+      "object_count": 33,
+      "bytes": 46543442
+    },
+    "trusted": {
+      "object_count": 30,
+      "bytes": 5584100
+    },
+    "refined": {
+      "object_count": 30,
+      "bytes": 50858
+    }
+  },
+  "pipeline_local_sha256": "8f7e09c80b1fa6e7eaec2065dae5817631516467bc908c615c04ac2b42f1a165",
+  "pipeline_s3_sha256": "8f7e09c80b1fa6e7eaec2065dae5817631516467bc908c615c04ac2b42f1a165",
+  "glue_code_sha256": "8f7e09c80b1fa6e7eaec2065dae5817631516467bc908c615c04ac2b42f1a165",
+  "s3_metadata_sha256": "8f7e09c80b1fa6e7eaec2065dae5817631516467bc908c615c04ac2b42f1a165",
+  "code_match": true,
+  "global_lf_settings_managed": false,
+  "global_lf_settings_preserved": true,
+  "global_lf_baseline_sha256": "ec98b95a50aae83de2ff33921d6826e0eaa8294dbce414a3dbfa1e753c8a75a2",
+  "global_lf_after_candidate_hashes": [
+    "ec98b95a50aae83de2ff33921d6826e0eaa8294dbce414a3dbfa1e753c8a75a2",
+    "abf9f742a2b713eb34e55d50571954d2227523e5b97b3a2a58893777dd1a9a2e"
+  ],
+  "pipeline_managed_policy_attachments": []
+}

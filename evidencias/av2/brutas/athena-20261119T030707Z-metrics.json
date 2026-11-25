@@ -1,0 +1,9 @@
+{
+  "cost_formula_pending": "Aplicar pre\u00e7o oficial vigente em us-east-1 e m\u00ednimo fatur\u00e1vel da data da execu\u00e7\u00e3o.",
+  "data_scanned_bytes": 1796712,
+  "engine_execution_ms": 961,
+  "query_execution_id": "367b8aa9-e62a-4c80-9f08-3fdbf76f4b55",
+  "result_reused": false,
+  "state": "SUCCEEDED",
+  "total_execution_ms": 1131
+}

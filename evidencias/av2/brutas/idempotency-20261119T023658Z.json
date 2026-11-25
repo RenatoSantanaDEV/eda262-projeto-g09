@@ -1,0 +1,17 @@
+{
+  "after": {
+    "distinct_keys": "174878",
+    "gross_sales": "526021301.72",
+    "label": "after",
+    "partitions": "30",
+    "trusted_rows": "174878"
+  },
+  "before": {
+    "distinct_keys": "174878",
+    "gross_sales": "526021301.72",
+    "label": "before",
+    "partitions": "30",
+    "trusted_rows": "174878"
+  },
+  "passed": true
+}

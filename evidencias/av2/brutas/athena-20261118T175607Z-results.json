@@ -1,0 +1,91 @@
+{
+    "ResultSet": {
+        "Rows": [
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "trusted_rows"
+                    },
+                    {
+                        "VarCharValue": "distinct_keys"
+                    },
+                    {
+                        "VarCharValue": "partitions"
+                    },
+                    {
+                        "VarCharValue": "gross_sales"
+                    }
+                ]
+            },
+            {
+                "Data": [
+                    {
+                        "VarCharValue": "174878"
+                    },
+                    {
+                        "VarCharValue": "174878"
+                    },
+                    {
+                        "VarCharValue": "30"
+                    },
+                    {
+                        "VarCharValue": "526021301.72"
+                    }
+                ]
+            }
+        ],
+        "ResultSetMetadata": {
+            "ColumnInfo": [
+                {
+                    "CatalogName": "hive",
+                    "SchemaName": "",
+                    "TableName": "",
+                    "Name": "trusted_rows",
+                    "Label": "trusted_rows",
+                    "Type": "bigint",
+                    "Precision": 19,
+                    "Scale": 0,
+                    "Nullable": "UNKNOWN",
+                    "CaseSensitive": false
+                },
+                {
+                    "CatalogName": "hive",
+                    "SchemaName": "",
+                    "TableName": "",
+                    "Name": "distinct_keys",
+                    "Label": "distinct_keys",
+                    "Type": "bigint",
+                    "Precision": 19,
+                    "Scale": 0,
+                    "Nullable": "UNKNOWN",
+                    "CaseSensitive": false
+                },
+                {
+                    "CatalogName": "hive",
+                    "SchemaName": "",
+                    "TableName": "",
+                    "Name": "partitions",
+                    "Label": "partitions",
+                    "Type": "bigint",
+                    "Precision": 19,
+                    "Scale": 0,
+                    "Nullable": "UNKNOWN",
+                    "CaseSensitive": false
+                },
+                {
+                    "CatalogName": "hive",
+                    "SchemaName": "",
+                    "TableName": "",
+                    "Name": "gross_sales",
+                    "Label": "gross_sales",
+                    "Type": "decimal",
+                    "Precision": 18,
+                    "Scale": 2,
+                    "Nullable": "UNKNOWN",
+                    "CaseSensitive": false
+                }
+            ]
+        }
+    },
+    "UpdateCount": 0
+}

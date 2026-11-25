@@ -1,0 +1,176 @@
+
+Warning: Deprecated Parameter
+
+The parameter "dynamodb_table" is deprecated. Use parameter "use_lockfile"
+instead.
+Acquiring state lock. This may take a few moments...
+module.data_lake.terraform_data.workspace_guard: Refreshing state... [id=6391f68a-1124-30ee-fc3a-177fd99efda7]
+module.data_lake.data.aws_caller_identity.current: Reading...
+module.data_lake.data.aws_iam_policy_document.glue_assume_role: Reading...
+module.data_lake.aws_glue_catalog_database.av2: Refreshing state... [id=<ACCOUNT_ID>:eda262_g09_av2]
+module.data_lake.aws_s3_bucket.lake["refined"]: Refreshing state... [id=eda262-g09-lake-refined]
+module.data_lake.aws_s3_bucket.support["artifacts"]: Refreshing state... [id=eda262-g09-artifacts-av2]
+module.data_lake.aws_s3_bucket.lake["trusted"]: Refreshing state... [id=eda262-g09-lake-trusted]
+module.data_lake.aws_s3_bucket.lake["raw"]: Refreshing state... [id=eda262-g09-lake-raw]
+module.data_lake.aws_s3_bucket.support["results"]: Refreshing state... [id=eda262-g09-athena-results-av2]
+module.data_lake.data.aws_iam_policy_document.glue_assume_role: Read complete after 0s [id=2681768870]
+module.data_lake.aws_iam_role.pipeline: Refreshing state... [id=eda262-g09-av2-glue-pipeline]
+module.data_lake.data.aws_caller_identity.current: Read complete after 1s [id=<ACCOUNT_ID>]
+module.data_lake.data.aws_iam_policy_document.principal_assume_role: Reading...
+module.data_lake.data.aws_iam_policy_document.principal_assume_role: Read complete after 0s [id=2716348323]
+module.data_lake.aws_iam_role.analyst: Refreshing state... [id=eda262-g09-av2-analyst]
+module.data_lake.aws_iam_role.ingestion: Refreshing state... [id=eda262-g09-av2-ingestion]
+module.data_lake.aws_lakeformation_permissions.executor_database: Refreshing state... [id=2519895622]
+module.data_lake.aws_iam_role_policy.pipeline_runtime: Refreshing state... [id=eda262-g09-av2-glue-pipeline:glue-runtime-minimal]
+module.data_lake.aws_lakeformation_permissions.pipeline_database: Refreshing state... [id=558969653]
+module.data_lake.aws_lakeformation_permissions.analyst_database: Refreshing state... [id=2681733843]
+module.data_lake.aws_s3_bucket_versioning.artifacts: Refreshing state... [id=eda262-g09-artifacts-av2]
+module.data_lake.aws_s3_bucket_ownership_controls.support["artifacts"]: Refreshing state... [id=eda262-g09-artifacts-av2]
+module.data_lake.aws_s3_bucket_ownership_controls.support["results"]: Refreshing state... [id=eda262-g09-athena-results-av2]
+module.data_lake.aws_s3_bucket_server_side_encryption_configuration.support["artifacts"]: Refreshing state... [id=eda262-g09-artifacts-av2]
+module.data_lake.aws_s3_bucket_public_access_block.support["results"]: Refreshing state... [id=eda262-g09-athena-results-av2]
+module.data_lake.aws_s3_bucket_public_access_block.support["artifacts"]: Refreshing state... [id=eda262-g09-artifacts-av2]
+module.data_lake.aws_s3_bucket_server_side_encryption_configuration.support["results"]: Refreshing state... [id=eda262-g09-athena-results-av2]
+module.data_lake.data.aws_iam_policy_document.support_tls["artifacts"]: Reading...
+module.data_lake.data.aws_iam_policy_document.support_tls["artifacts"]: Read complete after 0s [id=3985115685]
+module.data_lake.data.aws_iam_policy_document.support_tls["results"]: Reading...
+module.data_lake.data.aws_iam_policy_document.support_tls["results"]: Read complete after 0s [id=1211682519]
+module.data_lake.aws_s3_bucket_versioning.raw: Refreshing state... [id=eda262-g09-lake-raw]
+module.data_lake.data.aws_iam_policy_document.ingestion: Reading...
+module.data_lake.aws_lakeformation_resource.layer["refined"]: Refreshing state... [id=arn:aws:s3:::eda262-g09-lake-refined]
+module.data_lake.aws_lakeformation_resource.layer["trusted"]: Refreshing state... [id=arn:aws:s3:::eda262-g09-lake-trusted]
+module.data_lake.data.aws_iam_policy_document.lake_tls["raw"]: Reading...
+module.data_lake.data.aws_iam_policy_document.ingestion: Read complete after 0s [id=2546309831]
+module.data_lake.data.aws_iam_policy_document.lake_tls["raw"]: Read complete after 0s [id=3707982014]
+module.data_lake.aws_lakeformation_resource.layer["raw"]: Refreshing state... [id=arn:aws:s3:::eda262-g09-lake-raw]
+module.data_lake.data.aws_iam_policy_document.lake_tls["refined"]: Reading...
+module.data_lake.data.aws_iam_policy_document.lake_tls["refined"]: Read complete after 0s [id=2248194849]
+module.data_lake.data.aws_iam_policy_document.lake_tls["trusted"]: Reading...
+module.data_lake.data.aws_iam_policy_document.lake_tls["trusted"]: Read complete after 0s [id=138848331]
+module.data_lake.data.aws_iam_policy_document.pipeline: Reading...
+module.data_lake.data.aws_iam_policy_document.pipeline: Read complete after 0s [id=4076599474]
+module.data_lake.aws_s3_bucket_ownership_controls.lake["raw"]: Refreshing state... [id=eda262-g09-lake-raw]
+module.data_lake.aws_s3_bucket_ownership_controls.lake["refined"]: Refreshing state... [id=eda262-g09-lake-refined]
+module.data_lake.aws_s3_bucket_ownership_controls.lake["trusted"]: Refreshing state... [id=eda262-g09-lake-trusted]
+module.data_lake.aws_s3_bucket_public_access_block.lake["raw"]: Refreshing state... [id=eda262-g09-lake-raw]
+module.data_lake.data.aws_iam_policy_document.analyst: Reading...
+module.data_lake.data.aws_iam_policy_document.analyst: Read complete after 0s [id=452205179]
+module.data_lake.aws_s3_bucket_public_access_block.lake["refined"]: Refreshing state... [id=eda262-g09-lake-refined]
+module.data_lake.aws_s3_bucket_public_access_block.lake["trusted"]: Refreshing state... [id=eda262-g09-lake-trusted]
+module.data_lake.aws_s3_bucket_server_side_encryption_configuration.lake["raw"]: Refreshing state... [id=eda262-g09-lake-raw]
+module.data_lake.aws_s3_bucket_server_side_encryption_configuration.lake["refined"]: Refreshing state... [id=eda262-g09-lake-refined]
+module.data_lake.aws_s3_bucket_server_side_encryption_configuration.lake["trusted"]: Refreshing state... [id=eda262-g09-lake-trusted]
+module.data_lake.aws_iam_role_policy.ingestion: Refreshing state... [id=eda262-g09-av2-ingestion:raw-only]
+module.data_lake.aws_iam_role_policy.pipeline: Refreshing state... [id=eda262-g09-av2-glue-pipeline:lake-pipeline]
+module.data_lake.aws_iam_role_policy.analyst: Refreshing state... [id=eda262-g09-av2-analyst:refined-query-only]
+module.data_lake.aws_lakeformation_permissions.ingestion_raw_location: Refreshing state... [id=721147546]
+module.data_lake.aws_lakeformation_permissions.executor_locations["raw"]: Refreshing state... [id=3828044134]
+module.data_lake.aws_lakeformation_permissions.executor_locations["refined"]: Refreshing state... [id=2665495809]
+module.data_lake.aws_lakeformation_permissions.executor_locations["trusted"]: Refreshing state... [id=2960348025]
+module.data_lake.aws_s3_object.pipeline_script: Refreshing state... [id=scripts/pipeline_orders.py]
+module.data_lake.aws_lakeformation_permissions.pipeline_locations["trusted"]: Refreshing state... [id=1777273172]
+module.data_lake.aws_s3_bucket_policy.support_tls["artifacts"]: Refreshing state... [id=eda262-g09-artifacts-av2]
+module.data_lake.aws_lakeformation_permissions.pipeline_locations["raw"]: Refreshing state... [id=3444900111]
+module.data_lake.aws_s3_bucket_policy.support_tls["results"]: Refreshing state... [id=eda262-g09-athena-results-av2]
+module.data_lake.aws_s3_bucket_policy.lake_tls["raw"]: Refreshing state... [id=eda262-g09-lake-raw]
+module.data_lake.aws_lakeformation_permissions.pipeline_locations["refined"]: Refreshing state... [id=1199335212]
+module.data_lake.aws_athena_workgroup.av2: Refreshing state... [id=eda262-g09-av2]
+module.data_lake.aws_s3_bucket_policy.lake_tls["refined"]: Refreshing state... [id=eda262-g09-lake-refined]
+module.data_lake.aws_s3_bucket_policy.lake_tls["trusted"]: Refreshing state... [id=eda262-g09-lake-trusted]
+module.data_lake.aws_glue_catalog_table.refined_sales: Refreshing state... [id=<ACCOUNT_ID>:eda262_g09_av2:refined_daily_sales]
+module.data_lake.aws_glue_catalog_table.trusted_orders: Refreshing state... [id=<ACCOUNT_ID>:eda262_g09_av2:trusted_orders]
+module.data_lake.aws_glue_catalog_table.raw_orders: Refreshing state... [id=<ACCOUNT_ID>:eda262_g09_av2:raw_orders]
+module.data_lake.aws_glue_job.orders_pipeline: Refreshing state... [id=eda262-g09-av2-orders-pipeline]
+module.data_lake.aws_lakeformation_permissions.analyst_refined_table: Refreshing state... [id=1170272987]
+module.data_lake.aws_lakeformation_permissions.pipeline_tables["refined"]: Refreshing state... [id=3222528145]
+module.data_lake.aws_lakeformation_permissions.pipeline_tables["raw"]: Refreshing state... [id=2461719153]
+module.data_lake.aws_lakeformation_permissions.pipeline_tables["trusted"]: Refreshing state... [id=1063386954]
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  ~ update in-place
+-/+ destroy and then create replacement
+
+Terraform will perform the following actions:
+
+  # module.data_lake.aws_glue_job.orders_pipeline will be updated in-place
+  ~ resource "aws_glue_job" "orders_pipeline" {
+      ~ default_arguments         = {
+          ~ "--CODE_SHA256"                  = "8f7e09c80b1fa6e7eaec2065dae5817631516467bc908c615c04ac2b42f1a165" -> "a71798b04de67c23030677518b01965a36b2e2bf656a9ef3a4a4fc7ef41f401b"
+            # (10 unchanged elements hidden)
+        }
+        id                        = "eda262-g09-av2-orders-pipeline"
+        name                      = "eda262-g09-av2-orders-pipeline"
+        tags                      = {}
+        # (16 unchanged attributes hidden)
+
+        # (2 unchanged blocks hidden)
+    }
+
+  # module.data_lake.aws_lakeformation_permissions.analyst_database must be replaced
+-/+ resource "aws_lakeformation_permissions" "analyst_database" {
+      ~ id                            = "2681733843" -> (known after apply)
+      ~ permissions                   = [ # forces replacement
+          - "ALL",
+            # (1 unchanged element hidden)
+        ]
+      ~ permissions_with_grant_option = [] -> (known after apply)
+        # (2 unchanged attributes hidden)
+
+      ~ data_location (known after apply)
+
+      ~ lf_tag (known after apply)
+
+      ~ lf_tag_policy (known after apply)
+
+      ~ table (known after apply)
+
+      ~ table_with_columns (known after apply)
+
+        # (1 unchanged block hidden)
+    }
+
+  # module.data_lake.aws_lakeformation_permissions.pipeline_database must be replaced
+-/+ resource "aws_lakeformation_permissions" "pipeline_database" {
+      ~ id                            = "558969653" -> (known after apply)
+      ~ permissions                   = [ # forces replacement
+          - "ALL",
+            # (1 unchanged element hidden)
+        ]
+      ~ permissions_with_grant_option = [] -> (known after apply)
+        # (2 unchanged attributes hidden)
+
+      ~ data_location (known after apply)
+
+      ~ lf_tag (known after apply)
+
+      ~ lf_tag_policy (known after apply)
+
+      ~ table (known after apply)
+
+      ~ table_with_columns (known after apply)
+
+        # (1 unchanged block hidden)
+    }
+
+  # module.data_lake.aws_s3_object.pipeline_script will be updated in-place
+  ~ resource "aws_s3_object" "pipeline_script" {
+      ~ etag                          = "335728a0a8759c911fc0bbcefee77964" -> "5c6aece0ef32695a93a2cfdb72b2ff50"
+        id                            = "scripts/pipeline_orders.py"
+      ~ metadata                      = {
+          ~ "sha256" = "8f7e09c80b1fa6e7eaec2065dae5817631516467bc908c615c04ac2b42f1a165" -> "a71798b04de67c23030677518b01965a36b2e2bf656a9ef3a4a4fc7ef41f401b"
+        }
+        tags                          = {}
+      ~ version_id                    = "5qavnuWFlUTZ_re8ZxzB1dhAsi5DV7_5" -> (known after apply)
+        # (23 unchanged attributes hidden)
+    }
+
+Plan: 2 to add, 2 to change, 2 to destroy.
+
+─────────────────────────────────────────────────────────────────────────────
+
+Saved the plan to: .runtime/av2-20261122T001116Z.tfplan
+
+To perform exactly these actions, run the following command to apply:
+    terraform apply ".runtime/av2-20261122T001116Z.tfplan"
+Releasing state lock. This may take a few moments...

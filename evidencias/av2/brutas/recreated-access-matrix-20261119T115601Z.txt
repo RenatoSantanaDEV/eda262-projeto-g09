@@ -1,0 +1,5 @@
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mFailed to load state: Unable to list objects in S3 bucket "eda262-g09-tfstate" with prefix "workspaces/": operation error S3: ListObjectsV2, exceeded maximum number of attempts, 5, https response error StatusCode: 0, RequestID: , HostID: , request send failed, Get "https://eda262-g09-tfstate.s3.us-east-1.amazonaws.com/?list-type=2&max-keys=1000&prefix=workspaces%2F": net/http: TLS handshake timeout[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m
+[31m╵[0m[0m

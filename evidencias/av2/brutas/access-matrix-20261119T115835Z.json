@@ -1,0 +1,109 @@
+{
+  "check_count": 17,
+  "checks": [
+    {
+      "actual": "allowed",
+      "expected": "allowed",
+      "name": "iam_ingestion_list_raw",
+      "passed": true
+    },
+    {
+      "actual": "allowed",
+      "expected": "allowed",
+      "name": "iam_ingestion_location_raw",
+      "passed": true
+    },
+    {
+      "actual": "allowed",
+      "expected": "allowed",
+      "name": "iam_ingestion_getobject_raw",
+      "passed": true
+    },
+    {
+      "actual": "implicitDeny",
+      "expected": "denied",
+      "name": "iam_ingestion_getobject_trusted",
+      "passed": true
+    },
+    {
+      "actual": "implicitDeny",
+      "expected": "denied",
+      "name": "iam_ingestion_getobject_refined",
+      "passed": true
+    },
+    {
+      "actual": "allowed",
+      "expected": "allowed",
+      "name": "iam_ingestion_putobject_raw",
+      "passed": true
+    },
+    {
+      "actual": "implicitDeny",
+      "expected": "denied",
+      "name": "iam_ingestion_putobject_trusted",
+      "passed": true
+    },
+    {
+      "actual": "implicitDeny",
+      "expected": "denied",
+      "name": "iam_ingestion_putobject_refined",
+      "passed": true
+    },
+    {
+      "actual": "allowed",
+      "expected": "allowed",
+      "name": "iam_ingestion_deleteobject_raw",
+      "passed": true
+    },
+    {
+      "actual": "implicitDeny",
+      "expected": "denied",
+      "name": "iam_ingestion_deleteobject_trusted",
+      "passed": true
+    },
+    {
+      "actual": "implicitDeny",
+      "expected": "denied",
+      "name": "iam_ingestion_deleteobject_refined",
+      "passed": true
+    },
+    {
+      "actual": "allowed",
+      "expected": "allowed",
+      "name": "analyst_s3_get_refined",
+      "passed": true
+    },
+    {
+      "actual": "denied",
+      "expected": "denied",
+      "name": "analyst_s3_get_raw",
+      "passed": true
+    },
+    {
+      "actual": "denied",
+      "expected": "denied",
+      "name": "analyst_s3_get_trusted",
+      "passed": true
+    },
+    {
+      "actual": "SUCCEEDED query_id=412b9ceb-b866-4055-918e-dd83c47bc541",
+      "expected": "allowed",
+      "name": "analyst_athena_refined",
+      "passed": true
+    },
+    {
+      "actual": "FAILED query_id=d1479a56-8a0e-4bee-8bd7-be9cc6d4500e reason=TABLE_NOT_FOUND: line 1:22: Table 'awsdatacatalog.eda262_g09_av2.raw_orders' does not exist",
+      "expected": "denied",
+      "name": "analyst_athena_raw",
+      "passed": true
+    },
+    {
+      "actual": "FAILED query_id=fc9deb66-97c8-4ec4-bdfd-a6649fa09bb9 reason=TABLE_NOT_FOUND: line 1:22: Table 'awsdatacatalog.eda262_g09_av2.trusted_orders' does not exist",
+      "expected": "denied",
+      "name": "analyst_athena_trusted",
+      "passed": true
+    }
+  ],
+  "generated_at_utc": "20261119T115835Z",
+  "passed": true
+}

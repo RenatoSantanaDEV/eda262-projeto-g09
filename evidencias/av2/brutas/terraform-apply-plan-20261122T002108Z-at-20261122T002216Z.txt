@@ -1,0 +1,43 @@
+
+Warning: Deprecated Parameter
+
+The parameter "dynamodb_table" is deprecated. Use parameter "use_lockfile"
+instead.
+Acquiring state lock. This may take a few moments...
+module.data_lake.aws_s3_object.pipeline_script: Modifying... [id=scripts/pipeline_orders.py]
+module.data_lake.aws_s3_object.pipeline_script: Modifications complete after 1s [id=scripts/pipeline_orders.py]
+module.data_lake.aws_glue_job.orders_pipeline: Modifying... [id=eda262-g09-av2-orders-pipeline]
+module.data_lake.aws_glue_job.orders_pipeline: Modifications complete after 3s [id=eda262-g09-av2-orders-pipeline]
+
+Apply complete! Resources: 0 added, 2 changed, 0 destroyed.
+
+Outputs:
+
+account_id = "<ACCOUNT_ID>"
+artifacts_bucket = "eda262-g09-artifacts-av2"
+athena_results_bucket = "eda262-g09-athena-results-av2"
+athena_workgroup = "eda262-g09-av2"
+aws_region = "us-east-1"
+database = "eda262_g09_av2"
+glue_job = "eda262-g09-av2-orders-pipeline"
+layer_roles = {
+  "analyst" = "eda262-g09-av2-analyst"
+  "ingestion" = "eda262-g09-av2-ingestion"
+  "pipeline" = "eda262-g09-av2-glue-pipeline"
+}
+raw_bucket = "eda262-g09-lake-raw"
+raw_table = "raw_orders"
+refined_bucket = "eda262-g09-lake-refined"
+refined_table = "refined_daily_sales"
+resource_inventory = {
+  "athena_workgroups" = 1
+  "glue_database" = 1
+  "glue_jobs" = 1
+  "glue_tables" = 3
+  "iam_roles" = 3
+  "lakeformation_registrations" = 3
+  "s3_buckets" = 5
+}
+trusted_bucket = "eda262-g09-lake-trusted"
+trusted_table = "trusted_orders"
+workspace = "av2"

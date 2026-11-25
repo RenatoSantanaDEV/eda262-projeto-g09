@@ -1,0 +1,2046 @@
+
+Warning: Deprecated Parameter
+
+The parameter "dynamodb_table" is deprecated. Use parameter "use_lockfile"
+instead.
+Acquiring state lock. This may take a few moments...
+terraform_data.workspace_guard: Refreshing state... [id=ae4ffe4c-a26e-ee52-f919-a38fa443ce7a]
+data.aws_caller_identity.current: Reading...
+data.aws_iam_policy_document.glue_assume_role: Reading...
+aws_glue_catalog_database.av2: Refreshing state... [id=<ACCOUNT_ID>:eda262_g09_av2]
+aws_s3_bucket.lake["refined"]: Refreshing state... [id=eda262-g09-lake-refined]
+aws_s3_bucket.lake["raw"]: Refreshing state... [id=eda262-g09-lake-raw]
+data.aws_iam_policy_document.glue_assume_role: Read complete after 0s [id=2681768870]
+aws_s3_bucket.lake["trusted"]: Refreshing state... [id=eda262-g09-lake-trusted]
+aws_s3_bucket.support["artifacts"]: Refreshing state... [id=eda262-g09-artifacts-av2]
+aws_s3_bucket.support["results"]: Refreshing state... [id=eda262-g09-athena-results-av2]
+aws_iam_role.pipeline: Refreshing state... [id=eda262-g09-av2-glue-pipeline]
+data.aws_caller_identity.current: Read complete after 0s [id=<ACCOUNT_ID>]
+data.aws_iam_policy_document.principal_assume_role: Reading...
+data.aws_iam_policy_document.principal_assume_role: Read complete after 0s [id=2716348323]
+aws_iam_role.ingestion: Refreshing state... [id=eda262-g09-av2-ingestion]
+aws_iam_role.analyst: Refreshing state... [id=eda262-g09-av2-analyst]
+aws_lakeformation_permissions.executor_database: Refreshing state... [id=2126954045]
+aws_iam_role_policy_attachment.pipeline_glue: Refreshing state... [id=eda262-g09-av2-glue-pipeline-20261118174154150300000001]
+aws_lakeformation_permissions.pipeline_database: Refreshing state... [id=158768476]
+aws_lakeformation_permissions.analyst_database: Refreshing state... [id=2748688198]
+aws_s3_bucket_versioning.raw: Refreshing state... [id=eda262-g09-lake-raw]
+aws_s3_bucket_public_access_block.lake["trusted"]: Refreshing state... [id=eda262-g09-lake-trusted]
+aws_s3_bucket_public_access_block.lake["refined"]: Refreshing state... [id=eda262-g09-lake-refined]
+aws_s3_bucket_public_access_block.lake["raw"]: Refreshing state... [id=eda262-g09-lake-raw]
+data.aws_iam_policy_document.ingestion: Reading...
+aws_lakeformation_resource.layer["refined"]: Refreshing state... [id=arn:aws:s3:::eda262-g09-lake-refined]
+aws_lakeformation_resource.layer["trusted"]: Refreshing state... [id=arn:aws:s3:::eda262-g09-lake-trusted]
+aws_lakeformation_resource.layer["raw"]: Refreshing state... [id=arn:aws:s3:::eda262-g09-lake-raw]
+aws_s3_bucket_server_side_encryption_configuration.lake["raw"]: Refreshing state... [id=eda262-g09-lake-raw]
+aws_s3_bucket_server_side_encryption_configuration.lake["trusted"]: Refreshing state... [id=eda262-g09-lake-trusted]
+data.aws_iam_policy_document.ingestion: Read complete after 0s [id=2546309831]
+aws_s3_bucket_server_side_encryption_configuration.lake["refined"]: Refreshing state... [id=eda262-g09-lake-refined]
+aws_s3_bucket_versioning.artifacts: Refreshing state... [id=eda262-g09-artifacts-av2]
+data.aws_iam_policy_document.pipeline: Reading...
+data.aws_iam_policy_document.analyst: Reading...
+data.aws_iam_policy_document.pipeline: Read complete after 0s [id=4076599474]
+aws_s3_bucket_ownership_controls.lake["raw"]: Refreshing state... [id=eda262-g09-lake-raw]
+data.aws_iam_policy_document.analyst: Read complete after 0s [id=452205179]
+aws_s3_bucket_ownership_controls.lake["refined"]: Refreshing state... [id=eda262-g09-lake-refined]
+aws_s3_bucket_ownership_controls.lake["trusted"]: Refreshing state... [id=eda262-g09-lake-trusted]
+data.aws_iam_policy_document.lake_tls["refined"]: Reading...
+data.aws_iam_policy_document.lake_tls["raw"]: Reading...
+data.aws_iam_policy_document.lake_tls["raw"]: Read complete after 0s [id=3707982014]
+data.aws_iam_policy_document.lake_tls["refined"]: Read complete after 0s [id=2248194849]
+aws_s3_bucket_server_side_encryption_configuration.support["artifacts"]: Refreshing state... [id=eda262-g09-artifacts-av2]
+data.aws_iam_policy_document.lake_tls["trusted"]: Reading...
+data.aws_iam_policy_document.lake_tls["trusted"]: Read complete after 0s [id=138848331]
+aws_s3_bucket_server_side_encryption_configuration.support["results"]: Refreshing state... [id=eda262-g09-athena-results-av2]
+aws_s3_bucket_public_access_block.support["results"]: Refreshing state... [id=eda262-g09-athena-results-av2]
+aws_s3_bucket_public_access_block.support["artifacts"]: Refreshing state... [id=eda262-g09-artifacts-av2]
+data.aws_iam_policy_document.support_tls["results"]: Reading...
+data.aws_iam_policy_document.support_tls["artifacts"]: Reading...
+data.aws_iam_policy_document.support_tls["results"]: Read complete after 0s [id=1211682519]
+aws_s3_bucket_ownership_controls.support["results"]: Refreshing state... [id=eda262-g09-athena-results-av2]
+data.aws_iam_policy_document.support_tls["artifacts"]: Read complete after 0s [id=3985115685]
+aws_s3_bucket_ownership_controls.support["artifacts"]: Refreshing state... [id=eda262-g09-artifacts-av2]
+aws_iam_role_policy.ingestion: Refreshing state... [id=eda262-g09-av2-ingestion:raw-only]
+aws_iam_role_policy.pipeline: Refreshing state... [id=eda262-g09-av2-glue-pipeline:lake-pipeline]
+aws_iam_role_policy.analyst: Refreshing state... [id=eda262-g09-av2-analyst:refined-query-only]
+aws_lakeformation_permissions.ingestion_raw_location: Refreshing state... [id=721147546]
+aws_lakeformation_permissions.executor_locations["trusted"]: Refreshing state... [id=2960348025]
+aws_lakeformation_permissions.executor_locations["refined"]: Refreshing state... [id=2665495809]
+aws_lakeformation_permissions.executor_locations["raw"]: Refreshing state... [id=3828044134]
+aws_lakeformation_permissions.pipeline_locations["trusted"]: Refreshing state... [id=1777273172]
+aws_s3_bucket_policy.lake_tls["raw"]: Refreshing state... [id=eda262-g09-lake-raw]
+aws_lakeformation_permissions.pipeline_locations["raw"]: Refreshing state... [id=3444900111]
+aws_lakeformation_permissions.pipeline_locations["refined"]: Refreshing state... [id=1199335212]
+aws_s3_bucket_policy.lake_tls["trusted"]: Refreshing state... [id=eda262-g09-lake-trusted]
+aws_s3_bucket_policy.lake_tls["refined"]: Refreshing state... [id=eda262-g09-lake-refined]
+aws_s3_object.pipeline_script: Refreshing state... [id=scripts/pipeline_orders.py]
+aws_athena_workgroup.av2: Refreshing state... [id=eda262-g09-av2]
+aws_s3_bucket_policy.support_tls["artifacts"]: Refreshing state... [id=eda262-g09-artifacts-av2]
+aws_s3_bucket_policy.support_tls["results"]: Refreshing state... [id=eda262-g09-athena-results-av2]
+aws_glue_catalog_table.refined_sales: Refreshing state... [id=<ACCOUNT_ID>:eda262_g09_av2:refined_daily_sales]
+aws_glue_catalog_table.trusted_orders: Refreshing state... [id=<ACCOUNT_ID>:eda262_g09_av2:trusted_orders]
+aws_glue_catalog_table.raw_orders: Refreshing state... [id=<ACCOUNT_ID>:eda262_g09_av2:raw_orders]
+aws_glue_job.orders_pipeline: Refreshing state... [id=eda262-g09-av2-orders-pipeline]
+aws_lakeformation_permissions.analyst_refined_table: Refreshing state... [id=1170272987]
+aws_lakeformation_permissions.pipeline_tables["refined"]: Refreshing state... [id=3222528145]
+aws_lakeformation_permissions.pipeline_tables["raw"]: Refreshing state... [id=2461719153]
+aws_lakeformation_permissions.pipeline_tables["trusted"]: Refreshing state... [id=1063386954]
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  - destroy
+
+Terraform will perform the following actions:
+
+  # aws_athena_workgroup.av2 will be destroyed
+  - resource "aws_athena_workgroup" "av2" {
+      - arn           = "arn:aws:athena:us-east-1:<ACCOUNT_ID>:workgroup/eda262-g09-av2" -> null
+      - description   = "Consultas AV2 do grupo g09 sobre a camada refined" -> null
+      - force_destroy = true -> null
+      - id            = "eda262-g09-av2" -> null
+      - name          = "eda262-g09-av2" -> null
+      - state         = "ENABLED" -> null
+      - tags          = {} -> null
+      - tags_all      = {
+          - "entrega"   = "av2"
+          - "grupo"     = "g09"
+          - "managedby" = "terraform"
+          - "projeto"   = "engenharia-de-dados"
+          - "turma"     = "eda262"
+        } -> null
+
+      - configuration {
+          - bytes_scanned_cutoff_per_query     = 10485760 -> null
+          - enforce_workgroup_configuration    = true -> null
+          - publish_cloudwatch_metrics_enabled = true -> null
+          - requester_pays_enabled             = false -> null
+            # (1 unchanged attribute hidden)
+
+          - engine_version {
+              - effective_engine_version = "Athena engine version 3" -> null
+              - selected_engine_version  = "AUTO" -> null
+            }
+
+          - result_configuration {
+              - output_location       = "s3://eda262-g09-athena-results-av2/results/" -> null
+                # (1 unchanged attribute hidden)
+
+              - encryption_configuration {
+                  - encryption_option = "SSE_S3" -> null
+                    # (1 unchanged attribute hidden)
+                }
+            }
+        }
+    }
+
+  # aws_glue_catalog_database.av2 will be destroyed
+  - resource "aws_glue_catalog_database" "av2" {
+      - arn          = "arn:aws:glue:us-east-1:<ACCOUNT_ID>:database/eda262_g09_av2" -> null
+      - catalog_id   = "<ACCOUNT_ID>" -> null
+      - description  = "Catálogo AV2 do grupo g09: pedidos de e-commerce" -> null
+      - id           = "<ACCOUNT_ID>:eda262_g09_av2" -> null
+      - name         = "eda262_g09_av2" -> null
+      - parameters   = {} -> null
+      - tags         = {} -> null
+      - tags_all     = {
+          - "entrega"   = "av2"
+          - "grupo"     = "g09"
+          - "managedby" = "terraform"
+          - "projeto"   = "engenharia-de-dados"
+          - "turma"     = "eda262"
+        } -> null
+        # (1 unchanged attribute hidden)
+
+      - create_table_default_permission {
+          - permissions = [] -> null
+
+          - principal {
+              - data_lake_principal_identifier = "IAM_ALLOWED_PRINCIPALS" -> null
+            }
+        }
+    }
+
+  # aws_glue_catalog_table.raw_orders will be destroyed
+  - resource "aws_glue_catalog_table" "raw_orders" {
+      - arn                = "arn:aws:glue:us-east-1:<ACCOUNT_ID>:table/eda262_g09_av2/raw_orders" -> null
+      - catalog_id         = "<ACCOUNT_ID>" -> null
+      - database_name      = "eda262_g09_av2" -> null
+      - id                 = "<ACCOUNT_ID>:eda262_g09_av2:raw_orders" -> null
+      - name               = "raw_orders" -> null
+      - parameters         = {
+          - "classification"                        = "json"
+          - "projection.arrival_date.format"        = "yyyy-MM-dd"
+          - "projection.arrival_date.interval"      = "1"
+          - "projection.arrival_date.interval.unit" = "DAYS"
+          - "projection.arrival_date.range"         = "2026-09-01,2026-10-15"
+          - "projection.arrival_date.type"          = "date"
+          - "projection.enabled"                    = "true"
+          - "storage.location.template"             = "s3://eda262-g09-lake-raw/orders/arrival_date=${arrival_date}/"
+        } -> null
+      - retention          = 0 -> null
+      - table_type         = "EXTERNAL_TABLE" -> null
+        # (4 unchanged attributes hidden)
+
+      - partition_keys {
+          - name    = "arrival_date" -> null
+          - type    = "string" -> null
+            # (1 unchanged attribute hidden)
+        }
+
+      - storage_descriptor {
+          - additional_locations      = [] -> null
+          - bucket_columns            = [] -> null
+          - compressed                = false -> null
+          - input_format              = "org.apache.hadoop.mapred.TextInputFormat" -> null
+          - location                  = "s3://eda262-g09-lake-raw/orders/" -> null
+          - number_of_buckets         = 0 -> null
+          - output_format             = "org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat" -> null
+          - parameters                = {} -> null
+          - stored_as_sub_directories = false -> null
+
+          - columns {
+              - name       = "order_id" -> null
+              - parameters = {} -> null
+              - type       = "string" -> null
+                # (1 unchanged attribute hidden)
+            }
+          - columns {
+              - name       = "order_item_id" -> null
+              - parameters = {} -> null
+              - type       = "string" -> null
+                # (1 unchanged attribute hidden)
+            }
+          - columns {
+              - name       = "customer_id" -> null
+              - parameters = {} -> null
+              - type       = "string" -> null
+                # (1 unchanged attribute hidden)
+            }
+          - columns {
+              - name       = "order_timestamp" -> null
+              - parameters = {} -> null
+              - type       = "string" -> null
+                # (1 unchanged attribute hidden)
+            }
+          - columns {
+              - name       = "status" -> null
+              - parameters = {} -> null
+              - type       = "string" -> null
+                # (1 unchanged attribute hidden)
+            }
+          - columns {
+              - name       = "quantity" -> null
+              - parameters = {} -> null
+              - type       = "string" -> null
+                # (1 unchanged attribute hidden)
+            }
+          - columns {
+              - name       = "unit_price" -> null
+              - parameters = {} -> null
+              - type       = "string" -> null
+                # (1 unchanged attribute hidden)
+            }
+          - columns {
+              - name       = "city" -> null
+              - parameters = {} -> null
+              - type       = "string" -> null
+                # (1 unchanged attribute hidden)
+            }
+          - columns {
+              - name       = "state" -> null
+              - parameters = {} -> null
+              - type       = "string" -> null
+                # (1 unchanged attribute hidden)
+            }
+          - columns {
+              - name       = "updated_at" -> null
+              - parameters = {} -> null
+              - type       = "string" -> null
+                # (1 unchanged attribute hidden)
+            }
+
+          - ser_de_info {
+              - name                  = "raw-orders-json" -> null
+              - parameters            = {} -> null
+              - serialization_library = "org.openx.data.jsonserde.JsonSerDe" -> null
+            }
+        }
+    }
+
+  # aws_glue_catalog_table.refined_sales will be destroyed
+  - resource "aws_glue_catalog_table" "refined_sales" {
+      - arn                = "arn:aws:glue:us-east-1:<ACCOUNT_ID>:table/eda262_g09_av2/refined_daily_sales" -> null
+      - catalog_id         = "<ACCOUNT_ID>" -> null
+      - database_name      = "eda262_g09_av2" -> null
+      - id                 = "<ACCOUNT_ID>:eda262_g09_av2:refined_daily_sales" -> null
+      - name               = "refined_daily_sales" -> null
+      - parameters         = {
+          - "classification"                      = "parquet"
+          - "projection.enabled"                  = "true"
+          - "projection.order_date.format"        = "yyyy-MM-dd"
+          - "projection.order_date.interval"      = "1"
+          - "projection.order_date.interval.unit" = "DAYS"
+          - "projection.order_date.range"         = "2026-09-01,2026-09-30"
+          - "projection.order_date.type"          = "date"
+          - "storage.location.template"           = "s3://eda262-g09-lake-refined/daily_sales/order_date=${order_date}/"
+        } -> null
+      - retention          = 0 -> null
+      - table_type         = "EXTERNAL_TABLE" -> null
+        # (4 unchanged attributes hidden)
+
+      - partition_keys {
+          - name    = "order_date" -> null
+          - type    = "string" -> null
+            # (1 unchanged attribute hidden)
+        }
+
+      - storage_descriptor {
+          - additional_locations      = [] -> null
+          - bucket_columns            = [] -> null
+          - compressed                = false -> null
+          - input_format              = "org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat" -> null
+          - location                  = "s3://eda262-g09-lake-refined/daily_sales/" -> null
+          - number_of_buckets         = 0 -> null
+          - output_format             = "org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat" -> null
+          - parameters                = {} -> null
+          - stored_as_sub_directories = false -> null
+
+          - columns {
+              - name       = "status" -> null
+              - parameters = {} -> null
+              - type       = "string" -> null
+                # (1 unchanged attribute hidden)
+            }
+          - columns {
+              - name       = "order_count" -> null
+              - parameters = {} -> null
+              - type       = "bigint" -> null
+                # (1 unchanged attribute hidden)
+            }
+          - columns {
+              - name       = "item_count" -> null
+              - parameters = {} -> null
+              - type       = "bigint" -> null
+                # (1 unchanged attribute hidden)
+            }
+          - columns {
+              - name       = "quantity_total" -> null
+              - parameters = {} -> null
+              - type       = "bigint" -> null
+                # (1 unchanged attribute hidden)
+            }
+          - columns {
+              - name       = "gross_sales" -> null
+              - parameters = {} -> null
+              - type       = "decimal(18,2)" -> null
+                # (1 unchanged attribute hidden)
+            }
+
+          - ser_de_info {
+              - name                  = "refined-sales-parquet" -> null
+              - parameters            = {} -> null
+              - serialization_library = "org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe" -> null
+            }
+        }
+    }
+
+  # aws_glue_catalog_table.trusted_orders will be destroyed
+  - resource "aws_glue_catalog_table" "trusted_orders" {
+      - arn                = "arn:aws:glue:us-east-1:<ACCOUNT_ID>:table/eda262_g09_av2/trusted_orders" -> null
+      - catalog_id         = "<ACCOUNT_ID>" -> null
+      - database_name      = "eda262_g09_av2" -> null
+      - id                 = "<ACCOUNT_ID>:eda262_g09_av2:trusted_orders" -> null
+      - name               = "trusted_orders" -> null
+      - parameters         = {
+          - "classification"                      = "parquet"
+          - "projection.enabled"                  = "true"
+          - "projection.order_date.format"        = "yyyy-MM-dd"
+          - "projection.order_date.interval"      = "1"
+          - "projection.order_date.interval.unit" = "DAYS"
+          - "projection.order_date.range"         = "2026-09-01,2026-09-30"
+          - "projection.order_date.type"          = "date"
+          - "storage.location.template"           = "s3://eda262-g09-lake-trusted/orders/order_date=${order_date}/"
+        } -> null
+      - retention          = 0 -> null
+      - table_type         = "EXTERNAL_TABLE" -> null
+        # (4 unchanged attributes hidden)
+
+      - partition_keys {
+          - name    = "order_date" -> null
+          - type    = "string" -> null
+            # (1 unchanged attribute hidden)
+        }
+
+      - storage_descriptor {
+          - additional_locations      = [] -> null
+          - bucket_columns            = [] -> null
+          - compressed                = false -> null
+          - input_format              = "org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat" -> null
+          - location                  = "s3://eda262-g09-lake-trusted/orders/" -> null
+          - number_of_buckets         = 0 -> null
+          - output_format             = "org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat" -> null
+          - parameters                = {} -> null
+          - stored_as_sub_directories = false -> null
+
+          - columns {
+              - name       = "order_id" -> null
+              - parameters = {} -> null
+              - type       = "string" -> null
+                # (1 unchanged attribute hidden)
+            }
+          - columns {
+              - name       = "order_item_id" -> null
+              - parameters = {} -> null
+              - type       = "string" -> null
+                # (1 unchanged attribute hidden)
+            }
+          - columns {
+              - name       = "customer_id" -> null
+              - parameters = {} -> null
+              - type       = "string" -> null
+                # (1 unchanged attribute hidden)
+            }
+          - columns {
+              - name       = "order_timestamp" -> null
+              - parameters = {} -> null
+              - type       = "timestamp" -> null
+                # (1 unchanged attribute hidden)
+            }
+          - columns {
+              - name       = "status" -> null
+              - parameters = {} -> null
+              - type       = "string" -> null
+                # (1 unchanged attribute hidden)
+            }
+          - columns {
+              - name       = "quantity" -> null
+              - parameters = {} -> null
+              - type       = "int" -> null
+                # (1 unchanged attribute hidden)
+            }
+          - columns {
+              - name       = "unit_price" -> null
+              - parameters = {} -> null
+              - type       = "decimal(10,2)" -> null
+                # (1 unchanged attribute hidden)
+            }
+          - columns {
+              - name       = "city" -> null
+              - parameters = {} -> null
+              - type       = "string" -> null
+                # (1 unchanged attribute hidden)
+            }
+          - columns {
+              - name       = "state" -> null
+              - parameters = {} -> null
+              - type       = "string" -> null
+                # (1 unchanged attribute hidden)
+            }
+          - columns {
+              - name       = "updated_at" -> null
+              - parameters = {} -> null
+              - type       = "timestamp" -> null
+                # (1 unchanged attribute hidden)
+            }
+          - columns {
+              - name       = "arrival_date" -> null
+              - parameters = {} -> null
+              - type       = "string" -> null
+                # (1 unchanged attribute hidden)
+            }
+
+          - ser_de_info {
+              - name                  = "trusted-orders-parquet" -> null
+              - parameters            = {} -> null
+              - serialization_library = "org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe" -> null
+            }
+        }
+    }
+
+  # aws_glue_job.orders_pipeline will be destroyed
+  - resource "aws_glue_job" "orders_pipeline" {
+      - arn                       = "arn:aws:glue:us-east-1:<ACCOUNT_ID>:job/eda262-g09-av2-orders-pipeline" -> null
+      - connections               = [] -> null
+      - default_arguments         = {
+          - "--CODE_SHA256"                  = "8f7e09c80b1fa6e7eaec2065dae5817631516467bc908c615c04ac2b42f1a165"
+          - "--DAYS"                         = "all"
+          - "--MODE"                         = "FULL"
+          - "--RAW_BUCKET"                   = "eda262-g09-lake-raw"
+          - "--REFINED_BUCKET"               = "eda262-g09-lake-refined"
+          - "--REPORT_BUCKET"                = "eda262-g09-artifacts-av2"
+          - "--TRUSTED_BUCKET"               = "eda262-g09-lake-trusted"
+          - "--enable-metrics"               = "true"
+          - "--enable-observability-metrics" = "true"
+          - "--job-bookmark-option"          = "job-bookmark-disable"
+          - "--job-language"                 = "python"
+        } -> null
+      - glue_version              = "4.0" -> null
+      - id                        = "eda262-g09-av2-orders-pipeline" -> null
+      - job_run_queuing_enabled   = false -> null
+      - max_capacity              = 2 -> null
+      - max_retries               = 0 -> null
+      - name                      = "eda262-g09-av2-orders-pipeline" -> null
+      - non_overridable_arguments = {} -> null
+      - number_of_workers         = 2 -> null
+      - role_arn                  = "arn:aws:iam::<ACCOUNT_ID>:role/eda262-g09-av2-glue-pipeline" -> null
+      - tags                      = {} -> null
+      - tags_all                  = {
+          - "entrega"   = "av2"
+          - "grupo"     = "g09"
+          - "managedby" = "terraform"
+          - "projeto"   = "engenharia-de-dados"
+          - "turma"     = "eda262"
+        } -> null
+      - timeout                   = 30 -> null
+      - worker_type               = "G.1X" -> null
+        # (4 unchanged attributes hidden)
+
+      - command {
+          - name            = "glueetl" -> null
+          - python_version  = "3" -> null
+          - script_location = "s3://eda262-g09-artifacts-av2/scripts/pipeline_orders.py" -> null
+            # (1 unchanged attribute hidden)
+        }
+
+      - execution_property {
+          - max_concurrent_runs = 1 -> null
+        }
+    }
+
+  # aws_iam_role.analyst will be destroyed
+  - resource "aws_iam_role" "analyst" {
+      - arn                   = "arn:aws:iam::<ACCOUNT_ID>:role/eda262-g09-av2-analyst" -> null
+      - assume_role_policy    = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = "sts:AssumeRole"
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - AWS = "arn:aws:iam::<ACCOUNT_ID>:root"
+                        }
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - create_date           = "2026-11-18T17:41:53Z" -> null
+      - description           = "Consulta somente da camada refined com Athena" -> null
+      - force_detach_policies = false -> null
+      - id                    = "eda262-g09-av2-analyst" -> null
+      - managed_policy_arns   = [] -> null
+      - max_session_duration  = 3600 -> null
+      - name                  = "eda262-g09-av2-analyst" -> null
+      - path                  = "/" -> null
+      - tags                  = {} -> null
+      - tags_all              = {
+          - "entrega"   = "av2"
+          - "grupo"     = "g09"
+          - "managedby" = "terraform"
+          - "projeto"   = "engenharia-de-dados"
+          - "turma"     = "eda262"
+        } -> null
+      - unique_id             = "AROAUXTSPSNUTVLRBFZ54" -> null
+        # (2 unchanged attributes hidden)
+
+      - inline_policy {
+          - name   = "refined-query-only" -> null
+          - policy = jsonencode(
+                {
+                  - Statement = [
+                      - {
+                          - Action   = "s3:GetObject"
+                          - Effect   = "Allow"
+                          - Resource = "arn:aws:s3:::eda262-g09-lake-refined/*"
+                          - Sid      = "ReadRefined"
+                        },
+                      - {
+                          - Action   = [
+                              - "s3:ListBucket",
+                              - "s3:GetBucketLocation",
+                            ]
+                          - Effect   = "Allow"
+                          - Resource = [
+                              - "arn:aws:s3:::eda262-g09-lake-refined",
+                              - "arn:aws:s3:::eda262-g09-athena-results-av2",
+                            ]
+                          - Sid      = "ListRefinedAndResults"
+                        },
+                      - {
+                          - Action   = [
+                              - "s3:PutObject",
+                              - "s3:GetObject",
+                            ]
+                          - Effect   = "Allow"
+                          - Resource = "arn:aws:s3:::eda262-g09-athena-results-av2/*"
+                          - Sid      = "WriteAthenaResults"
+                        },
+                      - {
+                          - Action   = [
+                              - "athena:StartQueryExecution",
+                              - "athena:GetWorkGroup",
+                              - "athena:GetQueryResults",
+                              - "athena:GetQueryExecution",
+                            ]
+                          - Effect   = "Allow"
+                          - Resource = "arn:aws:athena:us-east-1:<ACCOUNT_ID>:workgroup/eda262-g09-av2"
+                          - Sid      = "QueryWorkgroup"
+                        },
+                      - {
+                          - Action   = [
+                              - "glue:GetTables",
+                              - "glue:GetTable",
+                              - "glue:GetPartitions",
+                              - "glue:GetPartition",
+                              - "glue:GetDatabases",
+                              - "glue:GetDatabase",
+                            ]
+                          - Effect   = "Allow"
+                          - Resource = [
+                              - "arn:aws:glue:us-east-1:<ACCOUNT_ID>:table/eda262_g09_av2/refined_daily_sales",
+                              - "arn:aws:glue:us-east-1:<ACCOUNT_ID>:database/eda262_g09_av2",
+                              - "arn:aws:glue:us-east-1:<ACCOUNT_ID>:catalog",
+                            ]
+                          - Sid      = "ReadRefinedCatalog"
+                        },
+                      - {
+                          - Action   = "lakeformation:GetDataAccess"
+                          - Effect   = "Allow"
+                          - Resource = "*"
+                          - Sid      = "LakeFormationCredentials"
+                        },
+                    ]
+                  - Version   = "2012-10-17"
+                }
+            ) -> null
+        }
+    }
+
+  # aws_iam_role.ingestion will be destroyed
+  - resource "aws_iam_role" "ingestion" {
+      - arn                   = "arn:aws:iam::<ACCOUNT_ID>:role/eda262-g09-av2-ingestion" -> null
+      - assume_role_policy    = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = "sts:AssumeRole"
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - AWS = "arn:aws:iam::<ACCOUNT_ID>:root"
+                        }
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - create_date           = "2026-11-18T17:41:53Z" -> null
+      - description           = "Carga idempotente de objetos na camada raw da AV2" -> null
+      - force_detach_policies = false -> null
+      - id                    = "eda262-g09-av2-ingestion" -> null
+      - managed_policy_arns   = [] -> null
+      - max_session_duration  = 3600 -> null
+      - name                  = "eda262-g09-av2-ingestion" -> null
+      - path                  = "/" -> null
+      - tags                  = {} -> null
+      - tags_all              = {
+          - "entrega"   = "av2"
+          - "grupo"     = "g09"
+          - "managedby" = "terraform"
+          - "projeto"   = "engenharia-de-dados"
+          - "turma"     = "eda262"
+        } -> null
+      - unique_id             = "AROAUXTSPSNUXHMFB2KRI" -> null
+        # (2 unchanged attributes hidden)
+
+      - inline_policy {
+          - name   = "raw-only" -> null
+          - policy = jsonencode(
+                {
+                  - Statement = [
+                      - {
+                          - Action   = [
+                              - "s3:ListBucket",
+                              - "s3:GetBucketLocation",
+                            ]
+                          - Effect   = "Allow"
+                          - Resource = "arn:aws:s3:::eda262-g09-lake-raw"
+                          - Sid      = "ListRaw"
+                        },
+                      - {
+                          - Action   = [
+                              - "s3:PutObject",
+                              - "s3:GetObject",
+                              - "s3:DeleteObject",
+                            ]
+                          - Effect   = "Allow"
+                          - Resource = "arn:aws:s3:::eda262-g09-lake-raw/orders/*"
+                          - Sid      = "WriteRawOrders"
+                        },
+                    ]
+                  - Version   = "2012-10-17"
+                }
+            ) -> null
+        }
+    }
+
+  # aws_iam_role.pipeline will be destroyed
+  - resource "aws_iam_role" "pipeline" {
+      - arn                   = "arn:aws:iam::<ACCOUNT_ID>:role/eda262-g09-av2-glue-pipeline" -> null
+      - assume_role_policy    = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = "sts:AssumeRole"
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - Service = "glue.amazonaws.com"
+                        }
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - create_date           = "2026-11-18T17:41:53Z" -> null
+      - description           = "Transformação raw para trusted e refined" -> null
+      - force_detach_policies = false -> null
+      - id                    = "eda262-g09-av2-glue-pipeline" -> null
+      - managed_policy_arns   = [
+          - "arn:aws:iam::aws:policy/service-role/AWSGlueServiceRole",
+        ] -> null
+      - max_session_duration  = 3600 -> null
+      - name                  = "eda262-g09-av2-glue-pipeline" -> null
+      - path                  = "/" -> null
+      - tags                  = {} -> null
+      - tags_all              = {
+          - "entrega"   = "av2"
+          - "grupo"     = "g09"
+          - "managedby" = "terraform"
+          - "projeto"   = "engenharia-de-dados"
+          - "turma"     = "eda262"
+        } -> null
+      - unique_id             = "AROAUXTSPSNUZVHK4LLGI" -> null
+        # (2 unchanged attributes hidden)
+
+      - inline_policy {
+          - name   = "lake-pipeline" -> null
+          - policy = jsonencode(
+                {
+                  - Statement = [
+                      - {
+                          - Action   = [
+                              - "s3:ListBucket",
+                              - "s3:GetBucketLocation",
+                            ]
+                          - Effect   = "Allow"
+                          - Resource = [
+                              - "arn:aws:s3:::eda262-g09-lake-trusted",
+                              - "arn:aws:s3:::eda262-g09-lake-refined",
+                              - "arn:aws:s3:::eda262-g09-lake-raw",
+                              - "arn:aws:s3:::eda262-g09-artifacts-av2",
+                            ]
+                          - Sid      = "ListLakeBuckets"
+                        },
+                      - {
+                          - Action   = [
+                              - "s3:GetObjectVersion",
+                              - "s3:GetObject",
+                            ]
+                          - Effect   = "Allow"
+                          - Resource = [
+                              - "arn:aws:s3:::eda262-g09-lake-raw/orders/*",
+                              - "arn:aws:s3:::eda262-g09-artifacts-av2/scripts/*",
+                            ]
+                          - Sid      = "ReadRawAndArtifacts"
+                        },
+                      - {
+                          - Action   = [
+                              - "s3:PutObject",
+                              - "s3:GetObject",
+                              - "s3:DeleteObject",
+                            ]
+                          - Effect   = "Allow"
+                          - Resource = [
+                              - "arn:aws:s3:::eda262-g09-lake-trusted/*",
+                              - "arn:aws:s3:::eda262-g09-lake-refined/*",
+                              - "arn:aws:s3:::eda262-g09-lake-raw/quality/*",
+                              - "arn:aws:s3:::eda262-g09-artifacts-av2/reports/*",
+                            ]
+                          - Sid      = "WriteCuratedAndReports"
+                        },
+                      - {
+                          - Action   = [
+                              - "glue:GetTables",
+                              - "glue:GetTable",
+                              - "glue:GetPartitions",
+                              - "glue:GetPartition",
+                              - "glue:GetDatabases",
+                              - "glue:GetDatabase",
+                            ]
+                          - Effect   = "Allow"
+                          - Resource = [
+                              - "arn:aws:glue:us-east-1:<ACCOUNT_ID>:table/eda262_g09_av2/*",
+                              - "arn:aws:glue:us-east-1:<ACCOUNT_ID>:database/eda262_g09_av2",
+                              - "arn:aws:glue:us-east-1:<ACCOUNT_ID>:catalog",
+                            ]
+                          - Sid      = "LakeFormationAndCatalog"
+                        },
+                      - {
+                          - Action   = "lakeformation:GetDataAccess"
+                          - Effect   = "Allow"
+                          - Resource = "*"
+                          - Sid      = "LakeFormationCredentials"
+                        },
+                    ]
+                  - Version   = "2012-10-17"
+                }
+            ) -> null
+        }
+    }
+
+  # aws_iam_role_policy.analyst will be destroyed
+  - resource "aws_iam_role_policy" "analyst" {
+      - id          = "eda262-g09-av2-analyst:refined-query-only" -> null
+      - name        = "refined-query-only" -> null
+      - policy      = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action   = "s3:GetObject"
+                      - Effect   = "Allow"
+                      - Resource = "arn:aws:s3:::eda262-g09-lake-refined/*"
+                      - Sid      = "ReadRefined"
+                    },
+                  - {
+                      - Action   = [
+                          - "s3:ListBucket",
+                          - "s3:GetBucketLocation",
+                        ]
+                      - Effect   = "Allow"
+                      - Resource = [
+                          - "arn:aws:s3:::eda262-g09-lake-refined",
+                          - "arn:aws:s3:::eda262-g09-athena-results-av2",
+                        ]
+                      - Sid      = "ListRefinedAndResults"
+                    },
+                  - {
+                      - Action   = [
+                          - "s3:PutObject",
+                          - "s3:GetObject",
+                        ]
+                      - Effect   = "Allow"
+                      - Resource = "arn:aws:s3:::eda262-g09-athena-results-av2/*"
+                      - Sid      = "WriteAthenaResults"
+                    },
+                  - {
+                      - Action   = [
+                          - "athena:StartQueryExecution",
+                          - "athena:GetWorkGroup",
+                          - "athena:GetQueryResults",
+                          - "athena:GetQueryExecution",
+                        ]
+                      - Effect   = "Allow"
+                      - Resource = "arn:aws:athena:us-east-1:<ACCOUNT_ID>:workgroup/eda262-g09-av2"
+                      - Sid      = "QueryWorkgroup"
+                    },
+                  - {
+                      - Action   = [
+                          - "glue:GetTables",
+                          - "glue:GetTable",
+                          - "glue:GetPartitions",
+                          - "glue:GetPartition",
+                          - "glue:GetDatabases",
+                          - "glue:GetDatabase",
+                        ]
+                      - Effect   = "Allow"
+                      - Resource = [
+                          - "arn:aws:glue:us-east-1:<ACCOUNT_ID>:table/eda262_g09_av2/refined_daily_sales",
+                          - "arn:aws:glue:us-east-1:<ACCOUNT_ID>:database/eda262_g09_av2",
+                          - "arn:aws:glue:us-east-1:<ACCOUNT_ID>:catalog",
+                        ]
+                      - Sid      = "ReadRefinedCatalog"
+                    },
+                  - {
+                      - Action   = "lakeformation:GetDataAccess"
+                      - Effect   = "Allow"
+                      - Resource = "*"
+                      - Sid      = "LakeFormationCredentials"
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - role        = "eda262-g09-av2-analyst" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # aws_iam_role_policy.ingestion will be destroyed
+  - resource "aws_iam_role_policy" "ingestion" {
+      - id          = "eda262-g09-av2-ingestion:raw-only" -> null
+      - name        = "raw-only" -> null
+      - policy      = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action   = [
+                          - "s3:ListBucket",
+                          - "s3:GetBucketLocation",
+                        ]
+                      - Effect   = "Allow"
+                      - Resource = "arn:aws:s3:::eda262-g09-lake-raw"
+                      - Sid      = "ListRaw"
+                    },
+                  - {
+                      - Action   = [
+                          - "s3:PutObject",
+                          - "s3:GetObject",
+                          - "s3:DeleteObject",
+                        ]
+                      - Effect   = "Allow"
+                      - Resource = "arn:aws:s3:::eda262-g09-lake-raw/orders/*"
+                      - Sid      = "WriteRawOrders"
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - role        = "eda262-g09-av2-ingestion" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # aws_iam_role_policy.pipeline will be destroyed
+  - resource "aws_iam_role_policy" "pipeline" {
+      - id          = "eda262-g09-av2-glue-pipeline:lake-pipeline" -> null
+      - name        = "lake-pipeline" -> null
+      - policy      = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action   = [
+                          - "s3:ListBucket",
+                          - "s3:GetBucketLocation",
+                        ]
+                      - Effect   = "Allow"
+                      - Resource = [
+                          - "arn:aws:s3:::eda262-g09-lake-trusted",
+                          - "arn:aws:s3:::eda262-g09-lake-refined",
+                          - "arn:aws:s3:::eda262-g09-lake-raw",
+                          - "arn:aws:s3:::eda262-g09-artifacts-av2",
+                        ]
+                      - Sid      = "ListLakeBuckets"
+                    },
+                  - {
+                      - Action   = [
+                          - "s3:GetObjectVersion",
+                          - "s3:GetObject",
+                        ]
+                      - Effect   = "Allow"
+                      - Resource = [
+                          - "arn:aws:s3:::eda262-g09-lake-raw/orders/*",
+                          - "arn:aws:s3:::eda262-g09-artifacts-av2/scripts/*",
+                        ]
+                      - Sid      = "ReadRawAndArtifacts"
+                    },
+                  - {
+                      - Action   = [
+                          - "s3:PutObject",
+                          - "s3:GetObject",
+                          - "s3:DeleteObject",
+                        ]
+                      - Effect   = "Allow"
+                      - Resource = [
+                          - "arn:aws:s3:::eda262-g09-lake-trusted/*",
+                          - "arn:aws:s3:::eda262-g09-lake-refined/*",
+                          - "arn:aws:s3:::eda262-g09-lake-raw/quality/*",
+                          - "arn:aws:s3:::eda262-g09-artifacts-av2/reports/*",
+                        ]
+                      - Sid      = "WriteCuratedAndReports"
+                    },
+                  - {
+                      - Action   = [
+                          - "glue:GetTables",
+                          - "glue:GetTable",
+                          - "glue:GetPartitions",
+                          - "glue:GetPartition",
+                          - "glue:GetDatabases",
+                          - "glue:GetDatabase",
+                        ]
+                      - Effect   = "Allow"
+                      - Resource = [
+                          - "arn:aws:glue:us-east-1:<ACCOUNT_ID>:table/eda262_g09_av2/*",
+                          - "arn:aws:glue:us-east-1:<ACCOUNT_ID>:database/eda262_g09_av2",
+                          - "arn:aws:glue:us-east-1:<ACCOUNT_ID>:catalog",
+                        ]
+                      - Sid      = "LakeFormationAndCatalog"
+                    },
+                  - {
+                      - Action   = "lakeformation:GetDataAccess"
+                      - Effect   = "Allow"
+                      - Resource = "*"
+                      - Sid      = "LakeFormationCredentials"
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - role        = "eda262-g09-av2-glue-pipeline" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # aws_iam_role_policy_attachment.pipeline_glue will be destroyed
+  - resource "aws_iam_role_policy_attachment" "pipeline_glue" {
+      - id         = "eda262-g09-av2-glue-pipeline-20261118174154150300000001" -> null
+      - policy_arn = "arn:aws:iam::aws:policy/service-role/AWSGlueServiceRole" -> null
+      - role       = "eda262-g09-av2-glue-pipeline" -> null
+    }
+
+  # aws_lakeformation_permissions.analyst_database will be destroyed
+  - resource "aws_lakeformation_permissions" "analyst_database" {
+      - catalog_resource              = false -> null
+      - id                            = "2748688198" -> null
+      - permissions                   = [
+          - "ALL",
+          - "DESCRIBE",
+        ] -> null
+      - permissions_with_grant_option = [] -> null
+      - principal                     = "arn:aws:iam::<ACCOUNT_ID>:role/eda262-g09-av2-analyst" -> null
+
+      - database {
+          - catalog_id = "<ACCOUNT_ID>" -> null
+          - name       = "eda262_g09_av2" -> null
+        }
+    }
+
+  # aws_lakeformation_permissions.analyst_refined_table will be destroyed
+  - resource "aws_lakeformation_permissions" "analyst_refined_table" {
+      - catalog_resource              = false -> null
+      - id                            = "1170272987" -> null
+      - permissions                   = [
+          - "DESCRIBE",
+          - "SELECT",
+        ] -> null
+      - permissions_with_grant_option = [] -> null
+      - principal                     = "arn:aws:iam::<ACCOUNT_ID>:role/eda262-g09-av2-analyst" -> null
+
+      - table {
+          - catalog_id    = "<ACCOUNT_ID>" -> null
+          - database_name = "eda262_g09_av2" -> null
+          - name          = "refined_daily_sales" -> null
+          - wildcard      = false -> null
+        }
+    }
+
+  # aws_lakeformation_permissions.executor_database will be destroyed
+  - resource "aws_lakeformation_permissions" "executor_database" {
+      - catalog_resource              = false -> null
+      - id                            = "2126954045" -> null
+      - permissions                   = [
+          - "ALL",
+          - "ALTER",
+          - "CREATE_TABLE",
+          - "DESCRIBE",
+          - "DROP",
+        ] -> null
+      - permissions_with_grant_option = [
+          - "ALL",
+          - "ALTER",
+          - "CREATE_TABLE",
+          - "DESCRIBE",
+          - "DROP",
+        ] -> null
+      - principal                     = "arn:aws:iam::<ACCOUNT_ID>:user/eda-grupo09" -> null
+
+      - database {
+          - catalog_id = "<ACCOUNT_ID>" -> null
+          - name       = "eda262_g09_av2" -> null
+        }
+    }
+
+  # aws_lakeformation_permissions.executor_locations["raw"] will be destroyed
+  - resource "aws_lakeformation_permissions" "executor_locations" {
+      - catalog_resource              = false -> null
+      - id                            = "3828044134" -> null
+      - permissions                   = [
+          - "DATA_LOCATION_ACCESS",
+        ] -> null
+      - permissions_with_grant_option = [
+          - "DATA_LOCATION_ACCESS",
+        ] -> null
+      - principal                     = "arn:aws:iam::<ACCOUNT_ID>:user/eda-grupo09" -> null
+
+      - data_location {
+          - arn        = "arn:aws:s3:::eda262-g09-lake-raw" -> null
+          - catalog_id = "<ACCOUNT_ID>" -> null
+        }
+    }
+
+  # aws_lakeformation_permissions.executor_locations["refined"] will be destroyed
+  - resource "aws_lakeformation_permissions" "executor_locations" {
+      - catalog_resource              = false -> null
+      - id                            = "2665495809" -> null
+      - permissions                   = [
+          - "DATA_LOCATION_ACCESS",
+        ] -> null
+      - permissions_with_grant_option = [
+          - "DATA_LOCATION_ACCESS",
+        ] -> null
+      - principal                     = "arn:aws:iam::<ACCOUNT_ID>:user/eda-grupo09" -> null
+
+      - data_location {
+          - arn        = "arn:aws:s3:::eda262-g09-lake-refined" -> null
+          - catalog_id = "<ACCOUNT_ID>" -> null
+        }
+    }
+
+  # aws_lakeformation_permissions.executor_locations["trusted"] will be destroyed
+  - resource "aws_lakeformation_permissions" "executor_locations" {
+      - catalog_resource              = false -> null
+      - id                            = "2960348025" -> null
+      - permissions                   = [
+          - "DATA_LOCATION_ACCESS",
+        ] -> null
+      - permissions_with_grant_option = [
+          - "DATA_LOCATION_ACCESS",
+        ] -> null
+      - principal                     = "arn:aws:iam::<ACCOUNT_ID>:user/eda-grupo09" -> null
+
+      - data_location {
+          - arn        = "arn:aws:s3:::eda262-g09-lake-trusted" -> null
+          - catalog_id = "<ACCOUNT_ID>" -> null
+        }
+    }
+
+  # aws_lakeformation_permissions.ingestion_raw_location will be destroyed
+  - resource "aws_lakeformation_permissions" "ingestion_raw_location" {
+      - catalog_resource              = false -> null
+      - id                            = "721147546" -> null
+      - permissions                   = [
+          - "DATA_LOCATION_ACCESS",
+        ] -> null
+      - permissions_with_grant_option = [] -> null
+      - principal                     = "arn:aws:iam::<ACCOUNT_ID>:role/eda262-g09-av2-ingestion" -> null
+
+      - data_location {
+          - arn        = "arn:aws:s3:::eda262-g09-lake-raw" -> null
+          - catalog_id = "<ACCOUNT_ID>" -> null
+        }
+    }
+
+  # aws_lakeformation_permissions.pipeline_database will be destroyed
+  - resource "aws_lakeformation_permissions" "pipeline_database" {
+      - catalog_resource              = false -> null
+      - id                            = "158768476" -> null
+      - permissions                   = [
+          - "ALL",
+          - "DESCRIBE",
+        ] -> null
+      - permissions_with_grant_option = [] -> null
+      - principal                     = "arn:aws:iam::<ACCOUNT_ID>:role/eda262-g09-av2-glue-pipeline" -> null
+
+      - database {
+          - catalog_id = "<ACCOUNT_ID>" -> null
+          - name       = "eda262_g09_av2" -> null
+        }
+    }
+
+  # aws_lakeformation_permissions.pipeline_locations["raw"] will be destroyed
+  - resource "aws_lakeformation_permissions" "pipeline_locations" {
+      - catalog_resource              = false -> null
+      - id                            = "3444900111" -> null
+      - permissions                   = [
+          - "DATA_LOCATION_ACCESS",
+        ] -> null
+      - permissions_with_grant_option = [] -> null
+      - principal                     = "arn:aws:iam::<ACCOUNT_ID>:role/eda262-g09-av2-glue-pipeline" -> null
+
+      - data_location {
+          - arn        = "arn:aws:s3:::eda262-g09-lake-raw" -> null
+          - catalog_id = "<ACCOUNT_ID>" -> null
+        }
+    }
+
+  # aws_lakeformation_permissions.pipeline_locations["refined"] will be destroyed
+  - resource "aws_lakeformation_permissions" "pipeline_locations" {
+      - catalog_resource              = false -> null
+      - id                            = "1199335212" -> null
+      - permissions                   = [
+          - "DATA_LOCATION_ACCESS",
+        ] -> null
+      - permissions_with_grant_option = [] -> null
+      - principal                     = "arn:aws:iam::<ACCOUNT_ID>:role/eda262-g09-av2-glue-pipeline" -> null
+
+      - data_location {
+          - arn        = "arn:aws:s3:::eda262-g09-lake-refined" -> null
+          - catalog_id = "<ACCOUNT_ID>" -> null
+        }
+    }
+
+  # aws_lakeformation_permissions.pipeline_locations["trusted"] will be destroyed
+  - resource "aws_lakeformation_permissions" "pipeline_locations" {
+      - catalog_resource              = false -> null
+      - id                            = "1777273172" -> null
+      - permissions                   = [
+          - "DATA_LOCATION_ACCESS",
+        ] -> null
+      - permissions_with_grant_option = [] -> null
+      - principal                     = "arn:aws:iam::<ACCOUNT_ID>:role/eda262-g09-av2-glue-pipeline" -> null
+
+      - data_location {
+          - arn        = "arn:aws:s3:::eda262-g09-lake-trusted" -> null
+          - catalog_id = "<ACCOUNT_ID>" -> null
+        }
+    }
+
+  # aws_lakeformation_permissions.pipeline_tables["raw"] will be destroyed
+  - resource "aws_lakeformation_permissions" "pipeline_tables" {
+      - catalog_resource              = false -> null
+      - id                            = "2461719153" -> null
+      - permissions                   = [
+          - "DESCRIBE",
+          - "SELECT",
+        ] -> null
+      - permissions_with_grant_option = [] -> null
+      - principal                     = "arn:aws:iam::<ACCOUNT_ID>:role/eda262-g09-av2-glue-pipeline" -> null
+
+      - table {
+          - catalog_id    = "<ACCOUNT_ID>" -> null
+          - database_name = "eda262_g09_av2" -> null
+          - name          = "raw_orders" -> null
+          - wildcard      = false -> null
+        }
+    }
+
+  # aws_lakeformation_permissions.pipeline_tables["refined"] will be destroyed
+  - resource "aws_lakeformation_permissions" "pipeline_tables" {
+      - catalog_resource              = false -> null
+      - id                            = "3222528145" -> null
+      - permissions                   = [
+          - "DESCRIBE",
+          - "SELECT",
+        ] -> null
+      - permissions_with_grant_option = [] -> null
+      - principal                     = "arn:aws:iam::<ACCOUNT_ID>:role/eda262-g09-av2-glue-pipeline" -> null
+
+      - table {
+          - catalog_id    = "<ACCOUNT_ID>" -> null
+          - database_name = "eda262_g09_av2" -> null
+          - name          = "refined_daily_sales" -> null
+          - wildcard      = false -> null
+        }
+    }
+
+  # aws_lakeformation_permissions.pipeline_tables["trusted"] will be destroyed
+  - resource "aws_lakeformation_permissions" "pipeline_tables" {
+      - catalog_resource              = false -> null
+      - id                            = "1063386954" -> null
+      - permissions                   = [
+          - "DESCRIBE",
+          - "SELECT",
+        ] -> null
+      - permissions_with_grant_option = [] -> null
+      - principal                     = "arn:aws:iam::<ACCOUNT_ID>:role/eda262-g09-av2-glue-pipeline" -> null
+
+      - table {
+          - catalog_id    = "<ACCOUNT_ID>" -> null
+          - database_name = "eda262_g09_av2" -> null
+          - name          = "trusted_orders" -> null
+          - wildcard      = false -> null
+        }
+    }
+
+  # aws_lakeformation_resource.layer["raw"] will be destroyed
+  - resource "aws_lakeformation_resource" "layer" {
+      - arn                     = "arn:aws:s3:::eda262-g09-lake-raw" -> null
+      - hybrid_access_enabled   = false -> null
+      - id                      = "arn:aws:s3:::eda262-g09-lake-raw" -> null
+      - role_arn                = "arn:aws:iam::<ACCOUNT_ID>:role/aws-service-role/lakeformation.amazonaws.com/AWSServiceRoleForLakeFormationDataAccess" -> null
+      - use_service_linked_role = true -> null
+      - with_federation         = false -> null
+    }
+
+  # aws_lakeformation_resource.layer["refined"] will be destroyed
+  - resource "aws_lakeformation_resource" "layer" {
+      - arn                     = "arn:aws:s3:::eda262-g09-lake-refined" -> null
+      - hybrid_access_enabled   = false -> null
+      - id                      = "arn:aws:s3:::eda262-g09-lake-refined" -> null
+      - role_arn                = "arn:aws:iam::<ACCOUNT_ID>:role/aws-service-role/lakeformation.amazonaws.com/AWSServiceRoleForLakeFormationDataAccess" -> null
+      - use_service_linked_role = true -> null
+      - with_federation         = false -> null
+    }
+
+  # aws_lakeformation_resource.layer["trusted"] will be destroyed
+  - resource "aws_lakeformation_resource" "layer" {
+      - arn                     = "arn:aws:s3:::eda262-g09-lake-trusted" -> null
+      - hybrid_access_enabled   = false -> null
+      - id                      = "arn:aws:s3:::eda262-g09-lake-trusted" -> null
+      - role_arn                = "arn:aws:iam::<ACCOUNT_ID>:role/aws-service-role/lakeformation.amazonaws.com/AWSServiceRoleForLakeFormationDataAccess" -> null
+      - use_service_linked_role = true -> null
+      - with_federation         = false -> null
+    }
+
+  # aws_s3_bucket.lake["raw"] will be destroyed
+  - resource "aws_s3_bucket" "lake" {
+      - arn                         = "arn:aws:s3:::eda262-g09-lake-raw" -> null
+      - bucket                      = "eda262-g09-lake-raw" -> null
+      - bucket_domain_name          = "eda262-g09-lake-raw.s3.amazonaws.com" -> null
+      - bucket_regional_domain_name = "eda262-g09-lake-raw.s3.us-east-1.amazonaws.com" -> null
+      - force_destroy               = true -> null
+      - hosted_zone_id              = "Z3AQBSTGFYJSTF" -> null
+      - id                          = "eda262-g09-lake-raw" -> null
+      - object_lock_enabled         = false -> null
+      - policy                      = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = "s3:*"
+                      - Condition = {
+                          - Bool = {
+                              - "aws:SecureTransport" = "false"
+                            }
+                        }
+                      - Effect    = "Deny"
+                      - Principal = "*"
+                      - Resource  = [
+                          - "arn:aws:s3:::eda262-g09-lake-raw/*",
+                          - "arn:aws:s3:::eda262-g09-lake-raw",
+                        ]
+                      - Sid       = "DenyInsecureTransport"
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - region                      = "us-east-1" -> null
+      - request_payer               = "BucketOwner" -> null
+      - tags                        = {} -> null
+      - tags_all                    = {
+          - "entrega"   = "av2"
+          - "grupo"     = "g09"
+          - "managedby" = "terraform"
+          - "projeto"   = "engenharia-de-dados"
+          - "turma"     = "eda262"
+        } -> null
+        # (2 unchanged attributes hidden)
+
+      - grant {
+          - id          = "8022b3bfe1e45d090335847dc77b594076fc7367a05e12aaab58998de2bef47e" -> null
+          - permissions = [
+              - "FULL_CONTROL",
+            ] -> null
+          - type        = "CanonicalUser" -> null
+            # (1 unchanged attribute hidden)
+        }
+
+      - server_side_encryption_configuration {
+          - rule {
+              - bucket_key_enabled = false -> null
+
+              - apply_server_side_encryption_by_default {
+                  - sse_algorithm     = "AES256" -> null
+                    # (1 unchanged attribute hidden)
+                }
+            }
+        }
+
+      - versioning {
+          - enabled    = true -> null
+          - mfa_delete = false -> null
+        }
+    }
+
+  # aws_s3_bucket.lake["refined"] will be destroyed
+  - resource "aws_s3_bucket" "lake" {
+      - arn                         = "arn:aws:s3:::eda262-g09-lake-refined" -> null
+      - bucket                      = "eda262-g09-lake-refined" -> null
+      - bucket_domain_name          = "eda262-g09-lake-refined.s3.amazonaws.com" -> null
+      - bucket_regional_domain_name = "eda262-g09-lake-refined.s3.us-east-1.amazonaws.com" -> null
+      - force_destroy               = true -> null
+      - hosted_zone_id              = "Z3AQBSTGFYJSTF" -> null
+      - id                          = "eda262-g09-lake-refined" -> null
+      - object_lock_enabled         = false -> null
+      - policy                      = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = "s3:*"
+                      - Condition = {
+                          - Bool = {
+                              - "aws:SecureTransport" = "false"
+                            }
+                        }
+                      - Effect    = "Deny"
+                      - Principal = "*"
+                      - Resource  = [
+                          - "arn:aws:s3:::eda262-g09-lake-refined/*",
+                          - "arn:aws:s3:::eda262-g09-lake-refined",
+                        ]
+                      - Sid       = "DenyInsecureTransport"
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - region                      = "us-east-1" -> null
+      - request_payer               = "BucketOwner" -> null
+      - tags                        = {} -> null
+      - tags_all                    = {
+          - "entrega"   = "av2"
+          - "grupo"     = "g09"
+          - "managedby" = "terraform"
+          - "projeto"   = "engenharia-de-dados"
+          - "turma"     = "eda262"
+        } -> null
+        # (2 unchanged attributes hidden)
+
+      - grant {
+          - id          = "8022b3bfe1e45d090335847dc77b594076fc7367a05e12aaab58998de2bef47e" -> null
+          - permissions = [
+              - "FULL_CONTROL",
+            ] -> null
+          - type        = "CanonicalUser" -> null
+            # (1 unchanged attribute hidden)
+        }
+
+      - server_side_encryption_configuration {
+          - rule {
+              - bucket_key_enabled = false -> null
+
+              - apply_server_side_encryption_by_default {
+                  - sse_algorithm     = "AES256" -> null
+                    # (1 unchanged attribute hidden)
+                }
+            }
+        }
+
+      - versioning {
+          - enabled    = false -> null
+          - mfa_delete = false -> null
+        }
+    }
+
+  # aws_s3_bucket.lake["trusted"] will be destroyed
+  - resource "aws_s3_bucket" "lake" {
+      - arn                         = "arn:aws:s3:::eda262-g09-lake-trusted" -> null
+      - bucket                      = "eda262-g09-lake-trusted" -> null
+      - bucket_domain_name          = "eda262-g09-lake-trusted.s3.amazonaws.com" -> null
+      - bucket_regional_domain_name = "eda262-g09-lake-trusted.s3.us-east-1.amazonaws.com" -> null
+      - force_destroy               = true -> null
+      - hosted_zone_id              = "Z3AQBSTGFYJSTF" -> null
+      - id                          = "eda262-g09-lake-trusted" -> null
+      - object_lock_enabled         = false -> null
+      - policy                      = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = "s3:*"
+                      - Condition = {
+                          - Bool = {
+                              - "aws:SecureTransport" = "false"
+                            }
+                        }
+                      - Effect    = "Deny"
+                      - Principal = "*"
+                      - Resource  = [
+                          - "arn:aws:s3:::eda262-g09-lake-trusted/*",
+                          - "arn:aws:s3:::eda262-g09-lake-trusted",
+                        ]
+                      - Sid       = "DenyInsecureTransport"
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - region                      = "us-east-1" -> null
+      - request_payer               = "BucketOwner" -> null
+      - tags                        = {} -> null
+      - tags_all                    = {
+          - "entrega"   = "av2"
+          - "grupo"     = "g09"
+          - "managedby" = "terraform"
+          - "projeto"   = "engenharia-de-dados"
+          - "turma"     = "eda262"
+        } -> null
+        # (2 unchanged attributes hidden)
+
+      - grant {
+          - id          = "8022b3bfe1e45d090335847dc77b594076fc7367a05e12aaab58998de2bef47e" -> null
+          - permissions = [
+              - "FULL_CONTROL",
+            ] -> null
+          - type        = "CanonicalUser" -> null
+            # (1 unchanged attribute hidden)
+        }
+
+      - server_side_encryption_configuration {
+          - rule {
+              - bucket_key_enabled = false -> null
+
+              - apply_server_side_encryption_by_default {
+                  - sse_algorithm     = "AES256" -> null
+                    # (1 unchanged attribute hidden)
+                }
+            }
+        }
+
+      - versioning {
+          - enabled    = false -> null
+          - mfa_delete = false -> null
+        }
+    }
+
+  # aws_s3_bucket.support["artifacts"] will be destroyed
+  - resource "aws_s3_bucket" "support" {
+      - arn                         = "arn:aws:s3:::eda262-g09-artifacts-av2" -> null
+      - bucket                      = "eda262-g09-artifacts-av2" -> null
+      - bucket_domain_name          = "eda262-g09-artifacts-av2.s3.amazonaws.com" -> null
+      - bucket_regional_domain_name = "eda262-g09-artifacts-av2.s3.us-east-1.amazonaws.com" -> null
+      - force_destroy               = true -> null
+      - hosted_zone_id              = "Z3AQBSTGFYJSTF" -> null
+      - id                          = "eda262-g09-artifacts-av2" -> null
+      - object_lock_enabled         = false -> null
+      - policy                      = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = "s3:*"
+                      - Condition = {
+                          - Bool = {
+                              - "aws:SecureTransport" = "false"
+                            }
+                        }
+                      - Effect    = "Deny"
+                      - Principal = "*"
+                      - Resource  = [
+                          - "arn:aws:s3:::eda262-g09-artifacts-av2/*",
+                          - "arn:aws:s3:::eda262-g09-artifacts-av2",
+                        ]
+                      - Sid       = "DenyInsecureTransport"
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - region                      = "us-east-1" -> null
+      - request_payer               = "BucketOwner" -> null
+      - tags                        = {} -> null
+      - tags_all                    = {
+          - "entrega"   = "av2"
+          - "grupo"     = "g09"
+          - "managedby" = "terraform"
+          - "projeto"   = "engenharia-de-dados"
+          - "turma"     = "eda262"
+        } -> null
+        # (2 unchanged attributes hidden)
+
+      - grant {
+          - id          = "8022b3bfe1e45d090335847dc77b594076fc7367a05e12aaab58998de2bef47e" -> null
+          - permissions = [
+              - "FULL_CONTROL",
+            ] -> null
+          - type        = "CanonicalUser" -> null
+            # (1 unchanged attribute hidden)
+        }
+
+      - server_side_encryption_configuration {
+          - rule {
+              - bucket_key_enabled = false -> null
+
+              - apply_server_side_encryption_by_default {
+                  - sse_algorithm     = "AES256" -> null
+                    # (1 unchanged attribute hidden)
+                }
+            }
+        }
+
+      - versioning {
+          - enabled    = true -> null
+          - mfa_delete = false -> null
+        }
+    }
+
+  # aws_s3_bucket.support["results"] will be destroyed
+  - resource "aws_s3_bucket" "support" {
+      - arn                         = "arn:aws:s3:::eda262-g09-athena-results-av2" -> null
+      - bucket                      = "eda262-g09-athena-results-av2" -> null
+      - bucket_domain_name          = "eda262-g09-athena-results-av2.s3.amazonaws.com" -> null
+      - bucket_regional_domain_name = "eda262-g09-athena-results-av2.s3.us-east-1.amazonaws.com" -> null
+      - force_destroy               = true -> null
+      - hosted_zone_id              = "Z3AQBSTGFYJSTF" -> null
+      - id                          = "eda262-g09-athena-results-av2" -> null
+      - object_lock_enabled         = false -> null
+      - policy                      = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = "s3:*"
+                      - Condition = {
+                          - Bool = {
+                              - "aws:SecureTransport" = "false"
+                            }
+                        }
+                      - Effect    = "Deny"
+                      - Principal = "*"
+                      - Resource  = [
+                          - "arn:aws:s3:::eda262-g09-athena-results-av2/*",
+                          - "arn:aws:s3:::eda262-g09-athena-results-av2",
+                        ]
+                      - Sid       = "DenyInsecureTransport"
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - region                      = "us-east-1" -> null
+      - request_payer               = "BucketOwner" -> null
+      - tags                        = {} -> null
+      - tags_all                    = {
+          - "entrega"   = "av2"
+          - "grupo"     = "g09"
+          - "managedby" = "terraform"
+          - "projeto"   = "engenharia-de-dados"
+          - "turma"     = "eda262"
+        } -> null
+        # (2 unchanged attributes hidden)
+
+      - grant {
+          - id          = "8022b3bfe1e45d090335847dc77b594076fc7367a05e12aaab58998de2bef47e" -> null
+          - permissions = [
+              - "FULL_CONTROL",
+            ] -> null
+          - type        = "CanonicalUser" -> null
+            # (1 unchanged attribute hidden)
+        }
+
+      - server_side_encryption_configuration {
+          - rule {
+              - bucket_key_enabled = false -> null
+
+              - apply_server_side_encryption_by_default {
+                  - sse_algorithm     = "AES256" -> null
+                    # (1 unchanged attribute hidden)
+                }
+            }
+        }
+
+      - versioning {
+          - enabled    = false -> null
+          - mfa_delete = false -> null
+        }
+    }
+
+  # aws_s3_bucket_ownership_controls.lake["raw"] will be destroyed
+  - resource "aws_s3_bucket_ownership_controls" "lake" {
+      - bucket = "eda262-g09-lake-raw" -> null
+      - id     = "eda262-g09-lake-raw" -> null
+
+      - rule {
+          - object_ownership = "BucketOwnerEnforced" -> null
+        }
+    }
+
+  # aws_s3_bucket_ownership_controls.lake["refined"] will be destroyed
+  - resource "aws_s3_bucket_ownership_controls" "lake" {
+      - bucket = "eda262-g09-lake-refined" -> null
+      - id     = "eda262-g09-lake-refined" -> null
+
+      - rule {
+          - object_ownership = "BucketOwnerEnforced" -> null
+        }
+    }
+
+  # aws_s3_bucket_ownership_controls.lake["trusted"] will be destroyed
+  - resource "aws_s3_bucket_ownership_controls" "lake" {
+      - bucket = "eda262-g09-lake-trusted" -> null
+      - id     = "eda262-g09-lake-trusted" -> null
+
+      - rule {
+          - object_ownership = "BucketOwnerEnforced" -> null
+        }
+    }
+
+  # aws_s3_bucket_ownership_controls.support["artifacts"] will be destroyed
+  - resource "aws_s3_bucket_ownership_controls" "support" {
+      - bucket = "eda262-g09-artifacts-av2" -> null
+      - id     = "eda262-g09-artifacts-av2" -> null
+
+      - rule {
+          - object_ownership = "BucketOwnerEnforced" -> null
+        }
+    }
+
+  # aws_s3_bucket_ownership_controls.support["results"] will be destroyed
+  - resource "aws_s3_bucket_ownership_controls" "support" {
+      - bucket = "eda262-g09-athena-results-av2" -> null
+      - id     = "eda262-g09-athena-results-av2" -> null
+
+      - rule {
+          - object_ownership = "BucketOwnerEnforced" -> null
+        }
+    }
+
+  # aws_s3_bucket_policy.lake_tls["raw"] will be destroyed
+  - resource "aws_s3_bucket_policy" "lake_tls" {
+      - bucket = "eda262-g09-lake-raw" -> null
+      - id     = "eda262-g09-lake-raw" -> null
+      - policy = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = "s3:*"
+                      - Condition = {
+                          - Bool = {
+                              - "aws:SecureTransport" = "false"
+                            }
+                        }
+                      - Effect    = "Deny"
+                      - Principal = "*"
+                      - Resource  = [
+                          - "arn:aws:s3:::eda262-g09-lake-raw/*",
+                          - "arn:aws:s3:::eda262-g09-lake-raw",
+                        ]
+                      - Sid       = "DenyInsecureTransport"
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+    }
+
+  # aws_s3_bucket_policy.lake_tls["refined"] will be destroyed
+  - resource "aws_s3_bucket_policy" "lake_tls" {
+      - bucket = "eda262-g09-lake-refined" -> null
+      - id     = "eda262-g09-lake-refined" -> null
+      - policy = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = "s3:*"
+                      - Condition = {
+                          - Bool = {
+                              - "aws:SecureTransport" = "false"
+                            }
+                        }
+                      - Effect    = "Deny"
+                      - Principal = "*"
+                      - Resource  = [
+                          - "arn:aws:s3:::eda262-g09-lake-refined/*",
+                          - "arn:aws:s3:::eda262-g09-lake-refined",
+                        ]
+                      - Sid       = "DenyInsecureTransport"
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+    }
+
+  # aws_s3_bucket_policy.lake_tls["trusted"] will be destroyed
+  - resource "aws_s3_bucket_policy" "lake_tls" {
+      - bucket = "eda262-g09-lake-trusted" -> null
+      - id     = "eda262-g09-lake-trusted" -> null
+      - policy = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = "s3:*"
+                      - Condition = {
+                          - Bool = {
+                              - "aws:SecureTransport" = "false"
+                            }
+                        }
+                      - Effect    = "Deny"
+                      - Principal = "*"
+                      - Resource  = [
+                          - "arn:aws:s3:::eda262-g09-lake-trusted/*",
+                          - "arn:aws:s3:::eda262-g09-lake-trusted",
+                        ]
+                      - Sid       = "DenyInsecureTransport"
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+    }
+
+  # aws_s3_bucket_policy.support_tls["artifacts"] will be destroyed
+  - resource "aws_s3_bucket_policy" "support_tls" {
+      - bucket = "eda262-g09-artifacts-av2" -> null
+      - id     = "eda262-g09-artifacts-av2" -> null
+      - policy = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = "s3:*"
+                      - Condition = {
+                          - Bool = {
+                              - "aws:SecureTransport" = "false"
+                            }
+                        }
+                      - Effect    = "Deny"
+                      - Principal = "*"
+                      - Resource  = [
+                          - "arn:aws:s3:::eda262-g09-artifacts-av2/*",
+                          - "arn:aws:s3:::eda262-g09-artifacts-av2",
+                        ]
+                      - Sid       = "DenyInsecureTransport"
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+    }
+
+  # aws_s3_bucket_policy.support_tls["results"] will be destroyed
+  - resource "aws_s3_bucket_policy" "support_tls" {
+      - bucket = "eda262-g09-athena-results-av2" -> null
+      - id     = "eda262-g09-athena-results-av2" -> null
+      - policy = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = "s3:*"
+                      - Condition = {
+                          - Bool = {
+                              - "aws:SecureTransport" = "false"
+                            }
+                        }
+                      - Effect    = "Deny"
+                      - Principal = "*"
+                      - Resource  = [
+                          - "arn:aws:s3:::eda262-g09-athena-results-av2/*",
+                          - "arn:aws:s3:::eda262-g09-athena-results-av2",
+                        ]
+                      - Sid       = "DenyInsecureTransport"
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+    }
+
+  # aws_s3_bucket_public_access_block.lake["raw"] will be destroyed
+  - resource "aws_s3_bucket_public_access_block" "lake" {
+      - block_public_acls       = true -> null
+      - block_public_policy     = true -> null
+      - bucket                  = "eda262-g09-lake-raw" -> null
+      - id                      = "eda262-g09-lake-raw" -> null
+      - ignore_public_acls      = true -> null
+      - restrict_public_buckets = true -> null
+    }
+
+  # aws_s3_bucket_public_access_block.lake["refined"] will be destroyed
+  - resource "aws_s3_bucket_public_access_block" "lake" {
+      - block_public_acls       = true -> null
+      - block_public_policy     = true -> null
+      - bucket                  = "eda262-g09-lake-refined" -> null
+      - id                      = "eda262-g09-lake-refined" -> null
+      - ignore_public_acls      = true -> null
+      - restrict_public_buckets = true -> null
+    }
+
+  # aws_s3_bucket_public_access_block.lake["trusted"] will be destroyed
+  - resource "aws_s3_bucket_public_access_block" "lake" {
+      - block_public_acls       = true -> null
+      - block_public_policy     = true -> null
+      - bucket                  = "eda262-g09-lake-trusted" -> null
+      - id                      = "eda262-g09-lake-trusted" -> null
+      - ignore_public_acls      = true -> null
+      - restrict_public_buckets = true -> null
+    }
+
+  # aws_s3_bucket_public_access_block.support["artifacts"] will be destroyed
+  - resource "aws_s3_bucket_public_access_block" "support" {
+      - block_public_acls       = true -> null
+      - block_public_policy     = true -> null
+      - bucket                  = "eda262-g09-artifacts-av2" -> null
+      - id                      = "eda262-g09-artifacts-av2" -> null
+      - ignore_public_acls      = true -> null
+      - restrict_public_buckets = true -> null
+    }
+
+  # aws_s3_bucket_public_access_block.support["results"] will be destroyed
+  - resource "aws_s3_bucket_public_access_block" "support" {
+      - block_public_acls       = true -> null
+      - block_public_policy     = true -> null
+      - bucket                  = "eda262-g09-athena-results-av2" -> null
+      - id                      = "eda262-g09-athena-results-av2" -> null
+      - ignore_public_acls      = true -> null
+      - restrict_public_buckets = true -> null
+    }
+
+  # aws_s3_bucket_server_side_encryption_configuration.lake["raw"] will be destroyed
+  - resource "aws_s3_bucket_server_side_encryption_configuration" "lake" {
+      - bucket                = "eda262-g09-lake-raw" -> null
+      - id                    = "eda262-g09-lake-raw" -> null
+        # (1 unchanged attribute hidden)
+
+      - rule {
+          - bucket_key_enabled = false -> null
+
+          - apply_server_side_encryption_by_default {
+              - sse_algorithm     = "AES256" -> null
+                # (1 unchanged attribute hidden)
+            }
+        }
+    }
+
+  # aws_s3_bucket_server_side_encryption_configuration.lake["refined"] will be destroyed
+  - resource "aws_s3_bucket_server_side_encryption_configuration" "lake" {
+      - bucket                = "eda262-g09-lake-refined" -> null
+      - id                    = "eda262-g09-lake-refined" -> null
+        # (1 unchanged attribute hidden)
+
+      - rule {
+          - bucket_key_enabled = false -> null
+
+          - apply_server_side_encryption_by_default {
+              - sse_algorithm     = "AES256" -> null
+                # (1 unchanged attribute hidden)
+            }
+        }
+    }
+
+  # aws_s3_bucket_server_side_encryption_configuration.lake["trusted"] will be destroyed
+  - resource "aws_s3_bucket_server_side_encryption_configuration" "lake" {
+      - bucket                = "eda262-g09-lake-trusted" -> null
+      - id                    = "eda262-g09-lake-trusted" -> null
+        # (1 unchanged attribute hidden)
+
+      - rule {
+          - bucket_key_enabled = false -> null
+
+          - apply_server_side_encryption_by_default {
+              - sse_algorithm     = "AES256" -> null
+                # (1 unchanged attribute hidden)
+            }
+        }
+    }
+
+  # aws_s3_bucket_server_side_encryption_configuration.support["artifacts"] will be destroyed
+  - resource "aws_s3_bucket_server_side_encryption_configuration" "support" {
+      - bucket                = "eda262-g09-artifacts-av2" -> null
+      - id                    = "eda262-g09-artifacts-av2" -> null
+        # (1 unchanged attribute hidden)
+
+      - rule {
+          - bucket_key_enabled = false -> null
+
+          - apply_server_side_encryption_by_default {
+              - sse_algorithm     = "AES256" -> null
+                # (1 unchanged attribute hidden)
+            }
+        }
+    }
+
+  # aws_s3_bucket_server_side_encryption_configuration.support["results"] will be destroyed
+  - resource "aws_s3_bucket_server_side_encryption_configuration" "support" {
+      - bucket                = "eda262-g09-athena-results-av2" -> null
+      - id                    = "eda262-g09-athena-results-av2" -> null
+        # (1 unchanged attribute hidden)
+
+      - rule {
+          - bucket_key_enabled = false -> null
+
+          - apply_server_side_encryption_by_default {
+              - sse_algorithm     = "AES256" -> null
+                # (1 unchanged attribute hidden)
+            }
+        }
+    }
+
+  # aws_s3_bucket_versioning.artifacts will be destroyed
+  - resource "aws_s3_bucket_versioning" "artifacts" {
+      - bucket                = "eda262-g09-artifacts-av2" -> null
+      - id                    = "eda262-g09-artifacts-av2" -> null
+        # (1 unchanged attribute hidden)
+
+      - versioning_configuration {
+          - status     = "Enabled" -> null
+            # (1 unchanged attribute hidden)
+        }
+    }
+
+  # aws_s3_bucket_versioning.raw will be destroyed
+  - resource "aws_s3_bucket_versioning" "raw" {
+      - bucket                = "eda262-g09-lake-raw" -> null
+      - id                    = "eda262-g09-lake-raw" -> null
+        # (1 unchanged attribute hidden)
+
+      - versioning_configuration {
+          - status     = "Enabled" -> null
+            # (1 unchanged attribute hidden)
+        }
+    }
+
+  # aws_s3_object.pipeline_script will be destroyed
+  - resource "aws_s3_object" "pipeline_script" {
+      - arn                           = "arn:aws:s3:::eda262-g09-artifacts-av2/scripts/pipeline_orders.py" -> null
+      - bucket                        = "eda262-g09-artifacts-av2" -> null
+      - bucket_key_enabled            = false -> null
+      - content_type                  = "application/octet-stream" -> null
+      - etag                          = "335728a0a8759c911fc0bbcefee77964" -> null
+      - force_destroy                 = false -> null
+      - id                            = "scripts/pipeline_orders.py" -> null
+      - key                           = "scripts/pipeline_orders.py" -> null
+      - metadata                      = {
+          - "sha256" = "8f7e09c80b1fa6e7eaec2065dae5817631516467bc908c615c04ac2b42f1a165"
+        } -> null
+      - server_side_encryption        = "AES256" -> null
+      - source                        = "./glue/pipeline_orders.py" -> null
+      - storage_class                 = "STANDARD" -> null
+      - tags                          = {} -> null
+      - tags_all                      = {
+          - "entrega"   = "av2"
+          - "grupo"     = "g09"
+          - "managedby" = "terraform"
+          - "projeto"   = "engenharia-de-dados"
+          - "turma"     = "eda262"
+        } -> null
+      - version_id                    = "_5SSjnR67bWfkznNyE..Dlk5k0fgOTCR" -> null
+        # (13 unchanged attributes hidden)
+    }
+
+  # terraform_data.workspace_guard will be destroyed
+  - resource "terraform_data" "workspace_guard" {
+      - id     = "ae4ffe4c-a26e-ee52-f919-a38fa443ce7a" -> null
+      - input  = "av2" -> null
+      - output = "av2" -> null
+    }
+
+Plan: 0 to add, 0 to change, 59 to destroy.
+
+Changes to Outputs:
+  - account_id            = "<ACCOUNT_ID>" -> null
+  - artifacts_bucket      = "eda262-g09-artifacts-av2" -> null
+  - athena_results_bucket = "eda262-g09-athena-results-av2" -> null
+  - athena_workgroup      = "eda262-g09-av2" -> null
+  - aws_region            = "us-east-1" -> null
+  - database              = "eda262_g09_av2" -> null
+  - glue_job              = "eda262-g09-av2-orders-pipeline" -> null
+  - layer_roles           = {
+      - analyst   = "eda262-g09-av2-analyst"
+      - ingestion = "eda262-g09-av2-ingestion"
+      - pipeline  = "eda262-g09-av2-glue-pipeline"
+    } -> null
+  - raw_bucket            = "eda262-g09-lake-raw" -> null
+  - raw_table             = "raw_orders" -> null
+  - refined_bucket        = "eda262-g09-lake-refined" -> null
+  - refined_table         = "refined_daily_sales" -> null
+  - resource_inventory    = {
+      - athena_workgroups           = 1
+      - glue_database               = 1
+      - glue_jobs                   = 1
+      - glue_tables                 = 3
+      - iam_roles                   = 3
+      - lakeformation_registrations = 3
+      - s3_buckets                  = 5
+    } -> null
+  - trusted_bucket        = "eda262-g09-lake-trusted" -> null
+  - trusted_table         = "trusted_orders" -> null
+  - workspace             = "av2" -> null
+
+─────────────────────────────────────────────────────────────────────────────
+
+Saved the plan to: .runtime/av2-destroy-review.tfplan
+
+To perform exactly these actions, run the following command to apply:
+    terraform apply ".runtime/av2-destroy-review.tfplan"

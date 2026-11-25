@@ -1,0 +1,48 @@
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/21 21:28:32 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+
+[Stage 0:>                                                          (0 + 0) / 2]
+
+[Stage 0:>                                                          (0 + 2) / 2]
+
+                                                                                
+.
+[Stage 9:>                                                          (0 + 2) / 2]
+
+                                                                                
+./Users/<USER>/Documents/Codex/2026-11-19/revisao-independente-av2-g09/work/python/cpython-3.10-macos-aarch64-none/lib/python3.10/socket.py:788: ResourceWarning: unclosed <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 55671), raddr=('127.0.0.1', 55670)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/<USER>/Documents/Codex/2026-11-19/revisao-independente-av2-g09/work/python/cpython-3.10-macos-aarch64-none/lib/python3.10/socket.py:788: ResourceWarning: unclosed <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 55673), raddr=('127.0.0.1', 55672)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/<USER>/Documents/Codex/2026-11-19/revisao-independente-av2-g09/work/python/cpython-3.10-macos-aarch64-none/lib/python3.10/socket.py:788: ResourceWarning: unclosed <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 55675), raddr=('127.0.0.1', 55674)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/<USER>/Documents/Codex/2026-11-19/revisao-independente-av2-g09/work/python/cpython-3.10-macos-aarch64-none/lib/python3.10/socket.py:788: ResourceWarning: unclosed <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 55679), raddr=('127.0.0.1', 55678)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+../Users/<USER>/Documents/Codex/2026-11-19/revisao-independente-av2-g09/work/python/cpython-3.10-macos-aarch64-none/lib/python3.10/socket.py:788: ResourceWarning: unclosed <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 55682), raddr=('127.0.0.1', 55681)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/<USER>/Documents/Codex/2026-11-19/revisao-independente-av2-g09/work/python/cpython-3.10-macos-aarch64-none/lib/python3.10/socket.py:788: ResourceWarning: unclosed <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 55684), raddr=('127.0.0.1', 55683)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+../Users/<USER>/Documents/Codex/2026-11-19/revisao-independente-av2-g09/work/python/cpython-3.10-macos-aarch64-none/lib/python3.10/socket.py:788: ResourceWarning: unclosed <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 55686), raddr=('127.0.0.1', 55685)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+./Users/<USER>/Documents/Codex/2026-11-19/revisao-independente-av2-g09/work/python/cpython-3.10-macos-aarch64-none/lib/python3.10/socket.py:788: ResourceWarning: unclosed <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 55688), raddr=('127.0.0.1', 55687)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+./Users/<USER>/Documents/Codex/2026-11-19/revisao-independente-av2-g09/work/python/cpython-3.10-macos-aarch64-none/lib/python3.10/socket.py:788: ResourceWarning: unclosed <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 55690), raddr=('127.0.0.1', 55689)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/<USER>/Documents/Codex/2026-11-19/revisao-independente-av2-g09/work/python/cpython-3.10-macos-aarch64-none/lib/python3.10/socket.py:788: ResourceWarning: unclosed <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 55693), raddr=('127.0.0.1', 55692)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+..
+----------------------------------------------------------------------
+Ran 10 tests in 11.047s
+
+OK

@@ -1,6 +1,3 @@
--- Pergunta: Qual foi o valor bruto de vendas por dia e por status dos pedidos?
--- O resultado inclui todos os status, inclusive cancelled, para não esconder
--- valores associados a pedidos posteriormente cancelados.
 
 SELECT
   CAST(order_timestamp AS DATE) AS order_date,

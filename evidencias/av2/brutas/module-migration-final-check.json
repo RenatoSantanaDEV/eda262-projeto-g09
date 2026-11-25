@@ -1,0 +1,9 @@
+{
+  "managed_resources": 59,
+  "data_sources": 11,
+  "module_addresses": true,
+  "terraform_no_changes": true,
+  "lakeformation_global_preserved": true,
+  "lf_global_sha256": "ec98b95a50aae83de2ff33921d6826e0eaa8294dbce414a3dbfa1e753c8a75a2",
+  "pipeline_sha256": "8f7e09c80b1fa6e7eaec2065dae5817631516467bc908c615c04ac2b42f1a165"
+}

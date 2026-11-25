@@ -1,0 +1,44 @@
+{
+    "QueryExecution": {
+        "QueryExecutionId": "47bea1e9-0eb1-424d-aef9-d2d7a48276cd",
+        "Query": "-- Pergunta: qual foi o valor bruto de vendas por dia e status dos pedidos?\n-- A refined já contém a agregação validada e particionada por order_date.\nSELECT\n  order_date,\n  status,\n  order_count,\n  item_count,\n  quantity_total,\n  gross_sales\nFROM \"eda262_g09_av2\".\"refined_daily_sales\"\nWHERE order_date BETWEEN '2026-09-01' AND '2026-09-30'\nORDER BY order_date, status",
+        "StatementType": "DML",
+        "ResultConfiguration": {
+            "OutputLocation": "s3://eda262-g09-athena-results-av2/results/47bea1e9-0eb1-424d-aef9-d2d7a48276cd.csv",
+            "EncryptionConfiguration": {
+                "EncryptionOption": "SSE_S3"
+            }
+        },
+        "ResultReuseConfiguration": {
+            "ResultReuseByAgeConfiguration": {
+                "Enabled": false
+            }
+        },
+        "QueryExecutionContext": {
+            "Database": "eda262_g09_av2"
+        },
+        "Status": {
+            "State": "SUCCEEDED",
+            "SubmissionDateTime": 1795025044.921,
+            "CompletionDateTime": 1795025045.922
+        },
+        "Statistics": {
+            "EngineExecutionTimeInMillis": 854,
+            "DataScannedInBytes": 10060,
+            "TotalExecutionTimeInMillis": 1001,
+            "QueryQueueTimeInMillis": 58,
+            "ServicePreProcessingTimeInMillis": 66,
+            "QueryPlanningTimeInMillis": 419,
+            "ServiceProcessingTimeInMillis": 23,
+            "ResultReuseInformation": {
+                "ReusedPreviousResult": false
+            }
+        },
+        "WorkGroup": "eda262-g09-av2",
+        "EngineVersion": {
+            "SelectedEngineVersion": "AUTO",
+            "EffectiveEngineVersion": "Athena engine version 3"
+        },
+        "SubstatementType": "SELECT"
+    }
+}

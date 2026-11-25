@@ -1,0 +1,10 @@
+{
+  "managed_resources": 59,
+  "moved_resources": 59,
+  "create": 0,
+  "update": 0,
+  "delete": 0,
+  "global_lf_managed": false,
+  "plan_sha256": "58b06f8c895e6a8b7cc0f1f7ebfcccd30357dd3ba96ea1693f340dcd30ad23fd",
+  "plan_evidence": "terraform-plan-20261119T154944Z.txt"
+}

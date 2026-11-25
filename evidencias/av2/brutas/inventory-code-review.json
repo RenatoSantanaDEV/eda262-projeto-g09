@@ -1,0 +1,26 @@
+{
+  "managed_resource_count": 59,
+  "data_source_count": 11,
+  "taggable_resources_checked": 12,
+  "missing_required_tags": [],
+  "layers": {
+    "raw": {
+      "object_count": 33,
+      "bytes": 46543442
+    },
+    "trusted": {
+      "object_count": 30,
+      "bytes": 5584100
+    },
+    "refined": {
+      "object_count": 30,
+      "bytes": 50858
+    }
+  },
+  "pipeline_local_sha256": "8f7e09c80b1fa6e7eaec2065dae5817631516467bc908c615c04ac2b42f1a165",
+  "pipeline_s3_sha256": "8f7e09c80b1fa6e7eaec2065dae5817631516467bc908c615c04ac2b42f1a165",
+  "glue_code_sha256": "8f7e09c80b1fa6e7eaec2065dae5817631516467bc908c615c04ac2b42f1a165",
+  "s3_metadata_sha256": "8f7e09c80b1fa6e7eaec2065dae5817631516467bc908c615c04ac2b42f1a165",
+  "global_lf_settings_managed": false,
+  "code_match": true
+}

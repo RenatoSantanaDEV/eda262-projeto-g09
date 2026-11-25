@@ -1,0 +1,8 @@
+{
+  "apply_created_utc": "20261119T030118Z",
+  "apply_evidence": "terraform-apply-plan-20261119T025835Z-at-20261119T030118Z.txt",
+  "kind": "apply",
+  "plan_created_utc": "20261119T025835Z",
+  "plan_evidence": "terraform-plan-20261119T025835Z.txt",
+  "plan_sha256": "06e8001018e9345de59fa23ea07abbcfcf1fab1a94efe7015b13b61e3758b13e"
+}

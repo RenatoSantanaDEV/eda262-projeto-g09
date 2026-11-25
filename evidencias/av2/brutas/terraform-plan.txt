@@ -1,0 +1,94 @@
+[33m╷[0m[0m
+[33m│[0m [0m[1m[33mWarning: [0m[0m[1mDeprecated Parameter[0m
+[33m│[0m [0m
+[33m│[0m [0m[0mThe parameter "dynamodb_table" is deprecated. Use parameter "use_lockfile"
+[33m│[0m [0minstead.
+[33m╵[0m[0m
+Acquiring state lock. This may take a few moments...
+[0m[1mterraform_data.workspace_guard: Refreshing state... [id=ae4ffe4c-a26e-ee52-f919-a38fa443ce7a][0m
+[0m[1mdata.aws_caller_identity.current: Reading...[0m[0m
+[0m[1mdata.aws_iam_policy_document.glue_assume_role: Reading...[0m[0m
+[0m[1maws_s3_bucket.lake["raw"]: Refreshing state... [id=eda262-g09-lake-raw][0m
+[0m[1maws_s3_bucket.lake["trusted"]: Refreshing state... [id=eda262-g09-lake-trusted][0m
+[0m[1maws_s3_bucket.support["artifacts"]: Refreshing state... [id=eda262-g09-artifacts-av2][0m
+[0m[1maws_s3_bucket.lake["refined"]: Refreshing state... [id=eda262-g09-lake-refined][0m
+[0m[1maws_s3_bucket.support["results"]: Refreshing state... [id=eda262-g09-athena-results-av2][0m
+[0m[1mdata.aws_iam_policy_document.glue_assume_role: Read complete after 0s [id=2681768870][0m
+[0m[1maws_iam_role.pipeline: Refreshing state... [id=eda262-g09-av2-glue-pipeline][0m
+[0m[1mdata.aws_caller_identity.current: Read complete after 0s [id=<ACCOUNT_ID>][0m
+[0m[1mdata.aws_iam_policy_document.principal_assume_role: Reading...[0m[0m
+[0m[1maws_lakeformation_data_lake_settings.av2: Refreshing state... [id=3707752433][0m
+[0m[1mdata.aws_iam_policy_document.principal_assume_role: Read complete after 0s [id=2716348323][0m
+[0m[1maws_iam_role.ingestion: Refreshing state... [id=eda262-g09-av2-ingestion][0m
+[0m[1maws_iam_role.analyst: Refreshing state... [id=eda262-g09-av2-analyst][0m
+[0m[1maws_glue_catalog_database.av2: Refreshing state... [id=<ACCOUNT_ID>:eda262_g09_av2][0m
+[0m[1maws_iam_role_policy_attachment.pipeline_glue: Refreshing state... [id=eda262-g09-av2-glue-pipeline-20261118174154150300000001][0m
+[0m[1maws_lakeformation_permissions.analyst_database: Refreshing state... [id=2748688198][0m
+[0m[1maws_lakeformation_permissions.pipeline_database: Refreshing state... [id=158768476][0m
+[0m[1maws_lakeformation_permissions.executor_database: Refreshing state... [id=2126954045][0m
+[0m[1maws_s3_bucket_versioning.artifacts: Refreshing state... [id=eda262-g09-artifacts-av2][0m
+[0m[1maws_s3_bucket_public_access_block.support["results"]: Refreshing state... [id=eda262-g09-athena-results-av2][0m
+[0m[1maws_s3_bucket_public_access_block.support["artifacts"]: Refreshing state... [id=eda262-g09-artifacts-av2][0m
+[0m[1maws_s3_bucket_versioning.raw: Refreshing state... [id=eda262-g09-lake-raw][0m
+[0m[1maws_s3_bucket_ownership_controls.support["results"]: Refreshing state... [id=eda262-g09-athena-results-av2][0m
+[0m[1maws_s3_bucket_ownership_controls.support["artifacts"]: Refreshing state... [id=eda262-g09-artifacts-av2][0m
+[0m[1mdata.aws_iam_policy_document.ingestion: Reading...[0m[0m
+[0m[1maws_s3_bucket_server_side_encryption_configuration.support["artifacts"]: Refreshing state... [id=eda262-g09-artifacts-av2][0m
+[0m[1maws_s3_bucket_server_side_encryption_configuration.support["results"]: Refreshing state... [id=eda262-g09-athena-results-av2][0m
+[0m[1mdata.aws_iam_policy_document.ingestion: Read complete after 0s [id=1307306763][0m
+[0m[1mdata.aws_iam_policy_document.support_tls["artifacts"]: Reading...[0m[0m
+[0m[1mdata.aws_iam_policy_document.pipeline: Reading...[0m[0m
+[0m[1mdata.aws_iam_policy_document.support_tls["artifacts"]: Read complete after 0s [id=3985115685][0m
+[0m[1mdata.aws_iam_policy_document.pipeline: Read complete after 0s [id=4076599474][0m
+[0m[1mdata.aws_iam_policy_document.support_tls["results"]: Reading...[0m[0m
+[0m[1maws_lakeformation_resource.layer["raw"]: Refreshing state... [id=arn:aws:s3:::eda262-g09-lake-raw][0m
+[0m[1mdata.aws_iam_policy_document.support_tls["results"]: Read complete after 0s [id=1211682519][0m
+[0m[1maws_lakeformation_resource.layer["trusted"]: Refreshing state... [id=arn:aws:s3:::eda262-g09-lake-trusted][0m
+[0m[1maws_lakeformation_resource.layer["refined"]: Refreshing state... [id=arn:aws:s3:::eda262-g09-lake-refined][0m
+[0m[1maws_s3_bucket_server_side_encryption_configuration.lake["refined"]: Refreshing state... [id=eda262-g09-lake-refined][0m
+[0m[1maws_s3_bucket_server_side_encryption_configuration.lake["trusted"]: Refreshing state... [id=eda262-g09-lake-trusted][0m
+[0m[1maws_s3_bucket_server_side_encryption_configuration.lake["raw"]: Refreshing state... [id=eda262-g09-lake-raw][0m
+[0m[1maws_s3_bucket_public_access_block.lake["refined"]: Refreshing state... [id=eda262-g09-lake-refined][0m
+[0m[1maws_s3_bucket_public_access_block.lake["raw"]: Refreshing state... [id=eda262-g09-lake-raw][0m
+[0m[1maws_s3_bucket_public_access_block.lake["trusted"]: Refreshing state... [id=eda262-g09-lake-trusted][0m
+[0m[1mdata.aws_iam_policy_document.lake_tls["trusted"]: Reading...[0m[0m
+[0m[1mdata.aws_iam_policy_document.lake_tls["raw"]: Reading...[0m[0m
+[0m[1mdata.aws_iam_policy_document.lake_tls["trusted"]: Read complete after 0s [id=138848331][0m
+[0m[1mdata.aws_iam_policy_document.lake_tls["raw"]: Read complete after 0s [id=3707982014][0m
+[0m[1maws_s3_bucket_ownership_controls.lake["trusted"]: Refreshing state... [id=eda262-g09-lake-trusted][0m
+[0m[1mdata.aws_iam_policy_document.lake_tls["refined"]: Reading...[0m[0m
+[0m[1mdata.aws_iam_policy_document.lake_tls["refined"]: Read complete after 0s [id=2248194849][0m
+[0m[1maws_s3_bucket_ownership_controls.lake["raw"]: Refreshing state... [id=eda262-g09-lake-raw][0m
+[0m[1maws_s3_bucket_ownership_controls.lake["refined"]: Refreshing state... [id=eda262-g09-lake-refined][0m
+[0m[1mdata.aws_iam_policy_document.analyst: Reading...[0m[0m
+[0m[1mdata.aws_iam_policy_document.analyst: Read complete after 0s [id=452205179][0m
+[0m[1maws_iam_role_policy.ingestion: Refreshing state... [id=eda262-g09-av2-ingestion:raw-only][0m
+[0m[1maws_s3_bucket_policy.support_tls["results"]: Refreshing state... [id=eda262-g09-athena-results-av2][0m
+[0m[1maws_iam_role_policy.pipeline: Refreshing state... [id=eda262-g09-av2-glue-pipeline:lake-pipeline][0m
+[0m[1maws_s3_bucket_policy.support_tls["artifacts"]: Refreshing state... [id=eda262-g09-artifacts-av2][0m
+[0m[1maws_lakeformation_permissions.ingestion_raw_location: Refreshing state... [id=721147546][0m
+[0m[1maws_lakeformation_permissions.executor_locations["refined"]: Refreshing state... [id=2665495809][0m
+[0m[1maws_lakeformation_permissions.executor_locations["raw"]: Refreshing state... [id=3828044134][0m
+[0m[1maws_lakeformation_permissions.executor_locations["trusted"]: Refreshing state... [id=2960348025][0m
+[0m[1maws_lakeformation_permissions.pipeline_locations["raw"]: Refreshing state... [id=3444900111][0m
+[0m[1maws_lakeformation_permissions.pipeline_locations["trusted"]: Refreshing state... [id=1777273172][0m
+[0m[1maws_lakeformation_permissions.pipeline_locations["refined"]: Refreshing state... [id=1199335212][0m
+[0m[1maws_iam_role_policy.analyst: Refreshing state... [id=eda262-g09-av2-analyst:refined-query-only][0m
+[0m[1maws_s3_bucket_policy.lake_tls["raw"]: Refreshing state... [id=eda262-g09-lake-raw][0m
+[0m[1maws_s3_bucket_policy.lake_tls["trusted"]: Refreshing state... [id=eda262-g09-lake-trusted][0m
+[0m[1maws_s3_bucket_policy.lake_tls["refined"]: Refreshing state... [id=eda262-g09-lake-refined][0m
+[0m[1maws_s3_object.pipeline_script: Refreshing state... [id=scripts/pipeline_orders.py][0m
+[0m[1maws_athena_workgroup.av2: Refreshing state... [id=eda262-g09-av2][0m
+[0m[1maws_glue_catalog_table.raw_orders: Refreshing state... [id=<ACCOUNT_ID>:eda262_g09_av2:raw_orders][0m
+[0m[1maws_glue_catalog_table.refined_sales: Refreshing state... [id=<ACCOUNT_ID>:eda262_g09_av2:refined_daily_sales][0m
+[0m[1maws_glue_catalog_table.trusted_orders: Refreshing state... [id=<ACCOUNT_ID>:eda262_g09_av2:trusted_orders][0m
+[0m[1maws_glue_job.orders_pipeline: Refreshing state... [id=eda262-g09-av2-orders-pipeline][0m
+[0m[1maws_lakeformation_permissions.analyst_refined_table: Refreshing state... [id=1170272987][0m
+[0m[1maws_lakeformation_permissions.pipeline_tables["refined"]: Refreshing state... [id=3222528145][0m
+[0m[1maws_lakeformation_permissions.pipeline_tables["trusted"]: Refreshing state... [id=1063386954][0m
+[0m[1maws_lakeformation_permissions.pipeline_tables["raw"]: Refreshing state... [id=2461719153][0m
+
+[0m[1m[32mNo changes.[0m[1m Your infrastructure matches the configuration.[0m
+
+[0mTerraform has compared your real infrastructure against your configuration
+and found no differences, so no changes are needed.

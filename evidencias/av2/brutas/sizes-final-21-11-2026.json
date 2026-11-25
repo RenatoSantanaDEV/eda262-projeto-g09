@@ -1,0 +1,14 @@
+{
+  "raw": {
+    "data_bytes": 46543442,
+    "data_objects": 33
+  },
+  "trusted": {
+    "data_bytes": 5584100,
+    "data_objects": 30
+  },
+  "refined": {
+    "data_bytes": 50858,
+    "data_objects": 30
+  }
+}

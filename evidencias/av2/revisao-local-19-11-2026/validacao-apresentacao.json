@@ -1,0 +1,14 @@
+{
+  "pages": 12,
+  "main_pages": 8,
+  "support_pages": 4,
+  "fonts": {
+    "/AAAAAA+Arial-BoldMT": true,
+    "/AAAAAA+ArialMT": true
+  },
+  "chart_rows": 150,
+  "chart_gross_sales": "526021301.72",
+  "terraform_validate_exit": 1,
+  "visual_review": "12 pages inspected",
+  "local_tests": 73
+}

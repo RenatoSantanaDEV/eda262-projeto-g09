@@ -1,0 +1,88 @@
+{
+  "scope": "Recorded job runs only; excludes S3, CloudWatch, Athena and uncaptured runs. Estimate, not billing.",
+  "runs": [
+    {
+      "evidence_file": "pipeline-backfill-20261118T175635Z.json",
+      "job_run_id": "jr_d8cfd86e85d7966b0c03d278631887ac462bf3529045ae514ed2cf3e43a884b6",
+      "state": "SUCCEEDED",
+      "execution_seconds": 86,
+      "dpu_seconds": 172.0
+    },
+    {
+      "evidence_file": "pipeline-backfill-20261119T024239Z.json",
+      "job_run_id": "jr_03e445ef1d5e5762da92fc990f48078119bec5535fd695211f5f0203f973a5fb",
+      "state": "SUCCEEDED",
+      "execution_seconds": 93,
+      "dpu_seconds": 186.0
+    },
+    {
+      "evidence_file": "pipeline-backfill-20261119T031009Z.json",
+      "job_run_id": "jr_f8c5b14841be45e89e5ea3e6a053f31abf0c0a23624cb90e5391650b8a48cf00",
+      "state": "SUCCEEDED",
+      "execution_seconds": 107,
+      "dpu_seconds": 214.0
+    },
+    {
+      "evidence_file": "pipeline-full-20261118T174756Z.json",
+      "job_run_id": "jr_80a406b4deeb9364bb9a44b64a7f6886f538765d6441da577de36243204e1f45",
+      "state": "SUCCEEDED",
+      "execution_seconds": 126,
+      "dpu_seconds": 252.0
+    },
+    {
+      "evidence_file": "pipeline-full-20261118T175112Z.json",
+      "job_run_id": "jr_afc22681f05e1b9f64cdf9f00fa10c17c0ed0771fb5c628c16385e6c047cb537",
+      "state": "SUCCEEDED",
+      "execution_seconds": 106,
+      "dpu_seconds": 212.0
+    },
+    {
+      "evidence_file": "pipeline-full-20261118T175348Z.json",
+      "job_run_id": "jr_e022650195e7947f65e1d27d0bb4039ab1babb7cb7c0522bb43f0e81876c8e50",
+      "state": "SUCCEEDED",
+      "execution_seconds": 102,
+      "dpu_seconds": 204.0
+    },
+    {
+      "evidence_file": "pipeline-full-20261119T023112Z.json",
+      "job_run_id": "jr_44c9457a92aa19dabea526d18b3cceda3d6a713d55183f95f8243277578e7c68",
+      "state": "SUCCEEDED",
+      "execution_seconds": 143,
+      "dpu_seconds": 286.0
+    },
+    {
+      "evidence_file": "pipeline-full-20261119T023706Z.json",
+      "job_run_id": "jr_dcf6c7a4dcc3a98c231a84e4048615a0214f5c259c42f45ccc4c777d3f8860c7",
+      "state": "SUCCEEDED",
+      "execution_seconds": 114,
+      "dpu_seconds": 228.0
+    },
+    {
+      "evidence_file": "pipeline-full-20261119T023940Z.json",
+      "job_run_id": "jr_bb11f49762ab6d0491eade56930c30b9d9bf25307ba15ba61e5a53e12711b2d9",
+      "state": "SUCCEEDED",
+      "execution_seconds": 132,
+      "dpu_seconds": 264.0
+    },
+    {
+      "evidence_file": "pipeline-full-20261119T030340Z.json",
+      "job_run_id": "jr_a910177d8e85c536b69e45b981edca18e97da16d56175f008e99a4d07cbfceb9",
+      "state": "SUCCEEDED",
+      "execution_seconds": 141,
+      "dpu_seconds": 282.0
+    },
+    {
+      "evidence_file": "pipeline-full-20261119T030719Z.json",
+      "job_run_id": "jr_409321e94491780ee7f07b5433f16ba031bb11e255ba79dfe4f8f3b1bd7b447d",
+      "state": "SUCCEEDED",
+      "execution_seconds": 128,
+      "dpu_seconds": 256.0
+    }
+  ],
+  "recorded_dpu_seconds": "2556.0",
+  "price_usd_per_dpu_hour": "0.44",
+  "estimated_glue_compute_usd": "0.3124",
+  "price_source": "https://aws.amazon.com/glue/pricing/",
+  "price_consulted_date": "2026-11-18",
+  "not_billing_statement": true
+}

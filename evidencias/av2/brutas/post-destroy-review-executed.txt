@@ -1,0 +1,14 @@
+PASSA [destroy] s3:eda262-g09-lake-raw ausente
+PASSA [destroy] s3:eda262-g09-lake-trusted ausente
+PASSA [destroy] s3:eda262-g09-lake-refined ausente
+PASSA [destroy] s3:eda262-g09-artifacts-av2 ausente
+PASSA [destroy] s3:eda262-g09-athena-results-av2 ausente
+PASSA [destroy] glue:eda262_g09_av2 ausente
+PASSA [destroy] glue-job:eda262-g09-av2-orders-pipeline ausente
+PASSA [destroy] athena:eda262-g09-av2 ausente
+PASSA [destroy] iam:eda262-g09-av2-ingestion ausente
+PASSA [destroy] iam:eda262-g09-av2-glue-pipeline ausente
+PASSA [destroy] iam:eda262-g09-av2-analyst ausente
+PASSA [destroy] nenhum recurso da stack AV2 foi encontrado; backend avaliado separadamente
+
+Resultado: 12 PASSA, 0 FALHA
